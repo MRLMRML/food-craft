@@ -3,413 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Craft - 家庭美食菜谱</title>
+    <title>Food Craft - 智能菜谱生成器</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         :root {
-            --bg: #FFF8F0;
-            --card: #FFFFFF;
             --primary: #D4A574;
             --secondary: #8B6F47;
-            --accent: #E8C9A0;
+            --bg: #FFF8F0;
+            --card: #FFFFFF;
             --text: #5D4E37;
             --text-light: #8B7D6B;
-            --green: #7DB87D;
-            --red: #D4756B;
             --border: #E8D5C0;
+            --green: #7DB87D;
         }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        body {
-            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.8;
-        }
+        header { background: linear-gradient(135deg, #F5E6D3, #E8D5C0); padding: 30px 0; text-align: center; border-bottom: 3px solid var(--border); }
+        header h1 { font-size: 2rem; color: var(--secondary); margin-bottom: 5px; }
+        header p { color: var(--text-light); }
         
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        
-        header {
-            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            padding: 50px 0;
-            text-align: center;
-            border-bottom: 3px solid var(--accent);
-        }
-        
-        header h1 {
-            font-family: 'Noto Serif SC', serif;
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 10px;
-        }
-        
-        header p { color: var(--text-light); font-size: 1.1rem; }
-        
-        .section-title {
-            font-family: 'Noto Serif SC', serif;
-            font-size: 1.8rem;
-            color: var(--secondary);
-            text-align: center;
-            margin: 40px 0 30px;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--primary);
-            margin: 10px auto 0;
-        }
-        
-        .prompt-card {
-            background: white;
-            margin: 30px auto;
-            max-width: 800px;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--primary);
-        }
-        
-        .prompt-label {
-            font-weight: 600;
-            color: var(--secondary);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .prompt-text {
-            background: #F5F5F5;
-            padding: 15px;
-            border-radius: 8px;
-            color: var(--text);
-            font-style: italic;
-        }
-        
-        .menu-overview {
-            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            margin: 30px auto;
-            max-width: 800px;
-            border-radius: 16px;
-            padding: 30px;
-        }
-        
-        .menu-overview h2 {
-            font-family: 'Noto Serif SC', serif;
-            color: var(--secondary);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .menu-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        
-        .stat-item {
-            text-align: center;
-            padding: 15px;
-            background: white;
-            border-radius: 12px;
-        }
-        
+        .stats-bar { display: flex; justify-content: center; gap: 30px; padding: 15px 0; background: white; border-bottom: 1px solid var(--border); }
+        .stat { text-align: center; }
         .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-        .stat-label { font-size: 0.85rem; color: var(--text-light); }
+        .stat-label { font-size: 0.8rem; color: var(--text-light); }
         
-        .menu-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
+        .main { display: grid; grid-template-columns: 350px 1fr; gap: 20px; padding: 20px 0; min-height: 80vh; }
         
-        .menu-tag {
-            padding: 8px 16px;
-            background: white;
-            border-radius: 20px;
-            font-size: 0.95rem;
-            color: var(--secondary);
-            border: 1px solid var(--accent);
-            transition: all 0.3s;
-        }
+        .sidebar { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: fit-content; position: sticky; top: 20px; }
+        .sidebar h2 { font-size: 1.2rem; color: var(--secondary); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
         
-        .menu-tag:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-2px);
-        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+        .form-group select, .form-group input { width: 100%; padding: 10px; border: 2px solid var(--border); border-radius: 8px; font-size: 14px; background: white; }
+        .form-group select:focus, .form-group input:focus { outline: none; border-color: var(--primary); }
         
-        .recipes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
+        .scene-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .scene-card { padding: 12px; border: 2px solid var(--border); border-radius: 10px; cursor: pointer; text-align: center; transition: all 0.2s; }
+        .scene-card:hover { border-color: var(--primary); background: #FFF8F0; }
+        .scene-card.active { border-color: var(--primary); background: linear-gradient(135deg, #FFF8F0, #F5E6D3); }
+        .scene-card .icon { font-size: 1.5rem; }
+        .scene-card .name { font-size: 0.85rem; font-weight: 600; }
         
-        .recipe-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid var(--border);
-        }
+        .btn { width: 100%; padding: 14px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 10px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; margin-top: 10px; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3); }
+        .btn-secondary { background: white; color: var(--secondary); border: 2px solid var(--secondary); }
         
-        .recipe-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-        }
+        .results { min-height: 400px; }
+        .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .results-header h2 { font-size: 1.3rem; color: var(--secondary); }
+        .results-count { color: var(--text-light); font-size: 0.9rem; }
         
-        .recipe-header {
-            padding: 25px;
-            position: relative;
-            overflow: hidden;
-        }
+        .recipe-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
         
-        .recipe-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-        }
+        .recipe-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: all 0.3s; cursor: pointer; }
+        .recipe-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
         
-        .recipe-badge {
-            display: inline-block;
-            padding: 4px 12px;
-            background: var(--accent);
-            color: var(--secondary);
-            border-radius: 15px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-        }
+        .recipe-header { padding: 20px; background: linear-gradient(135deg, #F5E6D3, #E8D5C0); }
+        .recipe-badge { display: inline-block; padding: 4px 10px; background: rgba(255,255,255,0.8); border-radius: 15px; font-size: 0.75rem; color: var(--secondary); margin-bottom: 10px; }
+        .recipe-name { font-size: 1.2rem; font-weight: 700; color: var(--secondary); margin-bottom: 5px; }
+        .recipe-cuisine { font-size: 0.85rem; color: var(--text-light); }
         
-        .recipe-icon { font-size: 2.5rem; margin-bottom: 10px; }
-        .recipe-name { font-family: 'Noto Serif SC', serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 8px; }
-        .recipe-desc { color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px; }
+        .recipe-body { padding: 15px 20px; }
+        .recipe-meta { display: flex; gap: 15px; margin-bottom: 10px; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 5px; font-size: 0.85rem; color: var(--text-light); }
+        .recipe-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+        .tag { padding: 3px 8px; background: #F5F5F5; border-radius: 10px; font-size: 0.75rem; color: var(--text-light); }
         
-        .recipe-meta { display: flex; gap: 12px; flex-wrap: wrap; }
+        .recipe-footer { padding: 15px 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .recipe-difficulty { padding: 4px 10px; border-radius: 10px; font-size: 0.8rem; }
+        .difficulty-easy { background: #E8F5E8; color: #2E7D32; }
+        .difficulty-medium { background: #FFF3E0; color: #E65100; }
+        .difficulty-hard { background: #FFEBEE; color: #C62828; }
+        .recipe-action { padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 8px; font-size: 0.85rem; cursor: pointer; }
         
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            padding: 6px 10px;
-            background: #F5F5F5;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-        
-        .recipe-toggle {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-        
-        .recipe-toggle:hover { opacity: 0.9; }
-        
-        .recipe-detail {
-            display: none;
-            padding: 25px;
-            background: #FAFAFA;
-            border-top: 1px solid var(--border);
-        }
-        
-        .recipe-detail.active { display: block; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }
+        .modal-overlay.active { display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .modal { background: white; border-radius: 16px; width: 100%; max-width: 700px; max-height: 90vh; overflow-y: auto; }
+        .modal-header { padding: 25px; background: linear-gradient(135deg, #F5E6D3, #E8D5C0); position: sticky; top: 0; z-index: 10; }
+        .modal-close { position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.8); border: none; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; }
+        .modal-body { padding: 25px; }
         
         .detail-section { margin-bottom: 25px; }
+        .detail-title { font-size: 1.1rem; font-weight: 600; color: var(--secondary); margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
         
-        .detail-title {
-            font-family: 'Noto Serif SC', serif;
-            font-size: 1.1rem;
-            color: var(--secondary);
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid var(--accent);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        .ingredients-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+        .ingredient { display: flex; justify-content: space-between; padding: 10px; background: #F5F5F5; border-radius: 8px; font-size: 0.9rem; }
+        .ingredient .amount { color: var(--primary); font-weight: 600; }
         
-        .ingredients-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        
-        .ingredient {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 12px;
-            background: white;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            border: 1px solid var(--border);
-        }
-        
-        .ingredient-amount { color: var(--primary); font-weight: 600; }
-        
-        .step {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-            padding: 15px;
-            background: white;
-            border-radius: 10px;
-            border: 1px solid var(--border);
-        }
-        
-        .step-number {
-            width: 32px;
-            height: 32px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            flex-shrink: 0;
-        }
-        
+        .steps-list { counter-reset: step; }
+        .step { display: flex; gap: 15px; margin-bottom: 15px; padding: 15px; background: #F5F5F5; border-radius: 10px; }
+        .step-number { width: 30px; height: 30px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; flex-shrink: 0; }
         .step-content { flex: 1; }
+        .step-tip { margin-top: 8px; padding: 8px; background: #FFF3CD; border-radius: 6px; font-size: 0.85rem; color: #856404; }
         
-        .step-tip {
-            margin-top: 8px;
-            padding: 8px 12px;
-            background: #FFF3CD;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            color: #856404;
-        }
-        
-        .tips-box {
-            padding: 15px;
-            background: #E8F5E8;
-            border-radius: 10px;
-            border-left: 4px solid var(--green);
-        }
-        
+        .tips-box { padding: 15px; background: #E8F5E8; border-radius: 10px; border-left: 4px solid var(--green); }
         .tips-box li { padding: 5px 0; list-style: none; }
         .tips-box li::before { content: "✨ "; }
         
-        .shopping-section {
-            background: white;
-            margin: 40px auto;
-            max-width: 800px;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
+        .loading { text-align: center; padding: 40px; color: var(--text-light); }
+        .loading .spinner { display: inline-block; width: 40px; height: 40px; border: 4px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 10px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
         
-        .shopping-section h2 {
-            font-family: 'Noto Serif SC', serif;
-            color: var(--secondary);
-            margin-bottom: 20px;
-            text-align: center;
-        }
+        .empty-state { text-align: center; padding: 60px 20px; color: var(--text-light); }
+        .empty-state .icon { font-size: 3rem; margin-bottom: 15px; }
         
-        .shopping-category { margin-bottom: 20px; }
-        
-        .shopping-category h3 {
-            color: var(--text);
-            font-size: 1rem;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .shopping-items {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 8px;
-        }
-        
-        .shopping-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 8px 12px;
-            background: #F5F5F5;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-        
-        .shopping-price { color: var(--red); font-weight: 600; }
-        
-        .total-cost {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-        
-        .total-cost .value { font-size: 2rem; font-weight: 700; color: var(--secondary); }
-        
-        .timeline-section {
-            background: white;
-            margin: 40px auto;
-            max-width: 800px;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-        
-        .timeline-section h2 {
-            font-family: 'Noto Serif SC', serif;
-            color: var(--secondary);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .timeline-item {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 15px;
-            padding: 15px;
-            background: #F5F5F5;
-            border-radius: 10px;
-        }
-        
-        .timeline-time { width: 80px; font-weight: 700; color: var(--primary); flex-shrink: 0; }
-        .timeline-content { flex: 1; }
-        .timeline-task { font-weight: 600; margin-bottom: 5px; }
-        .timeline-desc { font-size: 0.9rem; color: var(--text-light); }
-        
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            color: var(--text-light);
-            margin-top: 40px;
-        }
-        
+        footer { text-align: center; padding: 20px 0; color: var(--text-light); font-size: 0.9rem; border-top: 1px solid var(--border); margin-top: 30px; }
         footer a { color: var(--primary); text-decoration: none; }
         
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-in { animation: fadeIn 0.5s ease forwards; }
-        
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            .recipes-grid { grid-template-columns: 1fr; }
-            .menu-stats { grid-template-columns: repeat(2, 1fr); }
+            .main { grid-template-columns: 1fr; }
+            .sidebar { position: static; }
+            .recipe-grid { grid-template-columns: 1fr; }
+            .stats-bar { flex-wrap: wrap; gap: 15px; }
         }
     </style>
 </head>
@@ -417,458 +123,252 @@
     <header>
         <div class="container">
             <h1>🍽️ Food Craft</h1>
-            <p>AI 驱动的智能菜谱生成系统 - 让每一餐都好吃</p>
-            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">已收录 1744 道菜谱 | 1025 种食材 | 39 种菜系 | 5 种场景</p>
+            <p>AI 驱动的智能菜谱生成器 - 1744+ 道菜谱任你选</p>
         </div>
     </header>
     
-    <!-- 场景选择 -->
-    <div style="background: white; padding: 30px 0; border-bottom: 1px solid var(--border);">
-        <div class="container">
-            <h2 style="text-align: center; font-family: 'Noto Serif SC', serif; color: var(--secondary); margin-bottom: 20px;">🎯 选择用餐场景</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-                <div style="padding: 15px 25px; background: linear-gradient(135deg, #FFE8E8 0%, #FFD4D4 100%); border-radius: 12px; cursor: pointer; transition: transform 0.3s; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div style="font-size: 2rem;">👶</div>
-                    <div style="font-weight: 600; color: var(--secondary);">儿童餐</div>
-                    <div style="font-size: 0.8rem; color: var(--text-light);">3-12岁营养餐</div>
+    <div class="stats-bar">
+        <div class="stat"><div class="stat-value">1744+</div><div class="stat-label">菜谱</div></div>
+        <div class="stat"><div class="stat-value">1025+</div><div class="stat-label">食材</div></div>
+        <div class="stat"><div class="stat-value">39+</div><div class="stat-label">菜系</div></div>
+        <div class="stat"><div class="stat-value">5</div><div class="stat-label">场景</div></div>
+    </div>
+    
+    <div class="container">
+        <div class="main">
+            <div class="sidebar">
+                <h2>🎯 生成菜谱</h2>
+                
+                <div class="form-group">
+                    <label>用餐场景</label>
+                    <div class="scene-grid" id="scene-grid">
+                        <div class="scene-card" onclick="selectScene('')"><div class="icon">🍽️</div><div class="name">不限</div></div>
+                        <div class="scene-card" onclick="selectScene('children')"><div class="icon">👶</div><div class="name">儿童餐</div></div>
+                        <div class="scene-card" onclick="selectScene('elderly')"><div class="icon">👴</div><div class="name">老人餐</div></div>
+                        <div class="scene-card" onclick="selectScene('weight_loss')"><div class="icon">💪</div><div class="name">减脂餐</div></div>
+                        <div class="scene-card" onclick="selectScene('muscle_gain')"><div class="icon">🏋️</div><div class="name">增肌餐</div></div>
+                        <div class="scene-card" onclick="selectScene('vegetarian')"><div class="icon">🥬</div><div class="name">素食餐</div></div>
+                    </div>
                 </div>
-                <div style="padding: 15px 25px; background: linear-gradient(135deg, #E8F5E8 0%, #D4EDDA 100%); border-radius: 12px; cursor: pointer; transition: transform 0.3s; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div style="font-size: 2rem;">👴</div>
-                    <div style="font-weight: 600; color: var(--secondary);">老人餐</div>
-                    <div style="font-size: 0.8rem; color: var(--text-light);">65岁以上软烂餐</div>
+                
+                <div class="form-group">
+                    <label>菜系偏好</label>
+                    <select id="cuisine">
+                        <option value="">不限</option>
+                        <option value="sichuan">川菜</option>
+                        <option value="cantonese">粤菜</option>
+                        <option value="shandong">鲁菜</option>
+                        <option value="hunan">湘菜</option>
+                        <option value="jiangsu">苏菜</option>
+                        <option value="zhejiang">浙菜</option>
+                        <option value="fujian">闽菜</option>
+                        <option value="anhui">徽菜</option>
+                        <option value="northeast">东北菜</option>
+                        <option value="xinjiang">新疆菜</option>
+                        <option value="yunnan">云南菜</option>
+                        <option value="homestyle">家常菜</option>
+                        <option value="japanese">日本料理</option>
+                        <option value="korean">韩国料理</option>
+                        <option value="thai">泰国菜</option>
+                        <option value="vietnamese">越南菜</option>
+                        <option value="indian">印度菜</option>
+                        <option value="french">法国菜</option>
+                        <option value="italian">意大利菜</option>
+                        <option value="mexican">墨西哥菜</option>
+                        <option value="american">美国菜</option>
+                    </select>
                 </div>
-                <div style="padding: 15px 25px; background: linear-gradient(135deg, #E8F0FF 0%, #D4E4FF 100%); border-radius: 12px; cursor: pointer; transition: transform 0.3s; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div style="font-size: 2rem;">💪</div>
-                    <div style="font-weight: 600; color: var(--secondary);">减脂餐</div>
-                    <div style="font-size: 0.8rem; color: var(--text-light);">低卡高蛋白</div>
+                
+                <div class="form-group">
+                    <label>口味偏好</label>
+                    <select id="flavor">
+                        <option value="">不限</option>
+                        <option value="清淡">清淡</option>
+                        <option value="麻辣">麻辣</option>
+                        <option value="酸甜">酸甜</option>
+                        <option value="咸鲜">咸鲜</option>
+                        <option value="香辣">香辣</option>
+                    </select>
                 </div>
-                <div style="padding: 15px 25px; background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 12px; cursor: pointer; transition: transform 0.3s; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div style="font-size: 2rem;">🏋️</div>
-                    <div style="font-weight: 600; color: var(--secondary);">增肌餐</div>
-                    <div style="font-size: 0.8rem; color: var(--text-light);">高蛋白高热量</div>
+                
+                <div class="form-group">
+                    <label>关键词搜索</label>
+                    <input type="text" id="keyword" placeholder="如：红烧肉、鸡肉、茄子...">
                 </div>
-                <div style="padding: 15px 25px; background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); border-radius: 12px; cursor: pointer; transition: transform 0.3s; text-align: center;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div style="font-size: 2rem;">🥬</div>
-                    <div style="font-weight: 600; color: var(--secondary);">素食餐</div>
-                    <div style="font-size: 0.8rem; color: var(--text-light);">纯素/蛋奶素</div>
+                
+                <button class="btn" onclick="generateRecipes()">🍳 生成菜谱</button>
+                <button class="btn btn-secondary" onclick="loadRandomRecipes()" style="margin-top: 10px;">🎲 随机推荐</button>
+            </div>
+            
+            <div class="results">
+                <div class="results-header">
+                    <h2>📋 推荐菜谱</h2>
+                    <span class="results-count" id="results-count"></span>
+                </div>
+                <div id="recipe-grid" class="recipe-grid">
+                    <div class="loading"><div class="spinner"></div><p>正在加载菜谱数据...</p></div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="prompt-card animate-in">
-            <div class="prompt-label">💬 用户需求</div>
-            <div class="prompt-text">"4个人吃晚餐，预算200元左右，想吃家常菜，有红烧肉吗？再配几个下饭的菜。"</div>
-        </div>
-        
-        <div class="menu-overview animate-in">
-            <h2>📋 今日推荐菜单</h2>
-            <div class="menu-stats">
-                <div class="stat-item"><div class="stat-value">4人</div><div class="stat-label">用餐人数</div></div>
-                <div class="stat-item"><div class="stat-value">60分钟</div><div class="stat-label">预计时长</div></div>
-                <div class="stat-item"><div class="stat-value">¥186</div><div class="stat-label">预计总成本</div></div>
-                <div class="stat-item"><div class="stat-value">2800大卡</div><div class="stat-label">预计总热量</div></div>
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeModal()">✕</button>
+                <h2 id="modal-title">菜谱详情</h2>
+                <p id="modal-subtitle"></p>
             </div>
-            <div class="menu-tags">
-                <span class="menu-tag">🥩 红烧肉</span>
-                <span class="menu-tag">🐟 清蒸鲈鱼</span>
-                <span class="menu-tag">🦐 蒜蓉粉丝虾</span>
-                <span class="menu-tag">🥦 蒜蓉西兰花</span>
-                <span class="menu-tag">🍅 番茄炒蛋</span>
-                <span class="menu-tag">🥒 凉拌黄瓜</span>
-                <span class="menu-tag">🍳 韭菜炒蛋</span>
-                <span class="menu-tag">🥔 酸辣土豆丝</span>
-                <span class="menu-tag">🍲 紫菜蛋花汤</span>
-                <span class="menu-tag">🍚 米饭</span>
-            </div>
-        </div>
-        
-        <h2 class="section-title">👨‍🍳 详细做法</h2>
-        
-        <div class="recipes-grid">
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">主菜 · 家常菜</span>
-                    <div class="recipe-icon">🥩</div>
-                    <div class="recipe-name">红烧肉</div>
-                    <div class="recipe-desc">肥而不腻，入口即化，浓郁的酱香味配上软糯的口感，是家的味道。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 60分钟</span>
-                        <span class="meta-item">🔥 350大卡/份</span>
-                        <span class="meta-item">💰 ¥45</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>五花肉</span><span class="ingredient-amount">500g</span></div>
-                            <div class="ingredient"><span>冰糖</span><span class="ingredient-amount">30g</span></div>
-                            <div class="ingredient"><span>生抽</span><span class="ingredient-amount">2勺</span></div>
-                            <div class="ingredient"><span>老抽</span><span class="ingredient-amount">1勺</span></div>
-                            <div class="ingredient"><span>料酒</span><span class="ingredient-amount">2勺</span></div>
-                            <div class="ingredient"><span>八角</span><span class="ingredient-amount">2个</span></div>
-                            <div class="ingredient"><span>桂皮</span><span class="ingredient-amount">1小块</span></div>
-                            <div class="ingredient"><span>姜片</span><span class="ingredient-amount">3片</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>五花肉切块，冷水下锅，加姜片、料酒焯水，捞出洗净</p><div class="step-tip">💡 冷水下锅可以更好地去除血水</div></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放少许油，放入冰糖，小火炒至焦糖色</p><div class="step-tip">💡 冰糖更容易操作，炒到起大泡变色即可</div></div></div>
-                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>放入五花肉翻炒上色，加入姜片、八角、桂皮</p></div></div>
-                            <div class="step"><div class="step-number">4</div><div class="step-content"><p>加入生抽、老抽、料酒，翻炒均匀</p></div></div>
-                            <div class="step"><div class="step-number">5</div><div class="step-content"><p>加入开水，没过肉，大火烧开后转小火炖45分钟</p><div class="step-tip">💡 一定要加开水，冷水会让肉变硬</div></div></div>
-                            <div class="step"><div class="step-number">6</div><div class="step-content"><p>大火收汁，汤汁浓稠即可出锅</p></div></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">💡 小贴士</div>
-                        <div class="tips-box"><ul><li>五花肉要选三层的，肥瘦相间才好吃</li><li>焯水后要用冷水冲洗，去除浮沫</li><li>炖肉时要小火慢炖，肉才会软烂</li></ul></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">荤菜 · 粤菜</span>
-                    <div class="recipe-icon">🐟</div>
-                    <div class="recipe-name">清蒸鲈鱼</div>
-                    <div class="recipe-desc">鲜嫩的鱼肉配上姜丝和葱丝，清蒸保留了鱼的鲜美，简单却不失档次。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 20分钟</span>
-                        <span class="meta-item">🔥 180大卡/份</span>
-                        <span class="meta-item">💰 ¥55</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>鲈鱼</span><span class="ingredient-amount">1条</span></div>
-                            <div class="ingredient"><span>姜</span><span class="ingredient-amount">1块</span></div>
-                            <div class="ingredient"><span>葱</span><span class="ingredient-amount">2根</span></div>
-                            <div class="ingredient"><span>蒸鱼豉油</span><span class="ingredient-amount">2勺</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>鲈鱼清洗干净，两面划几刀，用料酒和姜片腌制10分钟</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>盘底铺上姜片和葱段，放上鱼</p></div></div>
-                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>水开后上锅蒸8-10分钟</p><div class="step-tip">💡 不要蒸太久，鱼肉会变老</div></div></div>
-                            <div class="step"><div class="step-number">4</div><div class="step-content"><p>倒掉蒸出的水，铺上新的姜丝和葱丝，淋上蒸鱼豉油</p></div></div>
-                            <div class="step"><div class="step-number">5</div><div class="step-content"><p>烧热油淋在鱼身上</p><div class="step-tip">💡 油要烧到冒烟，淋上去才会香</div></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">荤菜 · 粤菜</span>
-                    <div class="recipe-icon">🦐</div>
-                    <div class="recipe-name">蒜蓉粉丝蒸虾</div>
-                    <div class="recipe-desc">鲜嫩的大虾配上蒜蓉和粉丝，清蒸保留了虾的鲜美，简单却不失档次。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 20分钟</span>
-                        <span class="meta-item">🔥 180大卡/份</span>
-                        <span class="meta-item">💰 ¥55</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>大虾</span><span class="ingredient-amount">8只</span></div>
-                            <div class="ingredient"><span>粉丝</span><span class="ingredient-amount">1把</span></div>
-                            <div class="ingredient"><span>大蒜</span><span class="ingredient-amount">1头</span></div>
-                            <div class="ingredient"><span>生抽</span><span class="ingredient-amount">2勺</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>粉丝泡软铺盘底，虾开背去虾线</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>蒜末炒香，加入生抽调成酱汁</p></div></div>
-                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>酱汁淋在虾上，水开后蒸8分钟</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">素菜 · 家常菜</span>
-                    <div class="recipe-icon">🥦</div>
-                    <div class="recipe-name">蒜蓉西兰花</div>
-                    <div class="recipe-desc">翠绿的西兰花配上蒜蓉的香气，清爽健康，是餐桌上的解腻神器。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 10分钟</span>
-                        <span class="meta-item">🔥 80大卡/份</span>
-                        <span class="meta-item">💰 ¥15</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>西兰花</span><span class="ingredient-amount">1朵</span></div>
-                            <div class="ingredient"><span>大蒜</span><span class="ingredient-amount">5瓣</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>西兰花切小朵，焯水30秒捞出过冷水</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放油，蒜末炒香，放入西兰花翻炒，加盐调味</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">素菜 · 家常菜</span>
-                    <div class="recipe-icon">🍅</div>
-                    <div class="recipe-name">番茄炒蛋</div>
-                    <div class="recipe-desc">酸甜的番茄配上嫩滑的鸡蛋，是最经典的家常菜。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 10分钟</span>
-                        <span class="meta-item">🔥 120大卡/份</span>
-                        <span class="meta-item">💰 ¥12</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>番茄</span><span class="ingredient-amount">2个</span></div>
-                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">3个</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>番茄去皮切块，鸡蛋打散</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>先炒鸡蛋盛出，再炒番茄出汁，加入鸡蛋翻炒</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">凉菜 · 家常菜</span>
-                    <div class="recipe-icon">🥒</div>
-                    <div class="recipe-name">凉拌黄瓜</div>
-                    <div class="recipe-desc">清爽开胃，酸辣可口，是夏天餐桌上的必备凉菜。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 5分钟</span>
-                        <span class="meta-item">🔥 50大卡/份</span>
-                        <span class="meta-item">💰 ¥8</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>黄瓜</span><span class="ingredient-amount">2根</span></div>
-                            <div class="ingredient"><span>蒜</span><span class="ingredient-amount">3瓣</span></div>
-                            <div class="ingredient"><span>醋</span><span class="ingredient-amount">2勺</span></div>
-                            <div class="ingredient"><span>辣椒油</span><span class="ingredient-amount">1勺</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>黄瓜拍碎切段，蒜切末</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>加入醋、生抽、辣椒油、香油拌匀</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">素菜 · 家常菜</span>
-                    <div class="recipe-icon">🍳</div>
-                    <div class="recipe-name">韭菜炒蛋</div>
-                    <div class="recipe-desc">韭菜的香气配上鸡蛋的嫩滑，简单快手，是最家常的味道。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 8分钟</span>
-                        <span class="meta-item">🔥 100大卡/份</span>
-                        <span class="meta-item">💰 ¥10</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>韭菜</span><span class="ingredient-amount">200g</span></div>
-                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">3个</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>韭菜切段，鸡蛋打散</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>先炒鸡蛋盛出，再炒韭菜，加入鸡蛋翻炒</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">素菜 · 家常菜</span>
-                    <div class="recipe-icon">🥔</div>
-                    <div class="recipe-name">酸辣土豆丝</div>
-                    <div class="recipe-desc">酸辣可口，爽脆下饭，是最受欢迎的家常菜之一。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 15分钟</span>
-                        <span class="meta-item">🔥 150大卡/份</span>
-                        <span class="meta-item">💰 ¥8</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>土豆</span><span class="ingredient-amount">2个</span></div>
-                            <div class="ingredient"><span>干辣椒</span><span class="ingredient-amount">5个</span></div>
-                            <div class="ingredient"><span>醋</span><span class="ingredient-amount">2勺</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>土豆切丝泡水去淀粉</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放油，干辣椒爆香，放入土豆丝大火翻炒</p></div></div>
-                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>加入醋、盐调味，翻炒均匀出锅</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="recipe-card animate-in">
-                <div class="recipe-header">
-                    <span class="recipe-badge">汤品 · 家常菜</span>
-                    <div class="recipe-icon">🍲</div>
-                    <div class="recipe-name">紫菜蛋花汤</div>
-                    <div class="recipe-desc">清淡爽口，紫菜的鲜美配上蛋花的嫩滑，完美收尾。</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ 10分钟</span>
-                        <span class="meta-item">🔥 60大卡/份</span>
-                        <span class="meta-item">💰 ¥8</span>
-                    </div>
-                </div>
-                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
-                <div class="recipe-detail">
-                    <div class="detail-section">
-                        <div class="detail-title">📦 食材</div>
-                        <div class="ingredients-grid">
-                            <div class="ingredient"><span>紫菜</span><span class="ingredient-amount">10g</span></div>
-                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">2个</span></div>
-                        </div>
-                    </div>
-                    <div class="detail-section">
-                        <div class="detail-title">👨‍🍳 步骤</div>
-                        <div class="steps-list">
-                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>水开后放入紫菜，慢慢倒入蛋液</p></div></div>
-                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>加盐调味，关火后滴入香油</p></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="shopping-section animate-in">
-            <h2>🛒 采购清单</h2>
-            <div class="shopping-category">
-                <h3>🥩 肉类/海鲜</h3>
-                <div class="shopping-items">
-                    <div class="shopping-item"><span>五花肉 500g</span><span class="shopping-price">¥25</span></div>
-                    <div class="shopping-item"><span>鲈鱼 1条</span><span class="shopping-price">¥35</span></div>
-                    <div class="shopping-item"><span>大虾 8只</span><span class="shopping-price">¥30</span></div>
-                </div>
-            </div>
-            <div class="shopping-category">
-                <h3>🥬 蔬菜</h3>
-                <div class="shopping-items">
-                    <div class="shopping-item"><span>西兰花 1朵</span><span class="shopping-price">¥8</span></div>
-                    <div class="shopping-item"><span>番茄 2个</span><span class="shopping-price">¥6</span></div>
-                    <div class="shopping-item"><span>黄瓜 2根</span><span class="shopping-price">¥5</span></div>
-                    <div class="shopping-item"><span>韭菜 200g</span><span class="shopping-price">¥5</span></div>
-                    <div class="shopping-item"><span>土豆 2个</span><span class="shopping-price">¥4</span></div>
-                    <div class="shopping-item"><span>紫菜 10g</span><span class="shopping-price">¥5</span></div>
-                    <div class="shopping-item"><span>粉丝 1把</span><span class="shopping-price">¥5</span></div>
-                </div>
-            </div>
-            <div class="shopping-category">
-                <h3>🥚 蛋类/主食</h3>
-                <div class="shopping-items">
-                    <div class="shopping-item"><span>鸡蛋 15个</span><span class="shopping-price">¥18</span></div>
-                    <div class="shopping-item"><span>大米 1kg</span><span class="shopping-price">¥8</span></div>
-                </div>
-            </div>
-            <div class="shopping-category">
-                <h3>🧂 调味料</h3>
-                <div class="shopping-items">
-                    <div class="shopping-item"><span>冰糖/八角/桂皮</span><span class="shopping-price">¥10</span></div>
-                    <div class="shopping-item"><span>生抽/老抽/料酒</span><span class="shopping-price">¥34</span></div>
-                    <div class="shopping-item"><span>蒸鱼豉油</span><span class="shopping-price">¥15</span></div>
-                    <div class="shopping-item"><span>醋/辣椒油</span><span class="shopping-price">¥10</span></div>
-                </div>
-            </div>
-            <div class="total-cost">
-                <div>预计总成本</div>
-                <div class="value">¥186</div>
-                <div style="font-size: 0.9rem; color: #8B7D6B;">人均 ¥46.5</div>
-            </div>
-        </div>
-        
-        <div class="timeline-section animate-in">
-            <h2>⏱️ 时间规划（总计 60 分钟）</h2>
-            <div class="timeline-item"><div class="timeline-time">0 分钟</div><div class="timeline-content"><div class="timeline-task">开始备菜</div><div class="timeline-desc">五花肉切块、鲈鱼处理、蔬菜清洗切配、鸡蛋打散</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">10 分钟</div><div class="timeline-content"><div class="timeline-task">开始煮饭</div><div class="timeline-desc">电饭煲煮饭</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">15 分钟</div><div class="timeline-content"><div class="timeline-task">开始做红烧肉</div><div class="timeline-desc">焯水、炒糖色、炖煮</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">45 分钟</div><div class="timeline-content"><div class="timeline-task">开始做清蒸鲈鱼</div><div class="timeline-desc">腌制、蒸制</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">50 分钟</div><div class="timeline-content"><div class="timeline-task">开始做蒜蓉粉丝虾</div><div class="timeline-desc">处理虾、蒸制</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">55 分钟</div><div class="timeline-content"><div class="timeline-task">开始炒菜</div><div class="timeline-desc">蒜蓉西兰花、番茄炒蛋、韭菜炒蛋、酸辣土豆丝</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">60 分钟</div><div class="timeline-content"><div class="timeline-task">开始做汤和凉菜</div><div class="timeline-desc">紫菜蛋花汤、凉拌黄瓜</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">65 分钟</div><div class="timeline-content"><div class="timeline-task">上桌开吃 🍽️</div></div></div>
+            <div class="modal-body" id="modal-body"></div>
         </div>
     </div>
     
     <footer>
         <div class="container">
-            <p>🍽️ Food Craft - 让每一餐都好吃</p>
-            <p style="margin-top: 10px;"><a href="https://github.com/MRLMRML/food-craft">GitHub</a> | <a href="https://github.com/MRLMRML/food-craft/blob/main/SKILL.md">SKILL.md</a></p>
+            <p>🍽️ Food Craft - 让每一餐都好吃 | <a href="https://github.com/MRLMRML/food-craft">GitHub</a></p>
         </div>
     </footer>
     
     <script>
-        function toggleRecipe(btn) {
-            const detail = btn.nextElementSibling;
-            const isActive = detail.classList.contains('active');
-            document.querySelectorAll('.recipe-detail').forEach(d => d.classList.remove('active'));
-            document.querySelectorAll('.recipe-toggle').forEach(b => b.textContent = '展开详细做法 ▼');
-            if (!isActive) {
-                detail.classList.add('active');
-                btn.textContent = '收起详细做法 ▲';
+        let allRecipes = [];
+        let currentScene = '';
+        
+        // 加载菜谱数据
+        async function loadRecipes() {
+            try {
+                const res = await fetch('recipes.json');
+                allRecipes = await res.json();
+                document.getElementById('results-count').textContent = `共 ${allRecipes.length} 道菜谱`;
+                loadRandomRecipes();
+            } catch (e) {
+                console.error('Failed to load recipes:', e);
+                document.getElementById('recipe-grid').innerHTML = '<div class="empty-state"><div class="icon">❌</div><p>加载菜谱数据失败</p></div>';
             }
         }
+        
+        // 选择场景
+        function selectScene(scene) {
+            currentScene = scene;
+            document.querySelectorAll('.scene-card').forEach((card, i) => {
+                card.classList.toggle('active', i === (scene === '' ? 0 : ['children', 'elderly', 'weight_loss', 'muscle_gain', 'vegetarian'].indexOf(scene) + 1));
+            });
+        }
+        
+        // 加载随机菜谱
+        function loadRandomRecipes() {
+            const shuffled = [...allRecipes].sort(() => 0.5 - Math.random());
+            renderRecipes(shuffled.slice(0, 12));
+        }
+        
+        // 生成菜谱
+        function generateRecipes() {
+            const cuisine = document.getElementById('cuisine').value;
+            const flavor = document.getElementById('flavor').value;
+            const keyword = document.getElementById('keyword').value.toLowerCase();
+            
+            let filtered = [...allRecipes];
+            
+            if (currentScene) {
+                filtered = filtered.filter(r => r.category === currentScene || (r.tags && r.tags.some(t => t.includes(currentScene))));
+            }
+            if (cuisine) {
+                filtered = filtered.filter(r => r.cuisine === cuisine);
+            }
+            if (flavor) {
+                filtered = filtered.filter(r => r.name.includes(flavor) || (r.tags && r.tags.some(t => t.includes(flavor))));
+            }
+            if (keyword) {
+                filtered = filtered.filter(r => r.name.toLowerCase().includes(keyword) || (r.tags && r.tags.some(t => t.includes(keyword))));
+            }
+            
+            if (filtered.length === 0) {
+                filtered = [...allRecipes].sort(() => 0.5 - Math.random()).slice(0, 12);
+            }
+            
+            renderRecipes(filtered.slice(0, 20));
+        }
+        
+        // 渲染菜谱
+        function renderRecipes(recipes) {
+            const grid = document.getElementById('recipe-grid');
+            document.getElementById('results-count').textContent = `显示 ${recipes.length} 道菜谱`;
+            
+            if (recipes.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><div class="icon">😅</div><p>没有找到匹配的菜谱，试试其他条件？</p></div>';
+                return;
+            }
+            
+            grid.innerHTML = recipes.map(r => `
+                <div class="recipe-card" onclick='showDetail(${JSON.stringify(r).replace(/'/g, "&#39;")})'>
+                    <div class="recipe-header">
+                        <span class="recipe-badge">${r.cuisine || '家常菜'}</span>
+                        <div class="recipe-name">${r.name}</div>
+                    </div>
+                    <div class="recipe-body">
+                        <div class="recipe-meta">
+                            <span class="meta-item">⏱️ ${r.time_minutes || 30}分钟</span>
+                            <span class="meta-item">🔥 ${r.calories_per_serving || 200}大卡</span>
+                            <span class="meta-item">💰 ¥${r.cost_per_serving || 20}</span>
+                        </div>
+                        <div class="recipe-tags">${(r.tags || []).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+                    </div>
+                    <div class="recipe-footer">
+                        <span class="recipe-difficulty difficulty-${r.difficulty || 'medium'}">${r.difficulty === 'easy' ? '简单' : r.difficulty === 'hard' ? '困难' : '中等'}</span>
+                        <button class="recipe-action">查看详情</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // 显示详情
+        function showDetail(recipe) {
+            document.getElementById('modal-title').textContent = recipe.name;
+            document.getElementById('modal-subtitle').textContent = `${recipe.cuisine || '家常菜'} · ${recipe.time_minutes || 30}分钟 · ${recipe.calories_per_serving || 200}大卡/份`;
+            
+            document.getElementById('modal-body').innerHTML = `
+                <div class="detail-section">
+                    <div class="detail-title">📦 食材</div>
+                    <div class="ingredients-list">
+                        ${(recipe.ingredients || []).map(i => `<div class="ingredient"><span>${i.name}</span><span class="amount">${i.amount || '适量'}</span></div>`).join('')}
+                    </div>
+                </div>
+                ${(recipe.seasonings || []).length ? `
+                <div class="detail-section">
+                    <div class="detail-title">🧂 调味料</div>
+                    <div class="ingredients-list">
+                        ${recipe.seasonings.map(s => `<div class="ingredient"><span>${s.name}</span><span class="amount">${s.amount || '适量'}</span></div>`).join('')}
+                    </div>
+                </div>` : ''}
+                <div class="detail-section">
+                    <div class="detail-title">👨‍🍳 步骤</div>
+                    <div class="steps-list">
+                        ${(recipe.steps || []).map((s, i) => `
+                            <div class="step">
+                                <div class="step-number">${i + 1}</div>
+                                <div class="step-content">
+                                    <p>${s.content}</p>
+                                    ${s.tip ? `<div class="step-tip">💡 ${s.tip}</div>` : ''}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                ${(recipe.key_points || []).length ? `
+                <div class="detail-section">
+                    <div class="detail-title">💡 关键点</div>
+                    <div class="tips-box"><ul>${recipe.key_points.map(p => `<li>${p}</li>`).join('')}</ul></div>
+                </div>` : ''}
+            `;
+            
+            document.getElementById('modal').classList.add('active');
+        }
+        
+        function closeModal() { document.getElementById('modal').classList.remove('active'); }
+        document.getElementById('modal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+        
+        // 初始化
+        loadRecipes();
     </script>
 </body>
 </html>
