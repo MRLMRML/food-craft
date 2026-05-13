@@ -1,0 +1,18 @@
+{
+  "id": "sweet_potato",
+  "name": "红薯",
+  "name_en": "Sweet Potato",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {"calories": 86, "protein": 1.6, "fat": 0.1, "carbs": 20.1, "fiber": 3.0},
+  "price_range": {"min": 3, "max": 8, "average": 5, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "常温通风2周", "tips": "不要冷藏，会变硬"},
+  "cuts": [
+    {"name": "红薯块", "suitable_for": ["煮粥", "炖"], "cook_time_range": "15-20分钟"},
+    {"name": "红薯片", "suitable_for": ["烤", "炸"], "cook_time_range": "10-15分钟"},
+    {"name": "红薯泥", "suitable_for": ["甜点"], "cook_time_range": "15-20分钟"}
+  ],
+  "pairing": {"classic": ["小米", "红枣", "芝士"], "sauce": ["糖", "黄油"]},
+  "tips": ["红薯要选红心的，更甜更软", "烤红薯要200°C烤40分钟"]
+}

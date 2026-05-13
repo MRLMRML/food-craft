@@ -1,0 +1,18 @@
+{
+  "id": "noodle",
+  "name": "面条",
+  "name_en": "Noodle",
+  "category": "staple",
+  "subcategory": "noodle",
+  "nutrition_per_100g": {"calories": 110, "protein": 3.5, "fat": 0.5, "carbs": 22.0, "fiber": 1.0},
+  "price_range": {"min": 3, "max": 10, "average": 6, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏3-5天", "dried": "常温6个月", "tips": "新鲜面条要尽快食用"},
+  "cuts": [
+    {"name": "细面", "suitable_for": ["汤面", "拌面"], "cook_time_range": "3-5分钟"},
+    {"name": "宽面", "suitable_for": ["油泼面", "炒面"], "cook_time_range": "5-8分钟"},
+    {"name": "挂面", "suitable_for": ["汤面", "拌面"], "cook_time_range": "5-8分钟"}
+  ],
+  "pairing": {"classic": ["肉末", "鸡蛋", "青菜", "番茄"], "sauce": ["酱油", "醋", "辣椒油"]},
+  "tips": ["面条要水开后下锅", "煮面条要加冷水，口感更筋道"]
+}

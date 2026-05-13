@@ -1,0 +1,14 @@
+{
+  "id": "pepper",
+  "name": "花椒",
+  "name_en": "Sichuan Pepper",
+  "category": "seasoning",
+  "subcategory": "spice",
+  "nutrition_per_100g": {"calories": 296, "protein": 6.7, "fat": 8.9, "carbs": 68.0, "fiber": 28.0},
+  "price_range": {"min": 15, "max": 40, "average": 25, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温密封6个月", "tips": "避光防潮"},
+  "cuts": [],
+  "pairing": {"classic": ["川菜", "肉类", "火锅"], "usage": ["爆香", "炒菜", "火锅底料"]},
+  "tips": ["花椒要小火炒出香味", "炒糊会发苦，要注意火候"]
+}

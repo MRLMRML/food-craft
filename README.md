@@ -2,7 +2,7 @@
 
 > 🍽️ AI 驱动的智能菜谱生成系统 - 在约束条件下做出最好吃的菜
 
-[![Update Knowledge Base](https://github.com/YOUR_USERNAME/food-craft/actions/workflows/update_weekly.yml/badge.svg)](https://github.com/YOUR_USERNAME/food-craft/actions/workflows/update_weekly.yml)
+[![Update Knowledge Base](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml/badge.svg)](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml)
 
 ## ✨ 特性
 
@@ -153,7 +153,7 @@ food-craft/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR_USERNAME/food-craft.git
+git clone https://github.com/MRLMRML/food-craft.git
 cd food-craft
 
 # 校验数据

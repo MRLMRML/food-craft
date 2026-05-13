@@ -1,0 +1,14 @@
+{
+  "id": "chili",
+  "name": "干辣椒",
+  "name_en": "Dried Chili",
+  "category": "seasoning",
+  "subcategory": "spice",
+  "nutrition_per_100g": {"calories": 280, "protein": 12.0, "fat": 12.0, "carbs": 50.0, "fiber": 15.0},
+  "price_range": {"min": 10, "max": 25, "average": 15, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温密封6个月", "tips": "避光防潮"},
+  "cuts": [],
+  "pairing": {"classic": ["川菜", "湘菜", "肉类", "蔬菜"], "usage": ["爆香", "炒菜"]},
+  "tips": ["干辣椒要小火炒，炒糊会发苦", "剪开去籽可以减少辣度"]
+}

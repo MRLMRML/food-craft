@@ -1,0 +1,18 @@
+{
+  "id": "carrot",
+  "name": "胡萝卜",
+  "name_en": "Carrot",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {"calories": 41, "protein": 0.9, "fat": 0.2, "carbs": 9.6, "fiber": 2.8},
+  "price_range": {"min": 2, "max": 5, "average": 3, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "冷藏1-2周", "tips": "去叶子后保存更久"},
+  "cuts": [
+    {"name": "胡萝卜丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"},
+    {"name": "胡萝卜片", "suitable_for": ["炒", "炖"], "cook_time_range": "5-8分钟"},
+    {"name": "胡萝卜丁", "suitable_for": ["炒饭", "炖肉"], "cook_time_range": "5-10分钟"}
+  ],
+  "pairing": {"classic": ["肉丝", "木耳", "黄瓜", "玉米"], "sauce": ["盐", "糖"]},
+  "tips": ["胡萝卜要用油炒，营养更容易吸收", "切丝要顺着纹理切"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "lotus_root",
+  "name": "莲藕",
+  "name_en": "Lotus Root",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {"calories": 74, "protein": 1.5, "fat": 0.2, "carbs": 17.0, "fiber": 2.0},
+  "price_range": {"min": 5, "max": 12, "average": 8, "unit": "元/节", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "冷藏1周", "tips": "泡在醋水中防止氧化变黑"},
+  "cuts": [
+    {"name": "莲藕片", "suitable_for": ["炒", "凉拌", "炖"], "cook_time_range": "5-10分钟"},
+    {"name": "莲藕块", "suitable_for": ["炖汤", "红烧"], "cook_time_range": "20-30分钟"},
+    {"name": "莲藕丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"}
+  ],
+  "pairing": {"classic": ["排骨", "猪肉", "糯米", "红枣"], "sauce": ["糖醋", "桂花"]},
+  "tips": ["莲藕要泡水防止变黑", "炖汤用粉藕，炒菜用脆藕"]
+}

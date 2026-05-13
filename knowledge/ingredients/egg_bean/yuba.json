@@ -1,0 +1,17 @@
+{
+  "id": "yuba",
+  "name": "腐竹",
+  "name_en": "Yuba",
+  "category": "egg_bean",
+  "subcategory": "tofu",
+  "nutrition_per_100g": {"calories": 460, "protein": 44.6, "fat": 22.3, "carbs": 22.3, "fiber": 1.0},
+  "price_range": {"min": 10, "max": 25, "average": 15, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温密封6个月", "tips": "干腐竹要泡发后使用"},
+  "cuts": [
+    {"name": "腐竹段", "suitable_for": ["炒", "炖", "凉拌"], "cook_time_range": "5-10分钟"},
+    {"name": "腐竹丝", "suitable_for": ["凉拌"], "cook_time_range": "5分钟"}
+  ],
+  "pairing": {"classic": ["木耳", "芹菜", "肉片", "火锅"], "sauce": ["酱油", "蚝油", "醋"]},
+  "tips": ["干腐竹要冷水泡发4小时以上", "不要用热水泡，会外烂内硬"]
+}

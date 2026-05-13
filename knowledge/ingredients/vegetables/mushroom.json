@@ -1,0 +1,18 @@
+{
+  "id": "mushroom",
+  "name": "香菇",
+  "name_en": "Shiitake Mushroom",
+  "category": "vegetables",
+  "subcategory": "mushroom",
+  "nutrition_per_100g": {"calories": 34, "protein": 2.2, "fat": 0.3, "carbs": 6.8, "fiber": 2.5},
+  "price_range": {"min": 8, "max": 20, "average": 12, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "冷藏5-7天", "tips": "干香菇要泡发后使用"},
+  "cuts": [
+    {"name": "整朵", "suitable_for": ["炖", "烤"], "cook_time_range": "10-15分钟"},
+    {"name": "切片", "suitable_for": ["炒", "煮汤"], "cook_time_range": "3-5分钟"},
+    {"name": "切丁", "suitable_for": ["炒饭", "馅料"], "cook_time_range": "2-3分钟"}
+  ],
+  "pairing": {"classic": ["鸡肉", "青菜", "豆腐", "猪肉"], "sauce": ["蚝油", "酱油"]},
+  "tips": ["干香菇比鲜香菇更香", "泡香菇的水可以当高汤用"]
+}

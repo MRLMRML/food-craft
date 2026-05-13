@@ -1,0 +1,16 @@
+{
+  "id": "pork_minced",
+  "name": "肉末",
+  "name_en": "Minced Pork",
+  "category": "meat",
+  "subcategory": "pork",
+  "nutrition_per_100g": {"calories": 260, "protein": 17.0, "fat": 21.0, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 12, "max": 25, "average": 18, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏1-2天", "frozen": "冷冻2个月", "tips": "分装冷冻，每次取用一份"},
+  "cuts": [
+    {"name": "肉末", "suitable_for": ["炒", "蒸", "馅料"], "cook_time_range": "5-10分钟"}
+  ],
+  "pairing": {"classic": ["豆腐", "茄子", "豆角", "粉丝"], "sauce": ["酱油", "豆瓣酱", "料酒"]},
+  "tips": ["肉末要先炒散再调味", "麻婆豆腐的肉末要炒到微焦"]
+}

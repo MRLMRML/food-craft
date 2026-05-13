@@ -1,0 +1,18 @@
+{
+  "id": "garlic",
+  "name": "大蒜",
+  "name_en": "Garlic",
+  "category": "seasoning",
+  "subcategory": "spice",
+  "nutrition_per_100g": {"calories": 149, "protein": 6.4, "fat": 0.5, "carbs": 33.1, "fiber": 2.1},
+  "price_range": {"min": 5, "max": 15, "average": 10, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温通风1个月", "tips": "不要冷藏，容易发芽"},
+  "cuts": [
+    {"name": "蒜末", "suitable_for": ["炒菜", "凉拌"], "cook_time_range": "1-2分钟"},
+    {"name": "蒜片", "suitable_for": ["炒菜", "烤"], "cook_time_range": "2-3分钟"},
+    {"name": "蒜蓉", "suitable_for": ["蒸", "烤", "蘸料"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["所有肉类", "海鲜", "蔬菜"], "usage": ["爆香", "调味"]},
+  "tips": ["大蒜要拍碎再切，更容易出味", "蒜蓉要最后放，保持香味"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "squid",
+  "name": "鱿鱼",
+  "name_en": "Squid",
+  "category": "seafood",
+  "subcategory": "shellfish",
+  "nutrition_per_100g": {"calories": 92, "protein": 18.0, "fat": 1.4, "carbs": 1.5, "fiber": 0},
+  "price_range": {"min": 15, "max": 35, "average": 25, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏1-2天", "frozen": "冷冻2个月", "tips": "要处理干净再冷冻"},
+  "cuts": [
+    {"name": "鱿鱼圈", "suitable_for": ["炒", "炸", "烤"], "cook_time_range": "2-3分钟"},
+    {"name": "鱿鱼花", "suitable_for": ["炒", "爆炒"], "cook_time_range": "1-2分钟"},
+    {"name": "鱿鱼丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "2-3分钟"}
+  ],
+  "pairing": {"classic": ["青椒", "洋葱", "蒜苔", "韭菜"], "sauce": ["酱油", "蚝油", "料酒"]},
+  "tips": ["鱿鱼要大火快炒，炒久了会老", "切花刀要斜着切，炒出来才卷"]
+}

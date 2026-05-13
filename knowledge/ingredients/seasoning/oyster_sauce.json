@@ -1,0 +1,14 @@
+{
+  "id": "oyster_sauce",
+  "name": "蚝油",
+  "name_en": "Oyster Sauce",
+  "category": "seasoning",
+  "subcategory": "sauce",
+  "nutrition_per_100g": {"calories": 50, "protein": 3.0, "fat": 0.5, "carbs": 10.0, "fiber": 0},
+  "price_range": {"min": 10, "max": 30, "average": 18, "unit": "元/500ml", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏保存", "tips": "开封后冷藏，用干净勺子取用"},
+  "cuts": [],
+  "pairing": {"classic": ["青菜", "牛肉", "海鲜", "菌菇"], "usage": ["炒菜", "腌制", "蘸料"]},
+  "tips": ["蚝油要最后放，加热太久会失去鲜味", "蚝油可以提鲜，不需要再放味精"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pumpkin",
+  "name": "南瓜",
+  "name_en": "Pumpkin",
+  "category": "vegetables",
+  "subcategory": "gourd",
+  "nutrition_per_100g": {"calories": 26, "protein": 1.0, "fat": 0.1, "carbs": 6.5, "fiber": 0.5},
+  "price_range": {"min": 3, "max": 8, "average": 5, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "常温1个月", "tips": "切开后冷藏保存"},
+  "cuts": [
+    {"name": "南瓜块", "suitable_for": ["炖", "煮粥"], "cook_time_range": "15-20分钟"},
+    {"name": "南瓜片", "suitable_for": ["炒", "蒸"], "cook_time_range": "5-10分钟"},
+    {"name": "南瓜泥", "suitable_for": ["甜点", "浓汤"], "cook_time_range": "15-20分钟"}
+  ],
+  "pairing": {"classic": ["小米", "红枣", "百合", "排骨"], "sauce": ["糖", "盐"]},
+  "tips": ["南瓜要选老的，更甜更粉", "蒸南瓜要大火，15分钟即可"]
+}

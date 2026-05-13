@@ -1,0 +1,18 @@
+{
+  "id": "eggplant",
+  "name": "茄子",
+  "name_en": "Eggplant",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {"calories": 25, "protein": 1.0, "fat": 0.2, "carbs": 5.7, "fiber": 3.0},
+  "price_range": {"min": 3, "max": 7, "average": 5, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "夏秋"},
+  "storage": {"fresh": "冷藏3-5天", "tips": "不要切了再存"},
+  "cuts": [
+    {"name": "茄子块", "suitable_for": ["红烧", "炖"], "cook_time_range": "10-15分钟"},
+    {"name": "茄子条", "suitable_for": ["炒", "炸"], "cook_time_range": "5-10分钟"},
+    {"name": "茄子片", "suitable_for": ["煎", "烤"], "cook_time_range": "5-8分钟"}
+  ],
+  "pairing": {"classic": ["肉末", "蒜", "青椒", "土豆"], "sauce": ["酱油", "蚝油", "蒜蓉"]},
+  "tips": ["茄子吸油，可以先蒸或微波再炒", "红烧茄子要炸到软糯才好吃"]
+}

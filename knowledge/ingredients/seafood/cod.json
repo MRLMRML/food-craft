@@ -1,0 +1,17 @@
+{
+  "id": "cod",
+  "name": "鳕鱼",
+  "name_en": "Cod",
+  "category": "seafood",
+  "subcategory": "fish",
+  "nutrition_per_100g": {"calories": 82, "protein": 17.8, "fat": 0.7, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 30, "max": 60, "average": 45, "unit": "元/块", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏1-2天", "frozen": "冷冻3个月", "tips": "冷冻鳕鱼要提前解冻"},
+  "cuts": [
+    {"name": "鳕鱼块", "suitable_for": ["煎", "烤", "蒸"], "cook_time_range": "8-12分钟"},
+    {"name": "鳕鱼片", "suitable_for": ["煎", "炸"], "cook_time_range": "5-8分钟"}
+  ],
+  "pairing": {"classic": ["柠檬", "黄油", "蒜", "蔬菜"], "sauce": ["柠檬汁", "黄油", "盐"]},
+  "tips": ["鳕鱼肉质嫩，不要翻动太多", "煎鳕鱼要中火，两面各3-4分钟"]
+}

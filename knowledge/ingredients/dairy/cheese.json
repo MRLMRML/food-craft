@@ -1,0 +1,17 @@
+{
+  "id": "cheese",
+  "name": "芝士",
+  "name_en": "Cheese",
+  "category": "dairy",
+  "subcategory": "cheese",
+  "nutrition_per_100g": {"calories": 350, "protein": 25.0, "fat": 28.0, "carbs": 2.0, "fiber": 0},
+  "price_range": {"min": 20, "max": 50, "average": 30, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏1个月", "tips": "密封保存，防止串味"},
+  "cuts": [
+    {"name": "芝士片", "suitable_for": ["三明治", "汉堡"], "cook_time_range": "0分钟"},
+    {"name": "芝士碎", "suitable_for": ["披萨", "焗饭", "意面"], "cook_time_range": "5-10分钟"}
+  ],
+  "pairing": {"classic": ["面包", "意面", "披萨", "汉堡"], "usage": ["烘焙", "焗烤"]},
+  "tips": ["芝士要冷藏保存", "焗烤要用马苏里拉芝士，拉丝效果好"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "dried_tofu",
+  "name": "豆腐干",
+  "name_en": "Dried Tofu",
+  "category": "egg_bean",
+  "subcategory": "tofu",
+  "nutrition_per_100g": {"calories": 140, "protein": 16.2, "fat": 5.3, "carbs": 10.7, "fiber": 0.3},
+  "price_range": {"min": 3, "max": 8, "average": 5, "unit": "元/块", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏3-5天", "tips": "真空包装可以保存更久"},
+  "cuts": [
+    {"name": "豆腐干丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"},
+    {"name": "豆腐干片", "suitable_for": ["炒", "卤"], "cook_time_range": "5-8分钟"},
+    {"name": "豆腐干丁", "suitable_for": ["炒饭", "炒菜"], "cook_time_range": "3-5分钟"}
+  ],
+  "pairing": {"classic": ["芹菜", "青椒", "肉丝", "蒜苔"], "sauce": ["酱油", "蚝油"]},
+  "tips": ["豆腐干要先焯水去豆腥味", "凉拌豆腐干要切细丝"]
+}

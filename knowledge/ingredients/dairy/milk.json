@@ -1,0 +1,14 @@
+{
+  "id": "milk",
+  "name": "牛奶",
+  "name_en": "Milk",
+  "category": "dairy",
+  "subcategory": "milk",
+  "nutrition_per_100g": {"calories": 54, "protein": 3.0, "fat": 3.2, "carbs": 3.4, "fiber": 0},
+  "price_range": {"min": 5, "max": 15, "average": 8, "unit": "元/盒", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏7天", "tips": "开封后尽快饮用"},
+  "cuts": [],
+  "pairing": {"classic": ["麦片", "咖啡", "红茶", "面包"], "usage": ["直接饮用", "烘焙", "甜点"]},
+  "tips": ["牛奶不要空腹喝", "加热不要超过60度，会破坏营养"]
+}

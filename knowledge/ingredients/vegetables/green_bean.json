@@ -1,0 +1,18 @@
+{
+  "id": "green_bean",
+  "name": "豆角",
+  "name_en": "Green Bean",
+  "category": "vegetables",
+  "subcategory": "bean",
+  "nutrition_per_100g": {"calories": 31, "protein": 1.8, "fat": 0.1, "carbs": 7.0, "fiber": 2.7},
+  "price_range": {"min": 4, "max": 10, "average": 6, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "夏秋"},
+  "storage": {"fresh": "冷藏3-5天", "tips": "不要洗了再存"},
+  "cuts": [
+    {"name": "整根", "suitable_for": ["炒", "炖"], "cook_time_range": "5-10分钟"},
+    {"name": "切段", "suitable_for": ["炒", "干煸"], "cook_time_range": "3-5分钟"},
+    {"name": "切丁", "suitable_for": ["炒饭", "炒肉末"], "cook_time_range": "3-5分钟"}
+  ],
+  "pairing": {"classic": ["肉末", "土豆", "茄子", "蒜"], "sauce": ["酱油", "蚝油"]},
+  "tips": ["豆角一定要炒熟，否则有毒素", "干煸豆角要炸到表皮起皱"]
+}

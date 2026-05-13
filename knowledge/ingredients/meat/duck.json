@@ -1,0 +1,18 @@
+{
+  "id": "duck",
+  "name": "鸭肉",
+  "name_en": "Duck",
+  "category": "meat",
+  "subcategory": "poultry",
+  "nutrition_per_100g": {"calories": 240, "protein": 15.5, "fat": 19.7, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 15, "max": 30, "average": 22, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "冷藏2-3天", "frozen": "冷冻3个月", "tips": "鸭肉膻味重，建议分装密封"},
+  "cuts": [
+    {"name": "鸭腿", "suitable_for": ["烤", "卤", "红烧"], "cook_time_range": "40-60分钟"},
+    {"name": "鸭胸", "suitable_for": ["煎", "烤"], "cook_time_range": "15-20分钟"},
+    {"name": "整鸭", "suitable_for": ["烤鸭", "炖汤"], "cook_time_range": "90-180分钟"}
+  ],
+  "pairing": {"classic": ["啤酒", "酸萝卜", "笋", "山药"], "sauce": ["料酒", "姜", "八角"]},
+  "tips": ["鸭肉要焯水去膻味", "啤酒鸭要用啤酒代替水"]
+}

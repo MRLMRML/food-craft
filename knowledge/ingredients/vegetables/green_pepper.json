@@ -1,0 +1,18 @@
+{
+  "id": "green_pepper",
+  "name": "青椒",
+  "name_en": "Green Pepper",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {"calories": 20, "protein": 0.9, "fat": 0.2, "carbs": 4.6, "fiber": 1.7},
+  "price_range": {"min": 3, "max": 7, "average": 5, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "夏秋"},
+  "storage": {"fresh": "冷藏5-7天", "tips": "不要洗了再存"},
+  "cuts": [
+    {"name": "青椒丝", "suitable_for": ["炒"], "cook_time_range": "2-3分钟"},
+    {"name": "青椒块", "suitable_for": ["炒", "虎皮青椒"], "cook_time_range": "3-5分钟"},
+    {"name": "青椒圈", "suitable_for": ["装饰", "凉拌"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["肉丝", "鸡蛋", "土豆", "茄子"], "sauce": ["盐", "酱油"]},
+  "tips": ["青椒要大火快炒，保持脆感", "虎皮青椒要煎到表皮起皱"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "salmon",
+  "name": "三文鱼",
+  "name_en": "Salmon",
+  "category": "seafood",
+  "subcategory": "fish",
+  "nutrition_per_100g": {"calories": 208, "protein": 20.4, "fat": 13.4, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 40, "max": 80, "average": 60, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏1-2天", "frozen": "冷冻3个月", "tips": "生食要买刺身级"},
+  "cuts": [
+    {"name": "三文鱼片", "suitable_for": ["煎", "烤", "生食"], "cook_time_range": "5-10分钟"},
+    {"name": "三文鱼块", "suitable_for": ["炖", "煮"], "cook_time_range": "10-15分钟"},
+    {"name": "三文鱼刺身", "suitable_for": ["生食", "寿司"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["柠檬", "牛油果", "洋葱", "米饭"], "sauce": ["酱油", "芥末", "柠檬汁"]},
+  "tips": ["煎三文鱼要皮朝下，煎到皮脆", "生食要买刺身级，普通三文鱼要煮熟"]
+}

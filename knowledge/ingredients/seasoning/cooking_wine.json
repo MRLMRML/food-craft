@@ -1,0 +1,14 @@
+{
+  "id": "cooking_wine",
+  "name": "料酒",
+  "name_en": "Cooking Wine",
+  "category": "seasoning",
+  "subcategory": "liquid",
+  "nutrition_per_100g": {"calories": 50, "protein": 0.1, "fat": 0, "carbs": 5.0, "fiber": 0},
+  "price_range": {"min": 8, "max": 20, "average": 12, "unit": "元/500ml", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温避光1年", "tips": "开封后冷藏保存"},
+  "cuts": [],
+  "pairing": {"classic": ["所有肉类", "海鲜"], "usage": ["腌制", "焯水", "炒菜"]},
+  "tips": ["料酒可以去腥增香", "腌制肉类时加料酒效果最好"]
+}

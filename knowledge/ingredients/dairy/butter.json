@@ -1,0 +1,14 @@
+{
+  "id": "butter",
+  "name": "黄油",
+  "name_en": "Butter",
+  "category": "dairy",
+  "subcategory": "butter",
+  "nutrition_per_100g": {"calories": 717, "protein": 0.9, "fat": 81.0, "carbs": 0.1, "fiber": 0},
+  "price_range": {"min": 15, "max": 40, "average": 25, "unit": "元/块", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏3个月", "frozen": "冷冻6个月", "tips": "密封保存，防止串味"},
+  "cuts": [],
+  "pairing": {"classic": ["面包", "牛排", "西餐", "烘焙"], "usage": ["煎", "烤", "烘焙"]},
+  "tips": ["煎牛排要用黄油，更香", "烘焙要用无盐黄油"]
+}

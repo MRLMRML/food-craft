@@ -1,0 +1,18 @@
+{
+  "id": "celery",
+  "name": "芹菜",
+  "name_en": "Celery",
+  "category": "vegetables",
+  "subcategory": "leafy",
+  "nutrition_per_100g": {"calories": 16, "protein": 0.7, "fat": 0.2, "carbs": 3.0, "fiber": 1.6},
+  "price_range": {"min": 3, "max": 8, "average": 5, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "春秋"},
+  "storage": {"fresh": "冷藏3-5天", "tips": "用保鲜膜包好"},
+  "cuts": [
+    {"name": "芹菜段", "suitable_for": ["炒", "凉拌"], "cook_time_range": "2-3分钟"},
+    {"name": "芹菜丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "2-3分钟"},
+    {"name": "芹菜末", "suitable_for": ["馅料"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["肉丝", "豆腐干", "百合", "腰果"], "sauce": ["盐", "蚝油"]},
+  "tips": ["芹菜要去筋，口感更好", "大火快炒，保持脆感"]
+}

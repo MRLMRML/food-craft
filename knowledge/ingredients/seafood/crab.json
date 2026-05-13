@@ -1,0 +1,17 @@
+{
+  "id": "crab",
+  "name": "螃蟹",
+  "name_en": "Crab",
+  "category": "seafood",
+  "subcategory": "shellfish",
+  "nutrition_per_100g": {"calories": 97, "protein": 19.2, "fat": 1.5, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 30, "max": 100, "average": 60, "unit": "元/只", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": false, "best_season": "秋季"},
+  "storage": {"fresh": "冷藏1天", "tips": "活蟹要绑好冷藏"},
+  "cuts": [
+    {"name": "整只", "suitable_for": ["蒸", "煮"], "cook_time_range": "15-20分钟"},
+    {"name": "蟹块", "suitable_for": ["炒", "咖喱"], "cook_time_range": "10-15分钟"}
+  ],
+  "pairing": {"classic": ["姜", "醋", "蒜", "年糕"], "sauce": ["醋", "姜末", "酱油"]},
+  "tips": ["螃蟹要蒸15分钟以上", "吃螃蟹要蘸醋姜汁，去寒"]
+}

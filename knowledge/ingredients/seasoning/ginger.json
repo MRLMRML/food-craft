@@ -1,0 +1,18 @@
+{
+  "id": "ginger",
+  "name": "生姜",
+  "name_en": "Ginger",
+  "category": "seasoning",
+  "subcategory": "spice",
+  "nutrition_per_100g": {"calories": 80, "protein": 1.8, "fat": 0.8, "carbs": 17.8, "fiber": 2.0},
+  "price_range": {"min": 8, "max": 20, "average": 12, "unit": "元/斤", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "秋冬"},
+  "storage": {"fresh": "常温通风1-2周", "tips": "埋在沙子里可以保存更久"},
+  "cuts": [
+    {"name": "姜片", "suitable_for": ["炖汤", "焯水"], "cook_time_range": "5-10分钟"},
+    {"name": "姜丝", "suitable_for": ["炒菜", "凉拌"], "cook_time_range": "1-2分钟"},
+    {"name": "姜末", "suitable_for": ["馅料", "调味"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["所有肉类", "海鲜", "红糖"], "usage": ["去腥", "驱寒"]},
+  "tips": ["生姜可以去腥增香", "炖汤要拍碎，炒菜要切丝"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "scallion",
+  "name": "大葱",
+  "name_en": "Scallion",
+  "category": "seasoning",
+  "subcategory": "spice",
+  "nutrition_per_100g": {"calories": 31, "protein": 1.8, "fat": 0.3, "carbs": 7.3, "fiber": 2.6},
+  "price_range": {"min": 2, "max": 5, "average": 3, "unit": "元/根", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "春秋"},
+  "storage": {"fresh": "冷藏1周", "tips": "不要洗了再存"},
+  "cuts": [
+    {"name": "葱花", "suitable_for": ["装饰", "调味"], "cook_time_range": "0分钟"},
+    {"name": "葱段", "suitable_for": ["炒菜", "炖汤"], "cook_time_range": "2-3分钟"},
+    {"name": "葱丝", "suitable_for": ["蒸鱼", "凉拌"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["所有肉类", "海鲜", "豆腐"], "usage": ["爆香", "装饰"]},
+  "tips": ["葱要最后放，保持香味", "蒸鱼的葱丝要泡水会卷曲"]
+}

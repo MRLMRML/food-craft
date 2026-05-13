@@ -1,0 +1,17 @@
+{
+  "id": "wood_ear",
+  "name": "木耳",
+  "name_en": "Wood Ear Mushroom",
+  "category": "vegetables",
+  "subcategory": "mushroom",
+  "nutrition_per_100g": {"calories": 37, "protein": 1.5, "fat": 0.2, "carbs": 6.5, "fiber": 2.6},
+  "price_range": {"min": 10, "max": 25, "average": 15, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温密封6个月", "tips": "干木耳要泡发后使用"},
+  "cuts": [
+    {"name": "整朵", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"},
+    {"name": "切丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "2-3分钟"}
+  ],
+  "pairing": {"classic": ["鸡蛋", "肉片", "黄瓜", "腐竹"], "sauce": ["醋", "酱油", "香油"]},
+  "tips": ["干木耳要冷水泡发2小时以上", "不要用热水泡，会失去脆感"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pork_tenderloin",
+  "name": "猪里脊",
+  "name_en": "Pork Tenderloin",
+  "category": "meat",
+  "subcategory": "pork",
+  "nutrition_per_100g": {"calories": 143, "protein": 20.0, "fat": 6.5, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 14, "max": 28, "average": 20, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏2-3天", "frozen": "冷冻3个月", "tips": "分装冷冻"},
+  "cuts": [
+    {"name": "猪里脊片", "suitable_for": ["炒", "炸", "煎"], "cook_time_range": "5-8分钟"},
+    {"name": "猪里脊丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"},
+    {"name": "猪里脊条", "suitable_for": ["炸", "烤"], "cook_time_range": "8-10分钟"}
+  ],
+  "pairing": {"classic": ["青椒", "木耳", "蒜苔", "糖醋"], "sauce": ["酱油", "料酒", "淀粉"]},
+  "tips": ["猪里脊要顺着纹理切", "腌制时加淀粉更嫩"]
+}

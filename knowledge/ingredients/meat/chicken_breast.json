@@ -1,0 +1,19 @@
+{
+  "id": "chicken_breast",
+  "name": "鸡胸肉",
+  "name_en": "Chicken Breast",
+  "category": "meat",
+  "subcategory": "poultry",
+  "nutrition_per_100g": {"calories": 133, "protein": 23.3, "fat": 5.0, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 10, "max": 20, "average": 15, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏2-3天", "frozen": "冷冻3个月", "tips": "分装冷冻"},
+  "cuts": [
+    {"name": "鸡胸肉", "suitable_for": ["炒", "煎", "烤", "水煮"], "cook_time_range": "10-15分钟"},
+    {"name": "鸡胸肉丁", "suitable_for": ["炒", "宫保"], "cook_time_range": "5-8分钟"},
+    {"name": "鸡胸肉丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"}
+  ],
+  "pairing": {"classic": ["西兰花", "黄瓜", "胡萝卜", "玉米"], "sauce": ["黑胡椒", "柠檬", "酱油"]},
+  "substitutes": [{"ingredient": "鸡腿肉", "reason": "更嫩", "taste_impact": "口感更嫩滑", "cook_time_change": "相似"}],
+  "tips": ["鸡胸肉容易柴，腌制时加蛋清和淀粉", "煎鸡胸肉要中火，不要煎太久"]
+}

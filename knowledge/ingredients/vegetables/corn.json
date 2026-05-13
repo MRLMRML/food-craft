@@ -1,0 +1,18 @@
+{
+  "id": "corn",
+  "name": "玉米",
+  "name_en": "Corn",
+  "category": "vegetables",
+  "subcategory": "grain",
+  "nutrition_per_100g": {"calories": 96, "protein": 3.3, "fat": 1.2, "carbs": 19.0, "fiber": 2.7},
+  "price_range": {"min": 3, "max": 8, "average": 5, "unit": "元/根", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "夏秋"},
+  "storage": {"fresh": "冷藏3-5天", "frozen": "冷冻3个月", "tips": "带皮保存更久"},
+  "cuts": [
+    {"name": "整根", "suitable_for": ["煮", "烤"], "cook_time_range": "15-20分钟"},
+    {"name": "玉米粒", "suitable_for": ["炒", "沙拉"], "cook_time_range": "3-5分钟"},
+    {"name": "玉米段", "suitable_for": ["炖汤"], "cook_time_range": "30-40分钟"}
+  ],
+  "pairing": {"classic": ["排骨", "胡萝卜", "青豆", "松子"], "sauce": ["黄油", "盐"]},
+  "tips": ["甜玉米煮10分钟即可，老玉米要煮更久", "烤玉米要刷黄油和蜂蜜"]
+}

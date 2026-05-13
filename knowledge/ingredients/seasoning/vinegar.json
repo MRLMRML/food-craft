@@ -1,0 +1,15 @@
+{
+  "id": "vinegar",
+  "name": "醋",
+  "name_en": "Vinegar",
+  "category": "seasoning",
+  "subcategory": "liquid",
+  "nutrition_per_100g": {"calories": 5, "protein": 0.1, "fat": 0, "carbs": 1.0, "fiber": 0},
+  "price_range": {"min": 5, "max": 20, "average": 10, "unit": "元/500ml", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温避光1年", "tips": "开封后冷藏保存"},
+  "cuts": [],
+  "pairing": {"classic": ["凉拌菜", "糖醋菜", "酸辣菜"], "usage": ["凉拌", "糖醋", "酸辣"]},
+  "substitutes": [{"ingredient": "柠檬汁", "reason": "更清爽", "notes": "用量减半"}],
+  "tips": ["醋要最后放，保持酸味", "糖醋菜的醋糖比是2:1"]
+}

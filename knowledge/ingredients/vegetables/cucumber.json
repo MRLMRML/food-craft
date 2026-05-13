@@ -1,0 +1,18 @@
+{
+  "id": "cucumber",
+  "name": "黄瓜",
+  "name_en": "Cucumber",
+  "category": "vegetables",
+  "subcategory": "gourd",
+  "nutrition_per_100g": {"calories": 16, "protein": 0.7, "fat": 0.1, "carbs": 3.6, "fiber": 0.5},
+  "price_range": {"min": 2, "max": 5, "average": 3, "unit": "元/根", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": "夏季"},
+  "storage": {"fresh": "冷藏3-5天", "tips": "不要洗了再存"},
+  "cuts": [
+    {"name": "黄瓜片", "suitable_for": ["炒", "凉拌"], "cook_time_range": "0-3分钟"},
+    {"name": "黄瓜丝", "suitable_for": ["凉拌", "沙拉"], "cook_time_range": "0分钟"},
+    {"name": "拍黄瓜", "suitable_for": ["凉拌"], "cook_time_range": "0分钟"}
+  ],
+  "pairing": {"classic": ["蒜", "醋", "辣椒", "木耳"], "sauce": ["蒜泥", "醋", "香油"]},
+  "tips": ["拍黄瓜要用力拍碎，更容易入味", "凉拌前用盐腌出水分更脆"]
+}

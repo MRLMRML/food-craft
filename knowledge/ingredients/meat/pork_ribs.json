@@ -1,0 +1,18 @@
+{
+  "id": "pork_ribs",
+  "name": "排骨",
+  "name_en": "Pork Ribs",
+  "category": "meat",
+  "subcategory": "pork",
+  "nutrition_per_100g": {"calories": 278, "protein": 18.0, "fat": 22.0, "carbs": 0, "fiber": 0},
+  "price_range": {"min": 20, "max": 40, "average": 30, "unit": "元/500g", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏2-3天", "frozen": "冷冻3个月", "tips": "分装冷冻"},
+  "cuts": [
+    {"name": "小排", "suitable_for": ["红烧", "糖醋", "炖汤"], "cook_time_range": "30-60分钟"},
+    {"name": "肋排", "suitable_for": ["烤", "蒸"], "cook_time_range": "40-90分钟"},
+    {"name": "大排", "suitable_for": ["炖汤", "红烧"], "cook_time_range": "60-90分钟"}
+  ],
+  "pairing": {"classic": ["玉米", "莲藕", "冬瓜", "海带"], "sauce": ["酱油", "冰糖", "料酒"]},
+  "tips": ["排骨要焯水去血沫", "炖汤要冷水下锅，小火慢炖"]
+}

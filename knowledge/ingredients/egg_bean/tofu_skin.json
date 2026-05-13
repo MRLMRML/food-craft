@@ -1,0 +1,17 @@
+{
+  "id": "tofu_skin",
+  "name": "豆皮",
+  "name_en": "Tofu Skin",
+  "category": "egg_bean",
+  "subcategory": "tofu",
+  "nutrition_per_100g": {"calories": 409, "protein": 44.6, "fat": 17.4, "carbs": 22.3, "fiber": 0.5},
+  "price_range": {"min": 5, "max": 12, "average": 8, "unit": "元/袋", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "冷藏3-5天", "tips": "干豆皮要泡发后使用"},
+  "cuts": [
+    {"name": "豆皮丝", "suitable_for": ["炒", "凉拌"], "cook_time_range": "3-5分钟"},
+    {"name": "豆皮卷", "suitable_for": ["卷馅", "炸"], "cook_time_range": "5-10分钟"}
+  ],
+  "pairing": {"classic": ["青菜", "肉丝", "火锅"], "sauce": ["酱油", "蚝油"]},
+  "tips": ["豆皮要焯水去豆腥味", "卷馅料时要卷紧"]
+}

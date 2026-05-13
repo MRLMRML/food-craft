@@ -1,0 +1,18 @@
+{
+  "id": "onion",
+  "name": "洋葱",
+  "name_en": "Onion",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {"calories": 40, "protein": 1.1, "fat": 0.1, "carbs": 9.3, "fiber": 1.7},
+  "price_range": {"min": 2, "max": 5, "average": 3, "unit": "元/个", "last_updated": "2024-01-15"},
+  "seasonal_availability": {"全年": true, "best_season": null},
+  "storage": {"fresh": "常温1个月", "tips": "避光通风处保存"},
+  "cuts": [
+    {"name": "洋葱丝", "suitable_for": ["炒", "烤"], "cook_time_range": "3-5分钟"},
+    {"name": "洋葱块", "suitable_for": ["炖", "咖喱"], "cook_time_range": "10-15分钟"},
+    {"name": "洋葱碎", "suitable_for": ["炒饭", "馅料"], "cook_time_range": "2-3分钟"}
+  ],
+  "pairing": {"classic": ["牛肉", "鸡蛋", "青椒", "番茄"], "sauce": ["酱油", "蚝油"]},
+  "tips": ["洋葱要炒到透明才甜", "切洋葱前冷藏10分钟可以减少流泪"]
+}
