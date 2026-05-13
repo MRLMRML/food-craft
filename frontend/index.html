@@ -10,21 +10,22 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         :root {
-            --warm-bg: #FFF8F0;
-            --warm-card: #FFFFFF;
-            --warm-primary: #D4A574;
-            --warm-secondary: #8B6F47;
-            --warm-accent: #E8C9A0;
-            --warm-text: #5D4E37;
-            --warm-text-light: #8B7D6B;
-            --warm-green: #7DB87D;
-            --warm-red: #D4756B;
+            --bg: #FFF8F0;
+            --card: #FFFFFF;
+            --primary: #D4A574;
+            --secondary: #8B6F47;
+            --accent: #E8C9A0;
+            --text: #5D4E37;
+            --text-light: #8B7D6B;
+            --green: #7DB87D;
+            --red: #D4756B;
+            --border: #E8D5C0;
         }
         
         body {
             font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--warm-bg);
-            color: var(--warm-text);
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.8;
         }
         
@@ -32,33 +33,51 @@
         
         header {
             background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            padding: 40px 0;
+            padding: 50px 0;
             text-align: center;
-            border-bottom: 3px solid var(--warm-accent);
+            border-bottom: 3px solid var(--accent);
         }
         
         header h1 {
             font-family: 'Noto Serif SC', serif;
             font-size: 2.5rem;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 10px;
         }
         
-        header p { color: var(--warm-text-light); font-size: 1.1rem; }
+        header p { color: var(--text-light); font-size: 1.1rem; }
         
-        .prompt-section {
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            text-align: center;
+            margin: 40px 0 30px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+            margin: 10px auto 0;
+        }
+        
+        .prompt-card {
             background: white;
             margin: 30px auto;
             max-width: 800px;
             border-radius: 16px;
             padding: 30px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border-left: 4px solid var(--warm-primary);
+            border-left: 4px solid var(--primary);
         }
         
         .prompt-label {
             font-weight: 600;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 10px;
             display: flex;
             align-items: center;
@@ -69,7 +88,7 @@
             background: #F5F5F5;
             padding: 15px;
             border-radius: 8px;
-            color: var(--warm-text);
+            color: var(--text);
             font-style: italic;
         }
         
@@ -83,7 +102,7 @@
         
         .menu-overview h2 {
             font-family: 'Noto Serif SC', serif;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 20px;
             text-align: center;
         }
@@ -102,10 +121,10 @@
             border-radius: 12px;
         }
         
-        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--warm-primary); }
-        .stat-label { font-size: 0.85rem; color: var(--warm-text-light); }
+        .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .stat-label { font-size: 0.85rem; color: var(--text-light); }
         
-        .menu-list {
+        .menu-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -117,24 +136,22 @@
             background: white;
             border-radius: 20px;
             font-size: 0.95rem;
-            color: var(--warm-secondary);
-            border: 1px solid var(--warm-accent);
+            color: var(--secondary);
+            border: 1px solid var(--accent);
+            transition: all 0.3s;
         }
         
-        .recipes-section { margin: 40px auto; max-width: 1200px; }
-        
-        .recipes-section h2 {
-            font-family: 'Noto Serif SC', serif;
-            color: var(--warm-secondary);
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2rem;
+        .menu-tag:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
         }
         
         .recipes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
+            margin-bottom: 40px;
         }
         
         .recipe-card {
@@ -142,60 +159,77 @@
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
         }
         
-        .recipe-card:hover { transform: translateY(-5px); }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
         
         .recipe-header {
-            background: linear-gradient(135deg, var(--warm-accent) 0%, var(--warm-primary) 100%);
             padding: 25px;
-            color: white;
+            position: relative;
+            overflow: hidden;
         }
         
-        .recipe-icon { font-size: 3rem; margin-bottom: 10px; }
-        .recipe-name { font-family: 'Noto Serif SC', serif; font-size: 1.5rem; margin-bottom: 5px; }
-        .recipe-type { display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.2); border-radius: 15px; font-size: 0.85rem; }
-        
-        .recipe-body { padding: 25px; }
-        .recipe-desc { color: var(--warm-text-light); margin-bottom: 15px; font-size: 0.95rem; }
-        
-        .recipe-meta {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .recipe-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
         }
         
-        .meta-tag {
+        .recipe-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--accent);
+            color: var(--secondary);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .recipe-icon { font-size: 2.5rem; margin-bottom: 10px; }
+        .recipe-name { font-family: 'Noto Serif SC', serif; font-size: 1.4rem; color: var(--secondary); margin-bottom: 8px; }
+        .recipe-desc { color: var(--text-light); font-size: 0.95rem; margin-bottom: 15px; }
+        
+        .recipe-meta { display: flex; gap: 12px; flex-wrap: wrap; }
+        
+        .meta-item {
             display: flex;
             align-items: center;
             gap: 5px;
-            padding: 6px 12px;
+            padding: 6px 10px;
             background: #F5F5F5;
             border-radius: 8px;
             font-size: 0.85rem;
+            color: var(--text-light);
         }
         
         .recipe-toggle {
-            background: var(--warm-primary);
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
             border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
             cursor: pointer;
             font-size: 1rem;
-            width: 100%;
-            transition: background 0.3s;
+            transition: all 0.3s;
         }
         
-        .recipe-toggle:hover { background: var(--warm-secondary); }
+        .recipe-toggle:hover { opacity: 0.9; }
         
         .recipe-detail {
             display: none;
             padding: 25px;
             background: #FAFAFA;
-            border-top: 1px solid #EEE;
+            border-top: 1px solid var(--border);
         }
         
         .recipe-detail.active { display: block; }
@@ -205,13 +239,16 @@
         .detail-title {
             font-family: 'Noto Serif SC', serif;
             font-size: 1.1rem;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid var(--warm-accent);
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
-        .ingredients-list {
+        .ingredients-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 10px;
@@ -220,13 +257,14 @@
         .ingredient {
             display: flex;
             justify-content: space-between;
-            padding: 10px;
+            padding: 10px 12px;
             background: white;
             border-radius: 8px;
             font-size: 0.9rem;
+            border: 1px solid var(--border);
         }
         
-        .ingredient-amount { color: var(--warm-primary); font-weight: 600; }
+        .ingredient-amount { color: var(--primary); font-weight: 600; }
         
         .step {
             display: flex;
@@ -235,12 +273,13 @@
             padding: 15px;
             background: white;
             border-radius: 10px;
+            border: 1px solid var(--border);
         }
         
         .step-number {
             width: 32px;
             height: 32px;
-            background: var(--warm-primary);
+            background: var(--primary);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -265,7 +304,7 @@
             padding: 15px;
             background: #E8F5E8;
             border-radius: 10px;
-            border-left: 4px solid var(--warm-green);
+            border-left: 4px solid var(--green);
         }
         
         .tips-box li { padding: 5px 0; list-style: none; }
@@ -282,7 +321,7 @@
         
         .shopping-section h2 {
             font-family: 'Noto Serif SC', serif;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 20px;
             text-align: center;
         }
@@ -290,11 +329,11 @@
         .shopping-category { margin-bottom: 20px; }
         
         .shopping-category h3 {
-            color: var(--warm-text);
+            color: var(--text);
             font-size: 1rem;
             margin-bottom: 10px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #EEE;
+            border-bottom: 1px solid var(--border);
         }
         
         .shopping-items {
@@ -312,7 +351,7 @@
             font-size: 0.9rem;
         }
         
-        .shopping-price { color: var(--warm-red); font-weight: 600; }
+        .shopping-price { color: var(--red); font-weight: 600; }
         
         .total-cost {
             text-align: center;
@@ -322,7 +361,7 @@
             margin-top: 20px;
         }
         
-        .total-cost .value { font-size: 2rem; font-weight: 700; color: var(--warm-secondary); }
+        .total-cost .value { font-size: 2rem; font-weight: 700; color: var(--secondary); }
         
         .timeline-section {
             background: white;
@@ -335,7 +374,7 @@
         
         .timeline-section h2 {
             font-family: 'Noto Serif SC', serif;
-            color: var(--warm-secondary);
+            color: var(--secondary);
             margin-bottom: 20px;
             text-align: center;
         }
@@ -349,20 +388,20 @@
             border-radius: 10px;
         }
         
-        .timeline-time { width: 60px; font-weight: 700; color: var(--warm-primary); flex-shrink: 0; }
+        .timeline-time { width: 80px; font-weight: 700; color: var(--primary); flex-shrink: 0; }
         .timeline-content { flex: 1; }
         .timeline-task { font-weight: 600; margin-bottom: 5px; }
-        .timeline-desc { font-size: 0.9rem; color: var(--warm-text-light); }
+        .timeline-desc { font-size: 0.9rem; color: var(--text-light); }
         
         footer {
             text-align: center;
             padding: 40px 0;
             background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C0 100%);
-            color: var(--warm-text-light);
+            color: var(--text-light);
             margin-top: 40px;
         }
         
-        footer a { color: var(--warm-primary); text-decoration: none; }
+        footer a { color: var(--primary); text-decoration: none; }
         
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .animate-in { animation: fadeIn 0.5s ease forwards; }
@@ -383,212 +422,336 @@
     </header>
     
     <div class="container">
-        <div class="prompt-section animate-in">
+        <div class="prompt-card animate-in">
             <div class="prompt-label">💬 用户需求</div>
             <div class="prompt-text">"4个人吃晚餐，预算200元左右，想吃家常菜，有红烧肉吗？再配几个下饭的菜。"</div>
         </div>
         
         <div class="menu-overview animate-in">
-            <h2>📋 今日菜单</h2>
+            <h2>📋 今日推荐菜单</h2>
             <div class="menu-stats">
                 <div class="stat-item"><div class="stat-value">4人</div><div class="stat-label">用餐人数</div></div>
                 <div class="stat-item"><div class="stat-value">60分钟</div><div class="stat-label">预计时长</div></div>
                 <div class="stat-item"><div class="stat-value">¥186</div><div class="stat-label">预计总成本</div></div>
                 <div class="stat-item"><div class="stat-value">2800大卡</div><div class="stat-label">预计总热量</div></div>
             </div>
-            <div class="menu-list">
+            <div class="menu-tags">
                 <span class="menu-tag">🥩 红烧肉</span>
                 <span class="menu-tag">🐟 清蒸鲈鱼</span>
+                <span class="menu-tag">🦐 蒜蓉粉丝虾</span>
                 <span class="menu-tag">🥦 蒜蓉西兰花</span>
                 <span class="menu-tag">🍅 番茄炒蛋</span>
+                <span class="menu-tag">🥒 凉拌黄瓜</span>
+                <span class="menu-tag">🍳 韭菜炒蛋</span>
+                <span class="menu-tag">🥔 酸辣土豆丝</span>
                 <span class="menu-tag">🍲 紫菜蛋花汤</span>
                 <span class="menu-tag">🍚 米饭</span>
             </div>
         </div>
         
-        <div class="recipes-section">
-            <h2>👨‍🍳 详细做法</h2>
-            <div class="recipes-grid">
-                <div class="recipe-card animate-in">
-                    <div class="recipe-header">
-                        <div class="recipe-icon">🥩</div>
-                        <div class="recipe-name">红烧肉</div>
-                        <span class="recipe-type">主菜 · 家常菜</span>
+        <h2 class="section-title">👨‍🍳 详细做法</h2>
+        
+        <div class="recipes-grid">
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">主菜 · 家常菜</span>
+                    <div class="recipe-icon">🥩</div>
+                    <div class="recipe-name">红烧肉</div>
+                    <div class="recipe-desc">肥而不腻，入口即化，浓郁的酱香味配上软糯的口感，是家的味道。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 60分钟</span>
+                        <span class="meta-item">🔥 350大卡/份</span>
+                        <span class="meta-item">💰 ¥45</span>
                     </div>
-                    <div class="recipe-body">
-                        <div class="recipe-desc">肥而不腻，入口即化，浓郁的酱香味配上软糯的口感，是家的味道。</div>
-                        <div class="recipe-meta">
-                            <span class="meta-tag">⏱️ 60分钟</span>
-                            <span class="meta-tag">🔥 350大卡/份</span>
-                            <span class="meta-tag">💰 ¥45</span>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>五花肉</span><span class="ingredient-amount">500g</span></div>
+                            <div class="ingredient"><span>冰糖</span><span class="ingredient-amount">30g</span></div>
+                            <div class="ingredient"><span>生抽</span><span class="ingredient-amount">2勺</span></div>
+                            <div class="ingredient"><span>老抽</span><span class="ingredient-amount">1勺</span></div>
+                            <div class="ingredient"><span>料酒</span><span class="ingredient-amount">2勺</span></div>
+                            <div class="ingredient"><span>八角</span><span class="ingredient-amount">2个</span></div>
+                            <div class="ingredient"><span>桂皮</span><span class="ingredient-amount">1小块</span></div>
+                            <div class="ingredient"><span>姜片</span><span class="ingredient-amount">3片</span></div>
                         </div>
-                        <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
                     </div>
-                    <div class="recipe-detail">
-                        <div class="detail-section">
-                            <div class="detail-title">📦 食材</div>
-                            <div class="ingredients-list">
-                                <div class="ingredient"><span>五花肉</span><span class="ingredient-amount">500g</span></div>
-                                <div class="ingredient"><span>冰糖</span><span class="ingredient-amount">30g</span></div>
-                                <div class="ingredient"><span>生抽</span><span class="ingredient-amount">2勺</span></div>
-                                <div class="ingredient"><span>老抽</span><span class="ingredient-amount">1勺</span></div>
-                                <div class="ingredient"><span>料酒</span><span class="ingredient-amount">2勺</span></div>
-                                <div class="ingredient"><span>八角</span><span class="ingredient-amount">2个</span></div>
-                                <div class="ingredient"><span>桂皮</span><span class="ingredient-amount">1小块</span></div>
-                                <div class="ingredient"><span>姜片</span><span class="ingredient-amount">3片</span></div>
-                            </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>五花肉切块，冷水下锅，加姜片、料酒焯水，捞出洗净</p><div class="step-tip">💡 冷水下锅可以更好地去除血水</div></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放少许油，放入冰糖，小火炒至焦糖色</p><div class="step-tip">💡 冰糖更容易操作，炒到起大泡变色即可</div></div></div>
+                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>放入五花肉翻炒上色，加入姜片、八角、桂皮</p></div></div>
+                            <div class="step"><div class="step-number">4</div><div class="step-content"><p>加入生抽、老抽、料酒，翻炒均匀</p></div></div>
+                            <div class="step"><div class="step-number">5</div><div class="step-content"><p>加入开水，没过肉，大火烧开后转小火炖45分钟</p><div class="step-tip">💡 一定要加开水，冷水会让肉变硬</div></div></div>
+                            <div class="step"><div class="step-number">6</div><div class="step-content"><p>大火收汁，汤汁浓稠即可出锅</p></div></div>
                         </div>
-                        <div class="detail-section">
-                            <div class="detail-title">👨‍🍳 步骤</div>
-                            <div class="steps-list">
-                                <div class="step"><div class="step-number">1</div><div class="step-content"><p>五花肉切块，冷水下锅，加姜片、料酒焯水，捞出洗净</p><div class="step-tip">💡 冷水下锅可以更好地去除血水</div></div></div>
-                                <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放少许油，放入冰糖，小火炒至焦糖色</p><div class="step-tip">💡 冰糖更容易操作，炒到起大泡变色即可</div></div></div>
-                                <div class="step"><div class="step-number">3</div><div class="step-content"><p>放入五花肉翻炒上色，加入姜片、八角、桂皮</p></div></div>
-                                <div class="step"><div class="step-number">4</div><div class="step-content"><p>加入生抽、老抽、料酒，翻炒均匀</p></div></div>
-                                <div class="step"><div class="step-number">5</div><div class="step-content"><p>加入开水，没过肉，大火烧开后转小火炖45分钟</p><div class="step-tip">💡 一定要加开水，冷水会让肉变硬</div></div></div>
-                                <div class="step"><div class="step-number">6</div><div class="step-content"><p>大火收汁，汤汁浓稠即可出锅</p></div></div>
-                            </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-title">💡 小贴士</div>
+                        <div class="tips-box"><ul><li>五花肉要选三层的，肥瘦相间才好吃</li><li>焯水后要用冷水冲洗，去除浮沫</li><li>炖肉时要小火慢炖，肉才会软烂</li></ul></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">荤菜 · 粤菜</span>
+                    <div class="recipe-icon">🐟</div>
+                    <div class="recipe-name">清蒸鲈鱼</div>
+                    <div class="recipe-desc">鲜嫩的鱼肉配上姜丝和葱丝，清蒸保留了鱼的鲜美，简单却不失档次。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 20分钟</span>
+                        <span class="meta-item">🔥 180大卡/份</span>
+                        <span class="meta-item">💰 ¥55</span>
+                    </div>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>鲈鱼</span><span class="ingredient-amount">1条</span></div>
+                            <div class="ingredient"><span>姜</span><span class="ingredient-amount">1块</span></div>
+                            <div class="ingredient"><span>葱</span><span class="ingredient-amount">2根</span></div>
+                            <div class="ingredient"><span>蒸鱼豉油</span><span class="ingredient-amount">2勺</span></div>
                         </div>
-                        <div class="detail-section">
-                            <div class="detail-title">💡 小贴士</div>
-                            <div class="tips-box"><ul><li>五花肉要选三层的，肥瘦相间才好吃</li><li>焯水后要用冷水冲洗，去除浮沫</li><li>炖肉时要小火慢炖，肉才会软烂</li></ul></div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>鲈鱼清洗干净，两面划几刀，用料酒和姜片腌制10分钟</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>盘底铺上姜片和葱段，放上鱼</p></div></div>
+                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>水开后上锅蒸8-10分钟</p><div class="step-tip">💡 不要蒸太久，鱼肉会变老</div></div></div>
+                            <div class="step"><div class="step-number">4</div><div class="step-content"><p>倒掉蒸出的水，铺上新的姜丝和葱丝，淋上蒸鱼豉油</p></div></div>
+                            <div class="step"><div class="step-number">5</div><div class="step-content"><p>烧热油淋在鱼身上</p><div class="step-tip">💡 油要烧到冒烟，淋上去才会香</div></div></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="recipe-card animate-in">
-                    <div class="recipe-header">
-                        <div class="recipe-icon">🐟</div>
-                        <div class="recipe-name">清蒸鲈鱼</div>
-                        <span class="recipe-type">荤菜 · 粤菜</span>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">荤菜 · 粤菜</span>
+                    <div class="recipe-icon">🦐</div>
+                    <div class="recipe-name">蒜蓉粉丝蒸虾</div>
+                    <div class="recipe-desc">鲜嫩的大虾配上蒜蓉和粉丝，清蒸保留了虾的鲜美，简单却不失档次。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 20分钟</span>
+                        <span class="meta-item">🔥 180大卡/份</span>
+                        <span class="meta-item">💰 ¥55</span>
                     </div>
-                    <div class="recipe-body">
-                        <div class="recipe-desc">鲜嫩的鱼肉配上姜丝和葱丝，清蒸保留了鱼的鲜美，简单却不失档次。</div>
-                        <div class="recipe-meta">
-                            <span class="meta-tag">⏱️ 20分钟</span>
-                            <span class="meta-tag">🔥 180大卡/份</span>
-                            <span class="meta-tag">💰 ¥55</span>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>大虾</span><span class="ingredient-amount">8只</span></div>
+                            <div class="ingredient"><span>粉丝</span><span class="ingredient-amount">1把</span></div>
+                            <div class="ingredient"><span>大蒜</span><span class="ingredient-amount">1头</span></div>
+                            <div class="ingredient"><span>生抽</span><span class="ingredient-amount">2勺</span></div>
                         </div>
-                        <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
                     </div>
-                    <div class="recipe-detail">
-                        <div class="detail-section">
-                            <div class="detail-title">📦 食材</div>
-                            <div class="ingredients-list">
-                                <div class="ingredient"><span>鲈鱼</span><span class="ingredient-amount">1条</span></div>
-                                <div class="ingredient"><span>姜</span><span class="ingredient-amount">1块</span></div>
-                                <div class="ingredient"><span>葱</span><span class="ingredient-amount">2根</span></div>
-                                <div class="ingredient"><span>蒸鱼豉油</span><span class="ingredient-amount">2勺</span></div>
-                            </div>
-                        </div>
-                        <div class="detail-section">
-                            <div class="detail-title">👨‍🍳 步骤</div>
-                            <div class="steps-list">
-                                <div class="step"><div class="step-number">1</div><div class="step-content"><p>鲈鱼清洗干净，两面划几刀，用料酒和姜片腌制10分钟</p></div></div>
-                                <div class="step"><div class="step-number">2</div><div class="step-content"><p>盘底铺上姜片和葱段，放上鱼</p></div></div>
-                                <div class="step"><div class="step-number">3</div><div class="step-content"><p>水开后上锅蒸8-10分钟</p><div class="step-tip">💡 不要蒸太久，鱼肉会变老</div></div></div>
-                                <div class="step"><div class="step-number">4</div><div class="step-content"><p>倒掉蒸出的水，铺上新的姜丝和葱丝，淋上蒸鱼豉油</p></div></div>
-                                <div class="step"><div class="step-number">5</div><div class="step-content"><p>烧热油淋在鱼身上</p><div class="step-tip">💡 油要烧到冒烟，淋上去才会香</div></div></div>
-                            </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>粉丝泡软铺盘底，虾开背去虾线</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>蒜末炒香，加入生抽调成酱汁</p></div></div>
+                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>酱汁淋在虾上，水开后蒸8分钟</p></div></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="recipe-card animate-in">
-                    <div class="recipe-header">
-                        <div class="recipe-icon">🥦</div>
-                        <div class="recipe-name">蒜蓉西兰花</div>
-                        <span class="recipe-type">素菜 · 家常菜</span>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">素菜 · 家常菜</span>
+                    <div class="recipe-icon">🥦</div>
+                    <div class="recipe-name">蒜蓉西兰花</div>
+                    <div class="recipe-desc">翠绿的西兰花配上蒜蓉的香气，清爽健康，是餐桌上的解腻神器。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 10分钟</span>
+                        <span class="meta-item">🔥 80大卡/份</span>
+                        <span class="meta-item">💰 ¥15</span>
                     </div>
-                    <div class="recipe-body">
-                        <div class="recipe-desc">翠绿的西兰花配上蒜蓉的香气，清爽健康，是餐桌上的解腻神器。</div>
-                        <div class="recipe-meta">
-                            <span class="meta-tag">⏱️ 10分钟</span>
-                            <span class="meta-tag">🔥 80大卡/份</span>
-                            <span class="meta-tag">💰 ¥15</span>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>西兰花</span><span class="ingredient-amount">1朵</span></div>
+                            <div class="ingredient"><span>大蒜</span><span class="ingredient-amount">5瓣</span></div>
                         </div>
-                        <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
                     </div>
-                    <div class="recipe-detail">
-                        <div class="detail-section">
-                            <div class="detail-title">📦 食材</div>
-                            <div class="ingredients-list">
-                                <div class="ingredient"><span>西兰花</span><span class="ingredient-amount">1朵</span></div>
-                                <div class="ingredient"><span>大蒜</span><span class="ingredient-amount">5瓣</span></div>
-                            </div>
-                        </div>
-                        <div class="detail-section">
-                            <div class="detail-title">👨‍🍳 步骤</div>
-                            <div class="steps-list">
-                                <div class="step"><div class="step-number">1</div><div class="step-content"><p>西兰花切小朵，焯水30秒捞出过冷水</p></div></div>
-                                <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放油，蒜末炒香，放入西兰花翻炒，加盐调味</p></div></div>
-                            </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>西兰花切小朵，焯水30秒捞出过冷水</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放油，蒜末炒香，放入西兰花翻炒，加盐调味</p></div></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="recipe-card animate-in">
-                    <div class="recipe-header">
-                        <div class="recipe-icon">🍅</div>
-                        <div class="recipe-name">番茄炒蛋</div>
-                        <span class="recipe-type">素菜 · 家常菜</span>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">素菜 · 家常菜</span>
+                    <div class="recipe-icon">🍅</div>
+                    <div class="recipe-name">番茄炒蛋</div>
+                    <div class="recipe-desc">酸甜的番茄配上嫩滑的鸡蛋，是最经典的家常菜。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 10分钟</span>
+                        <span class="meta-item">🔥 120大卡/份</span>
+                        <span class="meta-item">💰 ¥12</span>
                     </div>
-                    <div class="recipe-body">
-                        <div class="recipe-desc">酸甜的番茄配上嫩滑的鸡蛋，是最经典的家常菜。</div>
-                        <div class="recipe-meta">
-                            <span class="meta-tag">⏱️ 10分钟</span>
-                            <span class="meta-tag">🔥 120大卡/份</span>
-                            <span class="meta-tag">💰 ¥12</span>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>番茄</span><span class="ingredient-amount">2个</span></div>
+                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">3个</span></div>
                         </div>
-                        <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
                     </div>
-                    <div class="recipe-detail">
-                        <div class="detail-section">
-                            <div class="detail-title">📦 食材</div>
-                            <div class="ingredients-list">
-                                <div class="ingredient"><span>番茄</span><span class="ingredient-amount">2个</span></div>
-                                <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">3个</span></div>
-                            </div>
-                        </div>
-                        <div class="detail-section">
-                            <div class="detail-title">👨‍🍳 步骤</div>
-                            <div class="steps-list">
-                                <div class="step"><div class="step-number">1</div><div class="step-content"><p>番茄去皮切块，鸡蛋打散</p></div></div>
-                                <div class="step"><div class="step-number">2</div><div class="step-content"><p>先炒鸡蛋盛出，再炒番茄出汁，加入鸡蛋翻炒</p></div></div>
-                            </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>番茄去皮切块，鸡蛋打散</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>先炒鸡蛋盛出，再炒番茄出汁，加入鸡蛋翻炒</p></div></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="recipe-card animate-in">
-                    <div class="recipe-header">
-                        <div class="recipe-icon">🍲</div>
-                        <div class="recipe-name">紫菜蛋花汤</div>
-                        <span class="recipe-type">汤品 · 家常菜</span>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">凉菜 · 家常菜</span>
+                    <div class="recipe-icon">🥒</div>
+                    <div class="recipe-name">凉拌黄瓜</div>
+                    <div class="recipe-desc">清爽开胃，酸辣可口，是夏天餐桌上的必备凉菜。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 5分钟</span>
+                        <span class="meta-item">🔥 50大卡/份</span>
+                        <span class="meta-item">💰 ¥8</span>
                     </div>
-                    <div class="recipe-body">
-                        <div class="recipe-desc">清淡爽口，紫菜的鲜美配上蛋花的嫩滑，完美收尾。</div>
-                        <div class="recipe-meta">
-                            <span class="meta-tag">⏱️ 10分钟</span>
-                            <span class="meta-tag">🔥 60大卡/份</span>
-                            <span class="meta-tag">💰 ¥8</span>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>黄瓜</span><span class="ingredient-amount">2根</span></div>
+                            <div class="ingredient"><span>蒜</span><span class="ingredient-amount">3瓣</span></div>
+                            <div class="ingredient"><span>醋</span><span class="ingredient-amount">2勺</span></div>
+                            <div class="ingredient"><span>辣椒油</span><span class="ingredient-amount">1勺</span></div>
                         </div>
-                        <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
                     </div>
-                    <div class="recipe-detail">
-                        <div class="detail-section">
-                            <div class="detail-title">📦 食材</div>
-                            <div class="ingredients-list">
-                                <div class="ingredient"><span>紫菜</span><span class="ingredient-amount">10g</span></div>
-                                <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">2个</span></div>
-                            </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>黄瓜拍碎切段，蒜切末</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>加入醋、生抽、辣椒油、香油拌匀</p></div></div>
                         </div>
-                        <div class="detail-section">
-                            <div class="detail-title">👨‍🍳 步骤</div>
-                            <div class="steps-list">
-                                <div class="step"><div class="step-number">1</div><div class="step-content"><p>水开后放入紫菜，慢慢倒入蛋液</p></div></div>
-                                <div class="step"><div class="step-number">2</div><div class="step-content"><p>加盐调味，关火后滴入香油</p></div></div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">素菜 · 家常菜</span>
+                    <div class="recipe-icon">🍳</div>
+                    <div class="recipe-name">韭菜炒蛋</div>
+                    <div class="recipe-desc">韭菜的香气配上鸡蛋的嫩滑，简单快手，是最家常的味道。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 8分钟</span>
+                        <span class="meta-item">🔥 100大卡/份</span>
+                        <span class="meta-item">💰 ¥10</span>
+                    </div>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>韭菜</span><span class="ingredient-amount">200g</span></div>
+                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">3个</span></div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>韭菜切段，鸡蛋打散</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>先炒鸡蛋盛出，再炒韭菜，加入鸡蛋翻炒</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">素菜 · 家常菜</span>
+                    <div class="recipe-icon">🥔</div>
+                    <div class="recipe-name">酸辣土豆丝</div>
+                    <div class="recipe-desc">酸辣可口，爽脆下饭，是最受欢迎的家常菜之一。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 15分钟</span>
+                        <span class="meta-item">🔥 150大卡/份</span>
+                        <span class="meta-item">💰 ¥8</span>
+                    </div>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>土豆</span><span class="ingredient-amount">2个</span></div>
+                            <div class="ingredient"><span>干辣椒</span><span class="ingredient-amount">5个</span></div>
+                            <div class="ingredient"><span>醋</span><span class="ingredient-amount">2勺</span></div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>土豆切丝泡水去淀粉</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>锅中放油，干辣椒爆香，放入土豆丝大火翻炒</p></div></div>
+                            <div class="step"><div class="step-number">3</div><div class="step-content"><p>加入醋、盐调味，翻炒均匀出锅</p></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recipe-card animate-in">
+                <div class="recipe-header">
+                    <span class="recipe-badge">汤品 · 家常菜</span>
+                    <div class="recipe-icon">🍲</div>
+                    <div class="recipe-name">紫菜蛋花汤</div>
+                    <div class="recipe-desc">清淡爽口，紫菜的鲜美配上蛋花的嫩滑，完美收尾。</div>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱️ 10分钟</span>
+                        <span class="meta-item">🔥 60大卡/份</span>
+                        <span class="meta-item">💰 ¥8</span>
+                    </div>
+                </div>
+                <button class="recipe-toggle" onclick="toggleRecipe(this)">展开详细做法 ▼</button>
+                <div class="recipe-detail">
+                    <div class="detail-section">
+                        <div class="detail-title">📦 食材</div>
+                        <div class="ingredients-grid">
+                            <div class="ingredient"><span>紫菜</span><span class="ingredient-amount">10g</span></div>
+                            <div class="ingredient"><span>鸡蛋</span><span class="ingredient-amount">2个</span></div>
+                        </div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-title">👨‍🍳 步骤</div>
+                        <div class="steps-list">
+                            <div class="step"><div class="step-number">1</div><div class="step-content"><p>水开后放入紫菜，慢慢倒入蛋液</p></div></div>
+                            <div class="step"><div class="step-number">2</div><div class="step-content"><p>加盐调味，关火后滴入香油</p></div></div>
                         </div>
                     </div>
                 </div>
@@ -602,6 +765,7 @@
                 <div class="shopping-items">
                     <div class="shopping-item"><span>五花肉 500g</span><span class="shopping-price">¥25</span></div>
                     <div class="shopping-item"><span>鲈鱼 1条</span><span class="shopping-price">¥35</span></div>
+                    <div class="shopping-item"><span>大虾 8只</span><span class="shopping-price">¥30</span></div>
                 </div>
             </div>
             <div class="shopping-category">
@@ -609,14 +773,17 @@
                 <div class="shopping-items">
                     <div class="shopping-item"><span>西兰花 1朵</span><span class="shopping-price">¥8</span></div>
                     <div class="shopping-item"><span>番茄 2个</span><span class="shopping-price">¥6</span></div>
+                    <div class="shopping-item"><span>黄瓜 2根</span><span class="shopping-price">¥5</span></div>
+                    <div class="shopping-item"><span>韭菜 200g</span><span class="shopping-price">¥5</span></div>
+                    <div class="shopping-item"><span>土豆 2个</span><span class="shopping-price">¥4</span></div>
                     <div class="shopping-item"><span>紫菜 10g</span><span class="shopping-price">¥5</span></div>
-                    <div class="shopping-item"><span>姜葱蒜</span><span class="shopping-price">¥8</span></div>
+                    <div class="shopping-item"><span>粉丝 1把</span><span class="shopping-price">¥5</span></div>
                 </div>
             </div>
             <div class="shopping-category">
                 <h3>🥚 蛋类/主食</h3>
                 <div class="shopping-items">
-                    <div class="shopping-item"><span>鸡蛋 10个</span><span class="shopping-price">¥12</span></div>
+                    <div class="shopping-item"><span>鸡蛋 15个</span><span class="shopping-price">¥18</span></div>
                     <div class="shopping-item"><span>大米 1kg</span><span class="shopping-price">¥8</span></div>
                 </div>
             </div>
@@ -626,6 +793,7 @@
                     <div class="shopping-item"><span>冰糖/八角/桂皮</span><span class="shopping-price">¥10</span></div>
                     <div class="shopping-item"><span>生抽/老抽/料酒</span><span class="shopping-price">¥34</span></div>
                     <div class="shopping-item"><span>蒸鱼豉油</span><span class="shopping-price">¥15</span></div>
+                    <div class="shopping-item"><span>醋/辣椒油</span><span class="shopping-price">¥10</span></div>
                 </div>
             </div>
             <div class="total-cost">
@@ -637,13 +805,14 @@
         
         <div class="timeline-section animate-in">
             <h2>⏱️ 时间规划</h2>
-            <div class="timeline-item"><div class="timeline-time">T-60</div><div class="timeline-content"><div class="timeline-task">备菜</div><div class="timeline-desc">五花肉切块、鲈鱼处理、蔬菜清洗切配</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-50</div><div class="timeline-content"><div class="timeline-task">煮饭</div><div class="timeline-desc">电饭煲煮饭</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-45</div><div class="timeline-content"><div class="timeline-task">红烧肉</div><div class="timeline-desc">焯水、炒糖色、炖煮</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-15</div><div class="timeline-content"><div class="timeline-task">清蒸鲈鱼</div><div class="timeline-desc">腌制、蒸制</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-10</div><div class="timeline-content"><div class="timeline-task">炒菜</div><div class="timeline-desc">蒜蓉西兰花、番茄炒蛋</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-5</div><div class="timeline-content"><div class="timeline-task">做汤</div><div class="timeline-desc">紫菜蛋花汤</div></div></div>
-            <div class="timeline-item"><div class="timeline-time">T-0</div><div class="timeline-content"><div class="timeline-task">上桌开吃 🍽️</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:00</div><div class="timeline-content"><div class="timeline-task">开始备菜</div><div class="timeline-desc">五花肉切块、鲈鱼处理、蔬菜清洗切配、鸡蛋打散</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:10</div><div class="timeline-content"><div class="timeline-task">开始煮饭</div><div class="timeline-desc">电饭煲煮饭</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:15</div><div class="timeline-content"><div class="timeline-task">开始做红烧肉</div><div class="timeline-desc">焯水、炒糖色、炖煮</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:45</div><div class="timeline-content"><div class="timeline-task">开始做清蒸鲈鱼</div><div class="timeline-desc">腌制、蒸制</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:50</div><div class="timeline-content"><div class="timeline-task">开始做蒜蓉粉丝虾</div><div class="timeline-desc">处理虾、蒸制</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">17:55</div><div class="timeline-content"><div class="timeline-task">开始炒菜</div><div class="timeline-desc">蒜蓉西兰花、番茄炒蛋、韭菜炒蛋、酸辣土豆丝</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">18:00</div><div class="timeline-content"><div class="timeline-task">开始做汤和凉菜</div><div class="timeline-desc">紫菜蛋花汤、凉拌黄瓜</div></div></div>
+            <div class="timeline-item"><div class="timeline-time">18:05</div><div class="timeline-content"><div class="timeline-task">上桌开吃 🍽️</div></div></div>
         </div>
     </div>
     
@@ -656,7 +825,7 @@
     
     <script>
         function toggleRecipe(btn) {
-            const detail = btn.parentElement.nextElementSibling;
+            const detail = btn.nextElementSibling;
             const isActive = detail.classList.contains('active');
             document.querySelectorAll('.recipe-detail').forEach(d => d.classList.remove('active'));
             document.querySelectorAll('.recipe-toggle').forEach(b => b.textContent = '展开详细做法 ▼');
