@@ -1,0 +1,43 @@
+{
+  "id": "sichuan_pepper_oil",
+  "name": "花椒油",
+  "name_en": "Sichuan Pepper Oil",
+  "category": "seasoning",
+  "subcategory": "seasoning",
+  "nutrition_per_100g": {
+    "calories": 884,
+    "protein": 0,
+    "fat": 100,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/瓶",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "凉拌",
+      "麻辣菜"
+    ],
+    "usage": [
+      "凉拌",
+      "麻辣菜"
+    ]
+  },
+  "tips": [
+    "花椒油要最后放，提麻味"
+  ]
+}

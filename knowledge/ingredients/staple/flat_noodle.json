@@ -1,0 +1,43 @@
+{
+  "id": "flat_noodle",
+  "name": "河粉",
+  "name_en": "Flat Noodle",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 110,
+    "protein": 2.5,
+    "fat": 0.4,
+    "carbs": 24.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煮汤"
+    ],
+    "usage": [
+      "炒",
+      "煮汤"
+    ]
+  },
+  "tips": [
+    "干炒牛河要大火快炒"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "dried_mushroom",
+  "name": "干香菇",
+  "name_en": "Dried Mushroom",
+  "category": "dried",
+  "subcategory": "dried",
+  "nutrition_per_100g": {
+    "calories": 290,
+    "protein": 20.0,
+    "fat": 3.0,
+    "carbs": 50.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 28,
+    "max": 52,
+    "average": 40,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炖肉",
+      "煮汤",
+      "炒菜"
+    ],
+    "usage": [
+      "炖肉",
+      "煮汤",
+      "炒菜"
+    ]
+  },
+  "tips": [
+    "干香菇比鲜香菇更香，泡的水是高汤"
+  ]
+}

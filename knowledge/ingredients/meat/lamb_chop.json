@@ -1,0 +1,43 @@
+{
+  "id": "lamb_chop",
+  "name": "羊排",
+  "name_en": "Lamb Chop",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 250,
+    "protein": 17.0,
+    "fat": 20.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 49,
+    "max": 91,
+    "average": 70,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "秋冬"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煎",
+      "烤"
+    ],
+    "usage": [
+      "煎",
+      "烤"
+    ]
+  },
+  "tips": [
+    "羊排要腌制后再烤"
+  ]
+}

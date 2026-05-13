@@ -1,0 +1,45 @@
+{
+  "id": "dried_longan",
+  "name": "桂圆干",
+  "name_en": "Dried Longan",
+  "category": "dried",
+  "subcategory": "dried",
+  "nutrition_per_100g": {
+    "calories": 280,
+    "protein": 5.0,
+    "fat": 0.5,
+    "carbs": 65.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煮粥",
+      "泡水",
+      "炖汤"
+    ],
+    "usage": [
+      "煮粥",
+      "泡水",
+      "炖汤"
+    ]
+  },
+  "tips": [
+    "桂圆干可以补气血"
+  ]
+}

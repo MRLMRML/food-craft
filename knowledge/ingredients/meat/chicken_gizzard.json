@@ -1,0 +1,43 @@
+{
+  "id": "chicken_gizzard",
+  "name": "鸡胗",
+  "name_en": "Chicken Gizzard",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 118,
+    "protein": 19.2,
+    "fat": 2.8,
+    "carbs": 4.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "卤"
+    ],
+    "usage": [
+      "炒",
+      "卤"
+    ]
+  },
+  "tips": [
+    "鸡胗要切花刀，大火快炒"
+  ]
+}

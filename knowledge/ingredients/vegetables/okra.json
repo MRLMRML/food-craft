@@ -1,20 +1,20 @@
 {
-  "id": "shrimp",
-  "name": "基围虾",
-  "name_en": "Shrimp",
-  "category": "seafood",
-  "subcategory": "seafood",
+  "id": "okra",
+  "name": "秋葵",
+  "name_en": "Okra",
+  "category": "vegetables",
+  "subcategory": "vegetables",
   "nutrition_per_100g": {
-    "calories": 101,
-    "protein": 18.6,
-    "fat": 1.3,
-    "carbs": 3.9,
+    "calories": 33,
+    "protein": 2.0,
+    "fat": 0.1,
+    "carbs": 7.5,
     "fiber": 0
   },
   "price_range": {
-    "min": 24,
-    "max": 45,
-    "average": 35,
+    "min": 7,
+    "max": 13,
+    "average": 10,
     "unit": "元/斤",
     "last_updated": "2024-01-15"
   },
@@ -29,17 +29,17 @@
   "cuts": [],
   "pairing": {
     "classic": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "炒",
+      "凉拌",
+      "烤"
     ],
     "usage": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "炒",
+      "凉拌",
+      "烤"
     ]
   },
   "tips": [
-    "虾要挑虾线，白灼要煮3分钟"
+    "秋葵焯水时加点盐保持翠绿"
   ]
 }

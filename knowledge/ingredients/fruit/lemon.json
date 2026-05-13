@@ -1,0 +1,45 @@
+{
+  "id": "lemon",
+  "name": "柠檬",
+  "name_en": "Lemon",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 29,
+    "protein": 1.1,
+    "fat": 0.3,
+    "carbs": 9.3,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 2,
+    "max": 3,
+    "average": 3,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "泡水",
+      "调味",
+      "甜点"
+    ],
+    "usage": [
+      "泡水",
+      "调味",
+      "甜点"
+    ]
+  },
+  "tips": [
+    "柠檬泡水要用温水"
+  ]
+}

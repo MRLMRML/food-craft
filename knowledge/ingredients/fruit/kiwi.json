@@ -1,0 +1,43 @@
+{
+  "id": "kiwi",
+  "name": "猕猴桃",
+  "name_en": "Kiwi",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 61,
+    "protein": 1.1,
+    "fat": 0.5,
+    "carbs": 14.7,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "秋季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "生吃",
+      "沙拉"
+    ],
+    "usage": [
+      "生吃",
+      "沙拉"
+    ]
+  },
+  "tips": [
+    "猕猴桃要选软的，硬的要催熟"
+  ]
+}

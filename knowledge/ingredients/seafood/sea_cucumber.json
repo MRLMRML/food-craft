@@ -1,26 +1,26 @@
 {
-  "id": "shrimp",
-  "name": "基围虾",
-  "name_en": "Shrimp",
+  "id": "sea_cucumber",
+  "name": "海参",
+  "name_en": "Sea Cucumber",
   "category": "seafood",
   "subcategory": "seafood",
   "nutrition_per_100g": {
-    "calories": 101,
-    "protein": 18.6,
-    "fat": 1.3,
-    "carbs": 3.9,
+    "calories": 55,
+    "protein": 16.5,
+    "fat": 0.2,
+    "carbs": 0,
     "fiber": 0
   },
   "price_range": {
-    "min": 24,
-    "max": 45,
-    "average": 35,
-    "unit": "元/斤",
+    "min": 140,
+    "max": 260,
+    "average": 200,
+    "unit": "元/只",
     "last_updated": "2024-01-15"
   },
   "seasonal_availability": {
     "全年": false,
-    "best_season": "夏季"
+    "best_season": "冬季"
   },
   "storage": {
     "fresh": "冷藏3-5天",
@@ -29,17 +29,15 @@
   "cuts": [],
   "pairing": {
     "classic": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "葱烧",
+      "炖汤"
     ],
     "usage": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "葱烧",
+      "炖汤"
     ]
   },
   "tips": [
-    "虾要挑虾线，白灼要煮3分钟"
+    "干海参要泡发3-5天"
   ]
 }

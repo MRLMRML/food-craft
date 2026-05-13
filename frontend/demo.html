@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Craft - 家庭美食菜谱</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --warm-bg: #FFF8F0;
+            --warm-card: #FFFFFF;
+            --warm-primary: #D4A574;
+            --warm-secondary: #8B6F47;
+            --warm-accent: #E8C9A0;
+            --warm-text: #5D4E37;
+            --warm-text-light: #8B7D6B;
+            --warm-green: #7DB87D;
+            --warm-red: #D4756B;
+            --warm-yellow: #E8C46B;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--warm-bg);
+            color: var(--warm-text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, var(--warm-accent) 0%, transparent 70%);
+            opacity: 0.3;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(10deg); }
+            66% { transform: translate(-20px, 20px) rotate(-5deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .hero h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 3rem;
+            color: var(--warm-secondary);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--warm-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            color: var(--warm-secondary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::before,
+        .section-title h2::after {
+            content: '·';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--warm-primary);
+            font-size: 2rem;
+        }
+        
+        .section-title h2::before { left: -40px; }
+        .section-title h2::after { right: -40px; }
+        
+        .section-subtitle {
+            color: var(--warm-text-light);
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+        
+        /* Recipe Cards Grid */
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .recipe-card {
+            background: var(--warm-card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(93, 78, 55, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(93, 78, 55, 0.15);
+        }
+        
+        .recipe-header {
+            padding: 30px 30px 20px;
+            position: relative;
+        }
+        
+        .recipe-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        
+        .recipe-badge {
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .badge-sichuan { background: #FFE8E8; color: #D4756B; }
+        .badge-cantonese { background: #E8F5E8; color: #7DB87D; }
+        .badge-home { background: #FFF3E0; color: #D4A574; }
+        .badge-japanese { background: #E8F0FF; color: #6B8FD4; }
+        
+        .recipe-card h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            color: var(--warm-secondary);
+            margin-bottom: 8px;
+        }
+        
+        .recipe-desc {
+            color: var(--warm-text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .recipe-meta {
+            display: flex;
+            gap: 20px;
+            padding: 20px 30px;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFF3E8 100%);
+            border-top: 1px solid var(--warm-accent);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            color: var(--warm-text-light);
+        }
+        
+        .meta-item .icon {
+            font-size: 1.2rem;
+        }
+        
+        .meta-item .value {
+            font-weight: 600;
+            color: var(--warm-secondary);
+        }
+        
+        /* Recipe Detail Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(93, 78, 55, 0.5);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .modal {
+            background: var(--warm-card);
+            border-radius: 24px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideUp 0.4s ease;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .modal-header {
+            padding: 30px;
+            background: linear-gradient(135deg, var(--warm-accent) 0%, var(--warm-primary) 100%);
+            color: white;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .modal-header h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        
+        .modal-header p {
+            opacity: 0.9;
+        }
+        
+        .modal-body {
+            padding: 30px;
+        }
+        
+        .ingredients-section,
+        .steps-section,
+        .tips-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-label {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.2rem;
+            color: var(--warm-secondary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        
+        .ingredient-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background: var(--warm-bg);
+            border-radius: 12px;
+            font-size: 0.95rem;
+        }
+        
+        .ingredient-item .amount {
+            color: var(--warm-primary);
+            font-weight: 600;
+        }
+        
+        .step-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: var(--warm-bg);
+            border-radius: 16px;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--warm-primary) 0%, var(--warm-secondary) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content p {
+            margin-bottom: 8px;
+        }
+        
+        .step-tip {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 12px;
+            background: #FFF3CD;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+        
+        .tips-box {
+            padding: 20px;
+            background: linear-gradient(135deg, #E8F5E8 0%, #D4EDDA 100%);
+            border-radius: 16px;
+            border-left: 4px solid var(--warm-green);
+        }
+        
+        .tips-box li {
+            padding: 8px 0;
+            list-style: none;
+        }
+        
+        .tips-box li::before {
+            content: '✨ ';
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--warm-text-light);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--warm-primary);
+            text-decoration: none;
+        }
+        
+        /* Decorative Elements */
+        .deco-leaf {
+            position: fixed;
+            opacity: 0.1;
+            font-size: 100px;
+            z-index: -1;
+        }
+        
+        .deco-leaf-1 { top: 10%; left: 5%; transform: rotate(-30deg); }
+        .deco-leaf-2 { top: 30%; right: 5%; transform: rotate(20deg); }
+        .deco-leaf-3 { bottom: 20%; left: 10%; transform: rotate(-15deg); }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .recipes-grid { grid-template-columns: 1fr; }
+            .modal { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="deco-leaf deco-leaf-1">🍃</div>
+    <div class="deco-leaf deco-leaf-2">🌿</div>
+    <div class="deco-leaf deco-leaf-3">🍂</div>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-icon">🍳</div>
+                <h1>Food Craft</h1>
+                <p>用 AI 温暖每一餐，让家的味道更美好</p>
+            </div>
+        </section>
+        
+        <!-- Recipe Demo Section -->
+        <section>
+            <div class="section-title">
+                <h2>今日推荐</h2>
+                <p class="section-subtitle">根据「4人家庭晚餐，预算200元，想吃家常菜」生成</p>
+            </div>
+            
+            <div class="recipes-grid">
+                <!-- Recipe 1: 红烧肉 -->
+                <div class="recipe-card" onclick="openModal('hongshaorou')">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🥩</span>
+                        <span class="recipe-badge badge-home">家常菜</span>
+                        <h3>红烧肉</h3>
+                        <p class="recipe-desc">肥而不腻，入口即化，浓郁的酱香味配上软糯的口感，是家的味道。</p>
+                    </div>
+                    <div class="recipe-meta">
+                        <div class="meta-item">
+                            <span class="icon">⏱️</span>
+                            <span>60分钟</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">🔥</span>
+                            <span>350大卡/份</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">💰</span>
+                            <span>¥45</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 2: 蒜蓉粉丝虾 -->
+                <div class="recipe-card" onclick="openModal('garlic_shrimp')">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🦐</span>
+                        <span class="recipe-badge badge-cantonese">粤菜</span>
+                        <h3>蒜蓉粉丝蒸虾</h3>
+                        <p class="recipe-desc">鲜嫩的大虾配上蒜蓉和粉丝，清蒸保留了虾的鲜美，简单却不失档次。</p>
+                    </div>
+                    <div class="recipe-meta">
+                        <div class="meta-item">
+                            <span class="icon">⏱️</span>
+                            <span>20分钟</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">🔥</span>
+                            <span>180大卡/份</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">💰</span>
+                            <span>¥55</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 3: 干煸四季豆 -->
+                <div class="recipe-card" onclick="openModal('green_beans')">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🫛</span>
+                        <span class="recipe-badge badge-sichuan">川菜</span>
+                        <h3>干煸四季豆</h3>
+                        <p class="recipe-desc">表皮微皱，干香可口，肉末的香气渗入四季豆，是下饭的一把好手。</p>
+                    </div>
+                    <div class="recipe-meta">
+                        <div class="meta-item">
+                            <span class="icon">⏱️</span>
+                            <span>15分钟</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">🔥</span>
+                            <span>120大卡/份</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">💰</span>
+                            <span>¥18</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 4: 番茄蛋花汤 -->
+                <div class="recipe-card" onclick="openModal('egg_soup')">
+                    <div class="recipe-header">
+                        <span class="recipe-icon">🍅</span>
+                        <span class="recipe-badge badge-home">家常菜</span>
+                        <h3>番茄蛋花汤</h3>
+                        <p class="recipe-desc">酸甜的番茄配上嫩滑的蛋花，清爽开胃，是每顿饭的完美收尾。</p>
+                    </div>
+                    <div class="recipe-meta">
+                        <div class="meta-item">
+                            <span class="icon">⏱️</span>
+                            <span>10分钟</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">🔥</span>
+                            <span>80大卡/份</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">💰</span>
+                            <span>¥8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Recipe Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="recipe-modal">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeModal()">✕</button>
+                <h2 id="modal-title">红烧肉</h2>
+                <p id="modal-subtitle">家常菜 · 60分钟 · 350大卡/份</p>
+            </div>
+            <div class="modal-body">
+                <div class="ingredients-section">
+                    <div class="section-label">📦 食材准备</div>
+                    <div class="ingredients-grid" id="modal-ingredients"></div>
+                </div>
+                
+                <div class="steps-section">
+                    <div class="section-label">👨‍🍳 烹饪步骤</div>
+                    <div id="modal-steps"></div>
+                </div>
+                
+                <div class="tips-section">
+                    <div class="section-label">💡 小贴士</div>
+                    <div class="tips-box">
+                        <ul id="modal-tips"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>🍽️ Food Craft - 让每一餐都好吃 | <a href="https://github.com/MRLMRML/food-craft">GitHub</a></p>
+    </footer>
+    
+    <script>
+        const recipes = {
+            hongshaorou: {
+                title: "红烧肉",
+                subtitle: "家常菜 · 60分钟 · 350大卡/份",
+                ingredients: [
+                    { name: "五花肉", amount: "500g" },
+                    { name: "冰糖", amount: "30g" },
+                    { name: "生抽", amount: "2勺" },
+                    { name: "老抽", amount: "1勺" },
+                    { name: "料酒", amount: "2勺" },
+                    { name: "八角", amount: "2个" },
+                    { name: "桂皮", amount: "1小块" },
+                    { name: "姜片", amount: "3片" },
+                    { name: "葱段", amount: "适量" }
+                ],
+                steps: [
+                    { content: "五花肉切块，冷水下锅，加姜片、料酒焯水，捞出洗净", tip: "冷水下锅可以更好地去除血水" },
+                    { content: "锅中放少许油，放入冰糖，小火炒至焦糖色", tip: "冰糖更容易操作，炒到起大泡变色即可" },
+                    { content: "放入五花肉翻炒上色，加入姜片、葱段、八角、桂皮", tip: "让每块肉都裹上糖色" },
+                    { content: "加入生抽、老抽、料酒，翻炒均匀", tip: "老抽主要是上色，不要放太多" },
+                    { content: "加入开水，没过肉，大火烧开后转小火炖45分钟", tip: "一定要加开水，冷水会让肉变硬" },
+                    { content: "大火收汁，汤汁浓稠即可出锅", tip: "收汁时要不停翻动，防止粘锅" }
+                ],
+                tips: [
+                    "五花肉要选三层的，肥瘦相间才好吃",
+                    "焯水后要用冷水冲洗，去除浮沫",
+                    "炖肉时要小火慢炖，肉才会软烂",
+                    "收汁时要注意火候，不要收太干"
+                ]
+            },
+            garlic_shrimp: {
+                title: "蒜蓉粉丝蒸虾",
+                subtitle: "粤菜 · 20分钟 · 180大卡/份",
+                ingredients: [
+                    { name: "大虾", amount: "8只" },
+                    { name: "粉丝", amount: "1把" },
+                    { name: "大蒜", amount: "1整头" },
+                    { name: "生抽", amount: "2勺" },
+                    { name: "蚝油", amount: "1勺" },
+                    { name: "料酒", amount: "1勺" },
+                    { name: "小葱", amount: "适量" },
+                    { name: "食用油", amount: "适量" }
+                ],
+                steps: [
+                    { content: "粉丝用温水泡软，铺在盘底", tip: "粉丝不要泡太久，保持一点嚼劲" },
+                    { content: "大虾去虾线，从背部剖开，平铺在粉丝上", tip: "虾线一定要去干净，否则有腥味" },
+                    { content: "大蒜切碎，锅中放油，小火炒至金黄出香味", tip: "蒜蓉要小火慢炒，炒糊会发苦" },
+                    { content: "加入生抽、蚝油、料酒调成酱汁", tip: "酱汁要尝一下咸淡" },
+                    { content: "将蒜蓉酱汁均匀淋在虾上", tip: "每只虾都要淋到" },
+                    { content: "水开后上锅蒸8分钟，出锅撒上葱花", tip: "蒸的时间不要太长，虾会变老" }
+                ],
+                tips: [
+                    "虾要选新鲜的，虾壳有光泽",
+                    "粉丝要提前泡软，但不要泡烂",
+                    "蒜蓉要炒到金黄，生蒜会有辛辣味",
+                    "蒸的时间要控制好，8分钟刚好"
+                ]
+            },
+            green_beans: {
+                title: "干煸四季豆",
+                subtitle: "川菜 · 15分钟 · 120大卡/份",
+                ingredients: [
+                    { name: "四季豆", amount: "300g" },
+                    { name: "猪肉末", amount: "50g" },
+                    { name: "干辣椒", amount: "5个" },
+                    { name: "花椒", amount: "1小把" },
+                    { name: "大蒜", amount: "3瓣" },
+                    { name: "生抽", amount: "1勺" },
+                    { name: "盐", amount: "适量" },
+                    { name: "食用油", amount: "适量" }
+                ],
+                steps: [
+                    { content: "四季豆去筋，掰成段，干辣椒剪段，大蒜切末", tip: "四季豆要掰成5-6cm的段" },
+                    { content: "锅中多放油，油热后放入四季豆，炸至表皮起皱", tip: "中火慢炸，要炸透，四季豆一定要熟" },
+                    { content: "捞出四季豆，锅中留底油", tip: "沥干油，不然会腻" },
+                    { content: "放入肉末炒散，加入干辣椒、花椒、蒜末炒香", tip: "小火炒香，辣椒不要炒糊" },
+                    { content: "放入四季豆，加入生抽、盐翻炒均匀", tip: "大火快炒，让调料均匀裹上" },
+                    { content: "出锅装盘即可", tip: "四季豆一定要炒熟，生的有毒" }
+                ],
+                tips: [
+                    "四季豆一定要炸透，否则会有毒素",
+                    "炸到表皮起皱才好吃",
+                    "干辣椒要小火炒，炒糊会发苦",
+                    "这道菜要大火快炒，保持干香"
+                ]
+            },
+            egg_soup: {
+                title: "番茄蛋花汤",
+                subtitle: "家常菜 · 10分钟 · 80大卡/份",
+                ingredients: [
+                    { name: "番茄", amount: "2个" },
+                    { name: "鸡蛋", amount: "2个" },
+                    { name: "葱花", amount: "适量" },
+                    { name: "盐", amount: "适量" },
+                    { name: "香油", amount: "几滴" },
+                    { name: "白胡椒粉", amount: "少许" },
+                    { name: "食用油", amount: "适量" }
+                ],
+                steps: [
+                    { content: "番茄顶部划十字，开水烫30秒去皮，切小块", tip: "番茄去皮后口感更好" },
+                    { content: "鸡蛋打散备用", tip: "蛋液要打散，这样蛋花更细腻" },
+                    { content: "锅中放油，放入番茄翻炒出汁", tip: "番茄要炒出汁，汤才会酸甜" },
+                    { content: "加入适量清水，大火烧开", tip: "水量根据人数调整" },
+                    { content: "水开后，慢慢倒入蛋液，边倒边用筷子搅拌", tip: "蛋液要慢慢倒，形成漂亮的蛋花" },
+                    { content: "加入盐、白胡椒粉调味，关火后滴入香油，撒上葱花", tip: "香油要最后放，香味更浓" }
+                ],
+                tips: [
+                    "番茄要选熟透的，颜色红亮",
+                    "蛋液要慢慢倒，形成漂亮的蛋花",
+                    "关火后再放香油，香味更浓",
+                    "这道汤要趁热喝，放凉会腥"
+                ]
+            }
+        };
+        
+        function openModal(recipeId) {
+            const recipe = recipes[recipeId];
+            if (!recipe) return;
+            
+            document.getElementById('modal-title').textContent = recipe.title;
+            document.getElementById('modal-subtitle').textContent = recipe.subtitle;
+            
+            // Ingredients
+            const ingredientsGrid = document.getElementById('modal-ingredients');
+            ingredientsGrid.innerHTML = recipe.ingredients.map(ing => `
+                <div class="ingredient-item">
+                    <span>${ing.name}</span>
+                    <span class="amount">${ing.amount}</span>
+                </div>
+            `).join('');
+            
+            // Steps
+            const stepsDiv = document.getElementById('modal-steps');
+            stepsDiv.innerHTML = recipe.steps.map((step, i) => `
+                <div class="step-item">
+                    <div class="step-number">${i + 1}</div>
+                    <div class="step-content">
+                        <p>${step.content}</p>
+                        ${step.tip ? `<div class="step-tip">💡 ${step.tip}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+            
+            // Tips
+            const tipsUl = document.getElementById('modal-tips');
+            tipsUl.innerHTML = recipe.tips.map(tip => `<li>${tip}</li>`).join('');
+            
+            // Show modal
+            document.getElementById('modal-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Close modal on overlay click
+        document.getElementById('modal-overlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

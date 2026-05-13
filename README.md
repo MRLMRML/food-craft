@@ -22,10 +22,13 @@
 cp SKILL.md ~/.opencode/skills/food-craft/SKILL.md
 ```
 
-### 作为前端网站使用
+### 前端 Demo
 
 ```bash
-# 直接打开前端页面
+# 美观的菜谱展示页面（推荐）
+open frontend/demo.html
+
+# 菜谱输出示例页面
 open frontend/index.html
 ```
 
@@ -136,8 +139,9 @@ food-craft/
 | 类别 | 数量 |
 |------|------|
 | 菜系 | 25+ |
-| 食材 | 50+ |
+| 食材 | 180+ |
 | 烹饪技法 | 10+ |
+| 调味料 | 30+ |
 | 搭配规则 | 20+ |
 
 ## 🔄 自动更新

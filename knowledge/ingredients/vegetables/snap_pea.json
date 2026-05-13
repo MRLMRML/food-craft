@@ -1,0 +1,43 @@
+{
+  "id": "snap_pea",
+  "name": "甜豆",
+  "name_en": "Snap Pea",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 42,
+    "protein": 2.8,
+    "fat": 0.3,
+    "carbs": 7.5,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "春季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "凉拌"
+    ],
+    "usage": [
+      "炒",
+      "凉拌"
+    ]
+  },
+  "tips": [
+    "甜豆比荷兰豆更甜脆"
+  ]
+}

@@ -1,26 +1,26 @@
 {
-  "id": "shrimp",
-  "name": "基围虾",
-  "name_en": "Shrimp",
+  "id": "carp",
+  "name": "鲤鱼",
+  "name_en": "Carp",
   "category": "seafood",
   "subcategory": "seafood",
   "nutrition_per_100g": {
-    "calories": 101,
-    "protein": 18.6,
-    "fat": 1.3,
-    "carbs": 3.9,
+    "calories": 109,
+    "protein": 17.6,
+    "fat": 4.1,
+    "carbs": 0,
     "fiber": 0
   },
   "price_range": {
-    "min": 24,
-    "max": 45,
-    "average": 35,
-    "unit": "元/斤",
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/条",
     "last_updated": "2024-01-15"
   },
   "seasonal_availability": {
     "全年": false,
-    "best_season": "夏季"
+    "best_season": "春季"
   },
   "storage": {
     "fresh": "冷藏3-5天",
@@ -29,17 +29,17 @@
   "cuts": [],
   "pairing": {
     "classic": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "红烧",
+      "糖醋",
+      "炖汤"
     ],
     "usage": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "红烧",
+      "糖醋",
+      "炖汤"
     ]
   },
   "tips": [
-    "虾要挑虾线，白灼要煮3分钟"
+    "鲤鱼要去腥线，两侧各一条"
   ]
 }

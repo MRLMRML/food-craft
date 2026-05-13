@@ -1,0 +1,45 @@
+{
+  "id": "vermicelli",
+  "name": "粉丝",
+  "name_en": "Vermicelli",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 335,
+    "protein": 0.5,
+    "fat": 0.1,
+    "carbs": 83.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/袋",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煮汤",
+      "火锅"
+    ],
+    "usage": [
+      "炒",
+      "煮汤",
+      "火锅"
+    ]
+  },
+  "tips": [
+    "粉丝要泡软后使用"
+  ]
+}

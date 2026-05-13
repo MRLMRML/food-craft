@@ -1,0 +1,43 @@
+{
+  "id": "pork_liver",
+  "name": "猪肝",
+  "name_en": "Pork Liver",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 129,
+    "protein": 19.3,
+    "fat": 3.5,
+    "carbs": 5.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煮汤"
+    ],
+    "usage": [
+      "炒",
+      "煮汤"
+    ]
+  },
+  "tips": [
+    "猪肝要泡水去血水，大火快炒"
+  ]
+}

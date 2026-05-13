@@ -1,0 +1,45 @@
+{
+  "id": "king_oyster",
+  "name": "杏鲍菇",
+  "name_en": "King Oyster Mushroom",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 34,
+    "protein": 1.3,
+    "fat": 0.4,
+    "carbs": 8.3,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "烤",
+      "煎"
+    ],
+    "usage": [
+      "炒",
+      "烤",
+      "煎"
+    ]
+  },
+  "tips": [
+    "杏鲍菇手撕比刀切更好吃"
+  ]
+}

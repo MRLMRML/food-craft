@@ -1,0 +1,43 @@
+{
+  "id": "dark_soy",
+  "name": "老抽",
+  "name_en": "Dark Soy Sauce",
+  "category": "seasoning",
+  "subcategory": "seasoning",
+  "nutrition_per_100g": {
+    "calories": 53,
+    "protein": 8.6,
+    "fat": 0.1,
+    "carbs": 4.9,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/瓶",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "红烧",
+      "卤"
+    ],
+    "usage": [
+      "红烧",
+      "卤"
+    ]
+  },
+  "tips": [
+    "老抽用来上色，不要放太多"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "water_chestnut",
+  "name": "荸荠",
+  "name_en": "Water Chestnut",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 61,
+    "protein": 1.2,
+    "fat": 0.2,
+    "carbs": 14.2,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "冬春"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "生吃",
+      "炒",
+      "煮汤"
+    ],
+    "usage": [
+      "生吃",
+      "炒",
+      "煮汤"
+    ]
+  },
+  "tips": [
+    "荸荠要削皮后食用",
+    "可以当水果生吃"
+  ]
+}

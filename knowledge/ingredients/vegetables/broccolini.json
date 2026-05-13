@@ -1,0 +1,43 @@
+{
+  "id": "broccolini",
+  "name": "西兰苔",
+  "name_en": "Broccolini",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 35,
+    "protein": 3.5,
+    "fat": 0.4,
+    "carbs": 5.5,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/把",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "烤"
+    ],
+    "usage": [
+      "炒",
+      "烤"
+    ]
+  },
+  "tips": [
+    "西兰苔比西兰花更嫩"
+  ]
+}

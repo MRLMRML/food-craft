@@ -1,0 +1,45 @@
+{
+  "id": "mango",
+  "name": "芒果",
+  "name_en": "Mango",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 60,
+    "protein": 0.8,
+    "fat": 0.4,
+    "carbs": 15.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "夏季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "生吃",
+      "甜品",
+      "沙冰"
+    ],
+    "usage": [
+      "生吃",
+      "甜品",
+      "沙冰"
+    ]
+  },
+  "tips": [
+    "芒果要选软的，香气浓的"
+  ]
+}

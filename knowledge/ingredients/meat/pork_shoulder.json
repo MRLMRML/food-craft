@@ -1,0 +1,45 @@
+{
+  "id": "pork_shoulder",
+  "name": "梅花肉",
+  "name_en": "Pork Shoulder",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 190,
+    "protein": 17.0,
+    "fat": 13.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煎",
+      "烤"
+    ],
+    "usage": [
+      "炒",
+      "煎",
+      "烤"
+    ]
+  },
+  "tips": [
+    "梅花肉肥瘦相间，口感嫩"
+  ]
+}

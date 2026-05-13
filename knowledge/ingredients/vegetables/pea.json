@@ -1,0 +1,43 @@
+{
+  "id": "pea",
+  "name": "豌豆",
+  "name_en": "Pea",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 81,
+    "protein": 5.4,
+    "fat": 0.4,
+    "carbs": 14.5,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "春季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煮汤"
+    ],
+    "usage": [
+      "炒",
+      "煮汤"
+    ]
+  },
+  "tips": [
+    "豌豆要焯水后再炒"
+  ]
+}

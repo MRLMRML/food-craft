@@ -1,0 +1,41 @@
+{
+  "id": "spring_roll_wrapper",
+  "name": "春卷皮",
+  "name_en": "Spring Roll Wrapper",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 290,
+    "protein": 7.0,
+    "fat": 2.0,
+    "carbs": 60.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/袋",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "春季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炸春卷"
+    ],
+    "usage": [
+      "炸春卷"
+    ]
+  },
+  "tips": [
+    "春卷要包紧，炸到金黄"
+  ]
+}

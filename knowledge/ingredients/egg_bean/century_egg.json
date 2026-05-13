@@ -1,0 +1,43 @@
+{
+  "id": "century_egg",
+  "name": "皮蛋",
+  "name_en": "Century Egg",
+  "category": "egg_bean",
+  "subcategory": "egg_bean",
+  "nutrition_per_100g": {
+    "calories": 171,
+    "protein": 13.1,
+    "fat": 10.7,
+    "carbs": 4.5,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 1,
+    "max": 2,
+    "average": 2,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "凉拌",
+      "皮蛋瘦肉粥"
+    ],
+    "usage": [
+      "凉拌",
+      "皮蛋瘦肉粥"
+    ]
+  },
+  "tips": [
+    "皮蛋要切块后蘸醋吃"
+  ]
+}

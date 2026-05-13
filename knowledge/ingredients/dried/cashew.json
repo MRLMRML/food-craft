@@ -1,0 +1,43 @@
+{
+  "id": "cashew",
+  "name": "腰果",
+  "name_en": "Cashew",
+  "category": "dried",
+  "subcategory": "dried",
+  "nutrition_per_100g": {
+    "calories": 553,
+    "protein": 18.2,
+    "fat": 43.9,
+    "carbs": 30.2,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 28,
+    "max": 52,
+    "average": 40,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒菜",
+      "零食"
+    ],
+    "usage": [
+      "炒菜",
+      "零食"
+    ]
+  },
+  "tips": [
+    "腰果要最后放，保持酥脆"
+  ]
+}

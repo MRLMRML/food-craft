@@ -1,0 +1,45 @@
+{
+  "id": "beef_tripe",
+  "name": "牛肚",
+  "name_en": "Beef Tripe",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 85,
+    "protein": 14.0,
+    "fat": 3.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 21,
+    "max": 39,
+    "average": 30,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "火锅",
+      "卤",
+      "炒"
+    ],
+    "usage": [
+      "火锅",
+      "卤",
+      "炒"
+    ]
+  },
+  "tips": [
+    "牛肚要煮到软烂"
+  ]
+}

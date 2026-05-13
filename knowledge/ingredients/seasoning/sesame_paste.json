@@ -1,0 +1,43 @@
+{
+  "id": "sesame_paste",
+  "name": "芝麻酱",
+  "name_en": "Sesame Paste",
+  "category": "seasoning",
+  "subcategory": "seasoning",
+  "nutrition_per_100g": {
+    "calories": 590,
+    "protein": 17.0,
+    "fat": 52.0,
+    "carbs": 22.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/瓶",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "凉拌",
+      "火锅蘸料"
+    ],
+    "usage": [
+      "凉拌",
+      "火锅蘸料"
+    ]
+  },
+  "tips": [
+    "芝麻酱要用温水调开"
+  ]
+}

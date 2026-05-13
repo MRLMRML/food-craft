@@ -1,0 +1,45 @@
+{
+  "id": "pork_intestine",
+  "name": "猪大肠",
+  "name_en": "Pork Intestine",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 196,
+    "protein": 6.9,
+    "fat": 18.7,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "红烧",
+      "卤",
+      "炒"
+    ],
+    "usage": [
+      "红烧",
+      "卤",
+      "炒"
+    ]
+  },
+  "tips": [
+    "猪大肠要清洗干净，用醋和盐搓洗"
+  ]
+}

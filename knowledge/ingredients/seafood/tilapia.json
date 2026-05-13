@@ -1,0 +1,45 @@
+{
+  "id": "tilapia",
+  "name": "罗非鱼",
+  "name_en": "Tilapia",
+  "category": "seafood",
+  "subcategory": "seafood",
+  "nutrition_per_100g": {
+    "calories": 96,
+    "protein": 18.7,
+    "fat": 1.5,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/条",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "红烧",
+      "煎",
+      "烤"
+    ],
+    "usage": [
+      "红烧",
+      "煎",
+      "烤"
+    ]
+  },
+  "tips": [
+    "罗非鱼要去腥线"
+  ]
+}

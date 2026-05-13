@@ -1,20 +1,20 @@
 {
-  "id": "shrimp",
-  "name": "基围虾",
-  "name_en": "Shrimp",
-  "category": "seafood",
-  "subcategory": "seafood",
+  "id": "winter_gourd",
+  "name": "冬瓜",
+  "name_en": "Winter Gourd",
+  "category": "vegetables",
+  "subcategory": "vegetables",
   "nutrition_per_100g": {
-    "calories": 101,
-    "protein": 18.6,
-    "fat": 1.3,
-    "carbs": 3.9,
+    "calories": 12,
+    "protein": 0.4,
+    "fat": 0.2,
+    "carbs": 2.6,
     "fiber": 0
   },
   "price_range": {
-    "min": 24,
-    "max": 45,
-    "average": 35,
+    "min": 1,
+    "max": 2,
+    "average": 2,
     "unit": "元/斤",
     "last_updated": "2024-01-15"
   },
@@ -29,17 +29,15 @@
   "cuts": [],
   "pairing": {
     "classic": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "炖汤",
+      "红烧"
     ],
     "usage": [
-      "白灼",
-      "油焖",
-      "椒盐"
+      "炖汤",
+      "红烧"
     ]
   },
   "tips": [
-    "虾要挑虾线，白灼要煮3分钟"
+    "冬瓜炖汤要带皮，更清热"
   ]
 }

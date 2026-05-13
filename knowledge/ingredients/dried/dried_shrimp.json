@@ -1,0 +1,45 @@
+{
+  "id": "dried_shrimp",
+  "name": "虾米",
+  "name_en": "Dried Shrimp",
+  "category": "dried",
+  "subcategory": "dried",
+  "nutrition_per_100g": {
+    "calories": 250,
+    "protein": 50.0,
+    "fat": 2.0,
+    "carbs": 5.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 28,
+    "max": 52,
+    "average": 40,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒菜",
+      "煮汤",
+      "馅料"
+    ],
+    "usage": [
+      "炒菜",
+      "煮汤",
+      "馅料"
+    ]
+  },
+  "tips": [
+    "虾米要泡软后使用，泡的水可以当高汤"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sugar",
+  "name": "白糖",
+  "name_en": "Sugar",
+  "category": "seasoning",
+  "subcategory": "seasoning",
+  "nutrition_per_100g": {
+    "calories": 400,
+    "protein": 0,
+    "fat": 0,
+    "carbs": 100,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒菜",
+      "甜品",
+      "腌制"
+    ],
+    "usage": [
+      "炒菜",
+      "甜品",
+      "腌制"
+    ]
+  },
+  "tips": [
+    "炒糖色要用冰糖，更容易操作"
+  ]
+}

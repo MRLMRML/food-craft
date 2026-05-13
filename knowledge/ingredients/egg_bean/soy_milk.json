@@ -1,0 +1,41 @@
+{
+  "id": "soy_milk",
+  "name": "豆浆",
+  "name_en": "Soy Milk",
+  "category": "egg_bean",
+  "subcategory": "egg_bean",
+  "nutrition_per_100g": {
+    "calories": 31,
+    "protein": 2.9,
+    "fat": 1.6,
+    "carbs": 1.2,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 2,
+    "max": 3,
+    "average": 3,
+    "unit": "元/杯",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "直接饮用"
+    ],
+    "usage": [
+      "直接饮用"
+    ]
+  },
+  "tips": [
+    "豆浆要煮熟，不能生喝"
+  ]
+}

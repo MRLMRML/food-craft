@@ -1,0 +1,43 @@
+{
+  "id": "lamb_shoulder",
+  "name": "羊肩肉",
+  "name_en": "Lamb Shoulder",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 210,
+    "protein": 16.0,
+    "fat": 16.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 38,
+    "max": 71,
+    "average": 55,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "秋冬"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炖",
+      "烤"
+    ],
+    "usage": [
+      "炖",
+      "烤"
+    ]
+  },
+  "tips": [
+    "羊肩肉适合慢炖"
+  ]
+}

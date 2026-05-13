@@ -1,0 +1,43 @@
+{
+  "id": "spaghetti",
+  "name": "意面",
+  "name_en": "Spaghetti",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 131,
+    "protein": 5.0,
+    "fat": 0.6,
+    "carbs": 27.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/袋",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煮",
+      "炒"
+    ],
+    "usage": [
+      "煮",
+      "炒"
+    ]
+  },
+  "tips": [
+    "意面要煮到al dente（有嚼劲）"
+  ]
+}

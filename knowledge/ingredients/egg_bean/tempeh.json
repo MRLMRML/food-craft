@@ -1,0 +1,43 @@
+{
+  "id": "tempeh",
+  "name": "豆豉",
+  "name_en": "Tempeh",
+  "category": "egg_bean",
+  "subcategory": "egg_bean",
+  "nutrition_per_100g": {
+    "calories": 200,
+    "protein": 24.0,
+    "fat": 8.0,
+    "carbs": 18.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/袋",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒菜",
+      "蒸排骨"
+    ],
+    "usage": [
+      "炒菜",
+      "蒸排骨"
+    ]
+  },
+  "tips": [
+    "豆豉要剁碎使用"
+  ]
+}

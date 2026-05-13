@@ -1,0 +1,43 @@
+{
+  "id": "dried_lily",
+  "name": "百合干",
+  "name_en": "Dried Lily",
+  "category": "dried",
+  "subcategory": "dried",
+  "nutrition_per_100g": {
+    "calories": 340,
+    "protein": 8.0,
+    "fat": 0.5,
+    "carbs": 78.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 21,
+    "max": 39,
+    "average": 30,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煮粥",
+      "甜品"
+    ],
+    "usage": [
+      "煮粥",
+      "甜品"
+    ]
+  },
+  "tips": [
+    "百合干要泡发后使用"
+  ]
+}

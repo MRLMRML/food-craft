@@ -1,0 +1,45 @@
+{
+  "id": "beef_tongue",
+  "name": "牛舌",
+  "name_en": "Beef Tongue",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 225,
+    "protein": 14.9,
+    "fat": 18.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 35,
+    "max": 65,
+    "average": 50,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "烤",
+      "卤",
+      "煎"
+    ],
+    "usage": [
+      "烤",
+      "卤",
+      "煎"
+    ]
+  },
+  "tips": [
+    "牛舌要煮熟后切片"
+  ]
+}

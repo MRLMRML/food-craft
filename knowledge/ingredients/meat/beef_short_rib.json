@@ -1,0 +1,43 @@
+{
+  "id": "beef_short_rib",
+  "name": "牛小排",
+  "name_en": "Beef Short Rib",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 290,
+    "protein": 17.0,
+    "fat": 24.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 56,
+    "max": 104,
+    "average": 80,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煎",
+      "烤"
+    ],
+    "usage": [
+      "煎",
+      "烤"
+    ]
+  },
+  "tips": [
+    "牛小排要煎到5分熟最好吃"
+  ]
+}

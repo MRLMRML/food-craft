@@ -1,0 +1,45 @@
+{
+  "id": "lily_bulb",
+  "name": "百合",
+  "name_en": "Lily Bulb",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 162,
+    "protein": 3.2,
+    "fat": 0.1,
+    "carbs": 38.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "秋季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "煮汤",
+      "甜品"
+    ],
+    "usage": [
+      "炒",
+      "煮汤",
+      "甜品"
+    ]
+  },
+  "tips": [
+    "鲜百合要最后放，保持脆感"
+  ]
+}

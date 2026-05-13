@@ -1,0 +1,43 @@
+{
+  "id": "duck_egg",
+  "name": "鸭蛋",
+  "name_en": "Duck Egg",
+  "category": "egg_bean",
+  "subcategory": "egg_bean",
+  "nutrition_per_100g": {
+    "calories": 180,
+    "protein": 12.6,
+    "fat": 13.0,
+    "carbs": 3.1,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 1,
+    "max": 2,
+    "average": 2,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "腌制",
+      "蒸"
+    ],
+    "usage": [
+      "腌制",
+      "蒸"
+    ]
+  },
+  "tips": [
+    "咸鸭蛋要腌制20天"
+  ]
+}

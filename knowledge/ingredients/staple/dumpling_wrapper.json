@@ -1,0 +1,43 @@
+{
+  "id": "dumpling_wrapper",
+  "name": "饺子皮",
+  "name_en": "Dumpling Wrapper",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 280,
+    "protein": 8.0,
+    "fat": 1.5,
+    "carbs": 58.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "包饺子",
+      "包馄饨"
+    ],
+    "usage": [
+      "包饺子",
+      "包馄饨"
+    ]
+  },
+  "tips": [
+    "饺子皮要薄，馅要包紧"
+  ]
+}

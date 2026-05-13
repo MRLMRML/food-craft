@@ -1,0 +1,45 @@
+{
+  "id": "chicken_feet",
+  "name": "鸡爪",
+  "name_en": "Chicken Feet",
+  "category": "meat",
+  "subcategory": "meat",
+  "nutrition_per_100g": {
+    "calories": 215,
+    "protein": 19.4,
+    "fat": 14.6,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "卤",
+      "泡椒",
+      "炖汤"
+    ],
+    "usage": [
+      "卤",
+      "泡椒",
+      "炖汤"
+    ]
+  },
+  "tips": [
+    "鸡爪要剪指甲，卤到软烂"
+  ]
+}

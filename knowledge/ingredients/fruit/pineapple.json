@@ -1,0 +1,45 @@
+{
+  "id": "pineapple",
+  "name": "菠萝",
+  "name_en": "Pineapple",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 50,
+    "protein": 0.5,
+    "fat": 0.1,
+    "carbs": 13.1,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/个",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "夏季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "生吃",
+      "炒饭",
+      "甜品"
+    ],
+    "usage": [
+      "生吃",
+      "炒饭",
+      "甜品"
+    ]
+  },
+  "tips": [
+    "菠萝要用盐水泡30分钟"
+  ]
+}

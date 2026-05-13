@@ -1,0 +1,46 @@
+{
+  "id": "asparagus",
+  "name": "芦笋",
+  "name_en": "Asparagus",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 20,
+    "protein": 2.2,
+    "fat": 0.2,
+    "carbs": 3.9,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/把",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "春季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "烤",
+      "白灼"
+    ],
+    "usage": [
+      "炒",
+      "烤",
+      "白灼"
+    ]
+  },
+  "tips": [
+    "芦笋要去掉老根",
+    "白灼芦笋要焯水30秒"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "quail_egg",
+  "name": "鹌鹑蛋",
+  "name_en": "Quail Egg",
+  "category": "egg_bean",
+  "subcategory": "egg_bean",
+  "nutrition_per_100g": {
+    "calories": 160,
+    "protein": 12.8,
+    "fat": 11.1,
+    "carbs": 0.4,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "卤",
+      "红烧",
+      "煮汤"
+    ],
+    "usage": [
+      "卤",
+      "红烧",
+      "煮汤"
+    ]
+  },
+  "tips": [
+    "鹌鹑蛋要冷水下锅煮"
+  ]
+}

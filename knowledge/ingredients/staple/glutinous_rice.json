@@ -1,0 +1,45 @@
+{
+  "id": "glutinous_rice",
+  "name": "糯米",
+  "name_en": "Glutinous Rice",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 345,
+    "protein": 7.3,
+    "fat": 1.0,
+    "carbs": 78.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 4,
+    "max": 7,
+    "average": 6,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "粽子",
+      "糯米饭",
+      "汤圆"
+    ],
+    "usage": [
+      "粽子",
+      "糯米饭",
+      "汤圆"
+    ]
+  },
+  "tips": [
+    "糯米要提前浸泡4小时"
+  ]
+}

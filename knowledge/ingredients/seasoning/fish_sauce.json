@@ -1,0 +1,43 @@
+{
+  "id": "fish_sauce",
+  "name": "鱼露",
+  "name_en": "Fish Sauce",
+  "category": "seasoning",
+  "subcategory": "seasoning",
+  "nutrition_per_100g": {
+    "calories": 35,
+    "protein": 5.0,
+    "fat": 0,
+    "carbs": 3.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/瓶",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "东南亚菜",
+      "凉拌"
+    ],
+    "usage": [
+      "东南亚菜",
+      "凉拌"
+    ]
+  },
+  "tips": [
+    "鱼露很咸，要少放"
+  ]
+}

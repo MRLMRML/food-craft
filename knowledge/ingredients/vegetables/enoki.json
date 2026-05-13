@@ -1,0 +1,45 @@
+{
+  "id": "enoki",
+  "name": "金针菇",
+  "name_en": "Enoki Mushroom",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 37,
+    "protein": 2.7,
+    "fat": 0.4,
+    "carbs": 7.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/袋",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "火锅",
+      "炒",
+      "凉拌"
+    ],
+    "usage": [
+      "火锅",
+      "炒",
+      "凉拌"
+    ]
+  },
+  "tips": [
+    "金针菇要煮熟，生吃有毒"
+  ]
+}

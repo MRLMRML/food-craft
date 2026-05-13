@@ -1,0 +1,46 @@
+{
+  "id": "bamboo_shoot",
+  "name": "竹笋",
+  "name_en": "Bamboo Shoot",
+  "category": "vegetables",
+  "subcategory": "vegetables",
+  "nutrition_per_100g": {
+    "calories": 27,
+    "protein": 2.6,
+    "fat": 0.2,
+    "carbs": 5.1,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": false,
+    "best_season": "春季"
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "炒",
+      "炖",
+      "凉拌"
+    ],
+    "usage": [
+      "炒",
+      "炖",
+      "凉拌"
+    ]
+  },
+  "tips": [
+    "竹笋要焯水去涩味",
+    "春笋最嫩"
+  ]
+}

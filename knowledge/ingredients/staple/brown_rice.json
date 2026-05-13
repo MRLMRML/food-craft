@@ -1,0 +1,43 @@
+{
+  "id": "brown_rice",
+  "name": "糙米",
+  "name_en": "Brown Rice",
+  "category": "staple",
+  "subcategory": "staple",
+  "nutrition_per_100g": {
+    "calories": 348,
+    "protein": 7.4,
+    "fat": 2.7,
+    "carbs": 72.9,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏3-5天",
+    "tips": "按照食材特性保存"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": [
+      "煮饭",
+      "煮粥"
+    ],
+    "usage": [
+      "煮饭",
+      "煮粥"
+    ]
+  },
+  "tips": [
+    "糙米要浸泡2小时，口感更好"
+  ]
+}
