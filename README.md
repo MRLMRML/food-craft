@@ -4,8 +4,10 @@
 
 [![GitHub Pages](https://img.shields.io/badge/Demo-🌐%20在线预览-blue)](https://mrlmrml.github.io/food-craft/)
 [![Update Knowledge Base](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml/badge.svg)](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml)
-[![Ingredients](https://img.shields.io/badge/食材-1000+-green)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/ingredients)
-[![Cuisines](https://img.shields.io/badge/菜系-25+-orange)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/cuisines)
+[![Recipes](https://img.shields.io/badge/菜谱-1744+-red)](https://github.com/MRLMRML/food-craft/tree/main/recipes)
+[![Ingredients](https://img.shields.io/badge/食材-1025+-green)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/ingredients)
+[![Cuisines](https://img.shields.io/badge/菜系-39+-orange)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/cuisines)
+[![Scenes](https://img.shields.io/badge/场景-5-purple)](https://github.com/MRLMRML/food-craft/tree/main/scenes)
 
 ---
 
@@ -24,10 +26,13 @@ Demo 展示了一个完整的菜谱输出示例，包括：
 ## ✨ 特性
 
 - 🎯 **高度定制化** - 根据人数、场景、预算、热量等多维度需求生成菜谱
-- 🌍 **全球菜系** - 涵盖 25+ 菜系，从川菜到法餐，从日料到墨西哥菜
-- 🥗 **1000+ 食材** - 全球食材数据库，涵盖蔬菜、肉类、海鲜、调味料等
+- 🌍 **全球菜系** - 涵盖 39 种菜系，从川菜到法餐，从日料到墨西哥菜
+- 🥗 **1744+ 菜谱** - 覆盖中国菜、国际菜、场景菜谱
+- 🥬 **1025+ 食材** - 全球食材数据库，涵盖蔬菜、肉类、海鲜、调味料等
+- 🎯 **5 种场景** - 儿童餐、老人餐、减脂餐、增肌餐、素食餐
 - 💰 **预算控制** - 实时价格数据，人均成本精确到元
 - ⏱️ **时间规划** - 多道菜并行烹饪的时间线
+- 🛒 **采购清单** - 自动生成购物清单，不错过任何食材
 - 🛒 **采购清单** - 自动生成购物清单，不错过任何食材
 
 ---
@@ -117,18 +122,44 @@ food-craft/
 ├── frontend/
 │   └── index.html                    # Demo 页面
 ├── knowledge/                        # 知识库
-│   ├── cuisines/                     # 25+ 菜系
-│   ├── ingredients/                  # 1000+ 食材
+│   ├── cuisines/                     # 39 种菜系
+│   ├── ingredients/                  # 1025 种食材
 │   ├── techniques/                   # 烹饪技法
 │   ├── pairing_rules.json            # 搭配规则
 │   ├── nutrition_db.json             # 营养数据
 │   ├── price_index.json              # 价格指数
 │   └── seasonal_calendar.json        # 时令食材
-├── scripts/                          # 更新脚本
-│   ├── generate_*.py                 # 食材生成脚本
-│   ├── update_*.py                   # 数据更新脚本
+├── recipes/                          # 菜谱库（1744+ 道）
+│   ├── chinese/                      # 中国菜系菜谱
+│   ├── japanese/                     # 日本料理
+│   ├── korean/                       # 韩国料理
+│   ├── thai/                         # 泰国菜
+│   ├── french/                       # 法国菜
+│   ├── italian/                      # 意大利菜
+│   ├── ...                           # 更多菜系
+│   ├── children/                     # 儿童餐
+│   ├── elderly/                      # 老人餐
+│   ├── weight_loss/                  # 减脂餐
+│   ├── muscle_gain/                  # 增肌餐
+│   └── vegetarian/                   # 素食餐
+├── scenes/                           # 场景规则
+│   ├── children.json                 # 儿童餐规则
+│   ├── elderly.json                  # 老人餐规则
+│   ├── weight_loss.json              # 减脂餐规则
+│   ├── muscle_gain.json              # 增肌餐规则
+│   └── vegetarian.json               # 素食餐规则
+├── data/
+│   └── recipes.db                    # SQLite 数据库
+├── scripts/                          # 脚本
+│   ├── crawl_recipes.py              # 菜谱爬取
+│   ├── generate_recipes.py           # 菜谱生成
+│   ├── batch_generate_recipes.py     # 批量生成
+│   ├── generate_international_recipes.py  # 国际菜系
+│   ├── generate_scene_recipes.py     # 场景菜谱
+│   ├── setup_database.py             # 数据库初始化
 │   └── validate_knowledge.py         # 数据校验
 └── .github/workflows/                # GitHub Actions
+    ├── deploy-pages.yml              # 页面部署
     ├── update_weekly.yml             # 每周更新
     └── update_monthly.yml            # 每月更新
 ```
@@ -155,9 +186,11 @@ food-craft/
 
 | 类别 | 数量 |
 |------|------|
-| 菜系 | 25+ |
-| 食材 | 1000+ |
-| 烹饪技法 | 10+ |
+| 菜谱 | 1744+ |
+| 食材 | 1025+ |
+| 菜系 | 39+ |
+| 场景 | 5 |
+| 烹饪技法 | 15+ |
 | 调味料 | 50+ |
 | 搭配规则 | 20+ |
 
