@@ -1,0 +1,61 @@
+{
+  "id": "duck_garlic_yunnan_1",
+  "name": "蒜蓉鸭肉",
+  "cuisine": "yunnan",
+  "category": "meat",
+  "difficulty": "easy",
+  "time_minutes": 14,
+  "servings": 4,
+  "calories_per_serving": 251,
+  "cost_per_serving": 30,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "鸭肉",
+      "amount": "200g",
+      "type": "duck"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸭肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用蒜蓉的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "蒜蓉要炒香但不能炒糊"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 15.5,
+    "fat": 19.7,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.751118"
+}

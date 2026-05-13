@@ -1,0 +1,61 @@
+{
+  "id": "duck_fish_flavor_anhui_0",
+  "name": "鱼香鸭肉",
+  "cuisine": "anhui",
+  "category": "meat",
+  "difficulty": "medium",
+  "time_minutes": 24,
+  "servings": 2,
+  "calories_per_serving": 222,
+  "cost_per_serving": 26,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "鸭肉",
+      "amount": "500g",
+      "type": "duck"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸭肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用鱼香的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "鱼香汁的比例是关键"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 15.5,
+    "fat": 19.7,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.718519"
+}

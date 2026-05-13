@@ -1,0 +1,66 @@
+{
+  "id": "carrot_soup_sichuan_1",
+  "name": "胡萝卜汤",
+  "cuisine": "sichuan",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 26,
+  "servings": 4,
+  "calories_per_serving": 35,
+  "cost_per_serving": 4,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "胡萝卜",
+      "amount": "500g",
+      "type": "carrot"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "胡萝卜洗净切块",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "锅中加水，放入食材和姜片",
+      "tip": "冷水下锅"
+    },
+    {
+      "step": 3,
+      "content": "大火烧开，转小火炖30分钟",
+      "tip": "小火慢炖"
+    },
+    {
+      "step": 4,
+      "content": "加盐调味，撒葱花出锅",
+      "tip": "盐最后放"
+    }
+  ],
+  "key_points": [
+    "小火慢炖，汤更鲜美"
+  ],
+  "nutrition": {
+    "calories": 41,
+    "protein": 0.9,
+    "fat": 0.2,
+    "carbs": 9.6
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.638243"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "lotus_root_cold_hunan_0",
+  "name": "凉拌莲藕",
+  "cuisine": "hunan",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 8,
+  "servings": 4,
+  "calories_per_serving": 116,
+  "cost_per_serving": 14,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "莲藕",
+      "amount": "300g",
+      "type": "lotus_root"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    },
+    {
+      "name": "蒜末",
+      "amount": "适量"
+    },
+    {
+      "name": "醋",
+      "amount": "2勺"
+    },
+    {
+      "name": "生抽",
+      "amount": "1勺"
+    },
+    {
+      "name": "辣椒油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "莲藕洗净切好",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "焯水后过冷水",
+      "tip": "过冷水保持脆感"
+    },
+    {
+      "step": 3,
+      "content": "加入调味料拌匀",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "焯水时间不要太长，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 74,
+    "protein": 2.6,
+    "fat": 0.1,
+    "carbs": 17.2
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.681384"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "lotus_root_garlic_shandong_1",
+  "name": "蒜蓉莲藕",
+  "cuisine": "shandong",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 14,
+  "servings": 4,
+  "calories_per_serving": 63,
+  "cost_per_serving": 10,
+  "tags": [
+    "素菜",
+    "素食",
+    "清淡"
+  ],
+  "ingredients": [
+    {
+      "name": "莲藕",
+      "amount": "500g",
+      "type": "lotus_root"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "莲藕处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用蒜蓉的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "蒜蓉要炒香但不能炒糊"
+  ],
+  "nutrition": {
+    "calories": 74,
+    "protein": 2.6,
+    "fat": 0.1,
+    "carbs": 17.2
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.670354"
+}

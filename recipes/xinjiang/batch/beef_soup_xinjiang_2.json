@@ -1,0 +1,66 @@
+{
+  "id": "beef_soup_xinjiang_2",
+  "name": "牛肉汤",
+  "cuisine": "xinjiang",
+  "category": "meat",
+  "difficulty": "easy",
+  "time_minutes": 29,
+  "servings": 2,
+  "calories_per_serving": 287,
+  "cost_per_serving": 52,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "牛肉",
+      "amount": "200g",
+      "type": "beef"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "牛肉洗净切块",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "锅中加水，放入食材和姜片",
+      "tip": "冷水下锅"
+    },
+    {
+      "step": 3,
+      "content": "大火烧开，转小火炖30分钟",
+      "tip": "小火慢炖"
+    },
+    {
+      "step": 4,
+      "content": "加盐调味，撒葱花出锅",
+      "tip": "盐最后放"
+    }
+  ],
+  "key_points": [
+    "小火慢炖，汤更鲜美"
+  ],
+  "nutrition": {
+    "calories": 250,
+    "protein": 26,
+    "fat": 15,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.738280"
+}

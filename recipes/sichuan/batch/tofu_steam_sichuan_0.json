@@ -1,0 +1,78 @@
+{
+  "id": "tofu_steam_sichuan_0",
+  "name": "清蒸豆腐",
+  "cuisine": "sichuan",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 16,
+  "servings": 2,
+  "calories_per_serving": 63,
+  "cost_per_serving": 12,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "豆腐",
+      "amount": "200g",
+      "type": "tofu"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    },
+    {
+      "name": "姜丝",
+      "amount": "适量"
+    },
+    {
+      "name": "葱丝",
+      "amount": "适量"
+    },
+    {
+      "name": "蒸鱼豉油",
+      "amount": "2勺"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆腐处理干净，放盘中",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "铺上姜丝，水开后蒸8-10分钟",
+      "tip": "水开后再放"
+    },
+    {
+      "step": 3,
+      "content": "倒掉蒸出的水，铺上葱丝",
+      "tip": "蒸出的水有腥味"
+    },
+    {
+      "step": 4,
+      "content": "淋上蒸鱼豉油，浇热油",
+      "tip": "油要烧热"
+    }
+  ],
+  "key_points": [
+    "蒸的时间要准确，不要过久"
+  ],
+  "nutrition": {
+    "calories": 76,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 2.8
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.642662"
+}

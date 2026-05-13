@@ -1,0 +1,61 @@
+{
+  "id": "eggplant_spicy_cantonese_0",
+  "name": "麻辣茄子",
+  "cuisine": "cantonese",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 11,
+  "servings": 2,
+  "calories_per_serving": 14,
+  "cost_per_serving": 3,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "茄子",
+      "amount": "500g",
+      "type": "eggplant"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "茄子处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用麻辣的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花椒要炒出香味"
+  ],
+  "nutrition": {
+    "calories": 25,
+    "protein": 1,
+    "fat": 0.2,
+    "carbs": 5.7
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.649248"
+}

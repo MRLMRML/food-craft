@@ -1,0 +1,61 @@
+{
+  "id": "fish_boil_jiangsu_1",
+  "name": "水煮鱼肉",
+  "cuisine": "jiangsu",
+  "category": "meat",
+  "difficulty": "easy",
+  "time_minutes": 27,
+  "servings": 2,
+  "calories_per_serving": 117,
+  "cost_per_serving": 34,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "鱼肉",
+      "amount": "300g",
+      "type": "fish"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鱼肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用煮的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好火候"
+  ],
+  "nutrition": {
+    "calories": 104,
+    "protein": 18.4,
+    "fat": 3.4,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.683890"
+}

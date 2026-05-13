@@ -1,0 +1,61 @@
+{
+  "id": "green_bean_fry_shandong_3",
+  "name": "干炸豆角",
+  "cuisine": "shandong",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 14,
+  "servings": 2,
+  "calories_per_serving": 49,
+  "cost_per_serving": 11,
+  "tags": [
+    "下饭",
+    "开胃",
+    "重口味"
+  ],
+  "ingredients": [
+    {
+      "name": "豆角",
+      "amount": "500g",
+      "type": "green_bean"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆角处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炸的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "油温要够，炸到金黄"
+  ],
+  "nutrition": {
+    "calories": 31,
+    "protein": 1.8,
+    "fat": 0.1,
+    "carbs": 7
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.668867"
+}

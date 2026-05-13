@@ -1,0 +1,87 @@
+{
+  "id": "tomato_braise_jiangsu_3",
+  "name": "红烧番茄",
+  "cuisine": "jiangsu",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 40,
+  "servings": 4,
+  "calories_per_serving": 22,
+  "cost_per_serving": 12,
+  "tags": [
+    "素菜",
+    "素食",
+    "清淡"
+  ],
+  "ingredients": [
+    {
+      "name": "番茄",
+      "amount": "500g",
+      "type": "tomato"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    },
+    {
+      "name": "生抽",
+      "amount": "2勺"
+    },
+    {
+      "name": "老抽",
+      "amount": "1勺"
+    },
+    {
+      "name": "料酒",
+      "amount": "1勺"
+    },
+    {
+      "name": "冰糖",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "番茄焯水去腥",
+      "tip": "冷水下锅"
+    },
+    {
+      "step": 2,
+      "content": "锅中放油，炒糖色",
+      "tip": "小火炒冰糖"
+    },
+    {
+      "step": 3,
+      "content": "放入番茄翻炒上色",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "加入调味料和水，炖煮20分钟",
+      "tip": "小火慢炖"
+    },
+    {
+      "step": 5,
+      "content": "大火收汁，出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "糖色要炒好，小火慢炖"
+  ],
+  "nutrition": {
+    "calories": 18,
+    "protein": 0.9,
+    "fat": 0.2,
+    "carbs": 3.9
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.685924"
+}

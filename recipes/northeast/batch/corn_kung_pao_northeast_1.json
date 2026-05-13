@@ -1,0 +1,61 @@
+{
+  "id": "corn_kung_pao_northeast_1",
+  "name": "宫保玉米",
+  "cuisine": "northeast",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 17,
+  "servings": 4,
+  "calories_per_serving": 83,
+  "cost_per_serving": 6,
+  "tags": [
+    "凉菜",
+    "开胃",
+    "爽口"
+  ],
+  "ingredients": [
+    {
+      "name": "玉米",
+      "amount": "500g",
+      "type": "corn"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "玉米处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用宫保的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花生最后放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 86,
+    "protein": 3.3,
+    "fat": 1.4,
+    "carbs": 19
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.735083"
+}

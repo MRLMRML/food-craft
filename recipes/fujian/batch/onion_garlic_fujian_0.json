@@ -1,0 +1,61 @@
+{
+  "id": "onion_garlic_fujian_0",
+  "name": "蒜蓉洋葱",
+  "cuisine": "fujian",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 10,
+  "servings": 4,
+  "calories_per_serving": 37,
+  "cost_per_serving": 4,
+  "tags": [
+    "汤品",
+    "营养",
+    "暖胃"
+  ],
+  "ingredients": [
+    {
+      "name": "洋葱",
+      "amount": "300g",
+      "type": "onion"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "洋葱处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用蒜蓉的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "蒜蓉要炒香但不能炒糊"
+  ],
+  "nutrition": {
+    "calories": 40,
+    "protein": 1.1,
+    "fat": 0.1,
+    "carbs": 9.3
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.714774"
+}

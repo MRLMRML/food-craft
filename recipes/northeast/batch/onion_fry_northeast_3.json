@@ -1,0 +1,61 @@
+{
+  "id": "onion_fry_northeast_3",
+  "name": "干炸洋葱",
+  "cuisine": "northeast",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 24,
+  "servings": 4,
+  "calories_per_serving": 79,
+  "cost_per_serving": 5,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "洋葱",
+      "amount": "500g",
+      "type": "onion"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "洋葱处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炸的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "油温要够，炸到金黄"
+  ],
+  "nutrition": {
+    "calories": 40,
+    "protein": 1.1,
+    "fat": 0.1,
+    "carbs": 9.3
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.735733"
+}

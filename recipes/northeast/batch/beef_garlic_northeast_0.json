@@ -1,0 +1,61 @@
+{
+  "id": "beef_garlic_northeast_0",
+  "name": "蒜蓉牛肉",
+  "cuisine": "northeast",
+  "category": "meat",
+  "difficulty": "easy",
+  "time_minutes": 15,
+  "servings": 2,
+  "calories_per_serving": 288,
+  "cost_per_serving": 47,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "牛肉",
+      "amount": "300g",
+      "type": "beef"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "牛肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用蒜蓉的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "蒜蓉要炒香但不能炒糊"
+  ],
+  "nutrition": {
+    "calories": 250,
+    "protein": 26,
+    "fat": 15,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.727982"
+}

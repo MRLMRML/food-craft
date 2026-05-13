@@ -1,0 +1,61 @@
+{
+  "id": "spinach_curry_anhui_2",
+  "name": "咖喱菠菜",
+  "cuisine": "anhui",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 24,
+  "servings": 4,
+  "calories_per_serving": 23,
+  "cost_per_serving": 12,
+  "tags": [
+    "素菜",
+    "素食",
+    "清淡"
+  ],
+  "ingredients": [
+    {
+      "name": "菠菜",
+      "amount": "500g",
+      "type": "spinach"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "菠菜处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用咖喱的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "咖喱要炒香再加椰浆"
+  ],
+  "nutrition": {
+    "calories": 23,
+    "protein": 2.9,
+    "fat": 0.4,
+    "carbs": 3.6
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.722932"
+}

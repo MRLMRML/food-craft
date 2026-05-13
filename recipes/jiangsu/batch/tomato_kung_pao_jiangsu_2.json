@@ -1,0 +1,61 @@
+{
+  "id": "tomato_kung_pao_jiangsu_2",
+  "name": "宫保番茄",
+  "cuisine": "jiangsu",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 20,
+  "servings": 2,
+  "calories_per_serving": 25,
+  "cost_per_serving": 12,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "番茄",
+      "amount": "200g",
+      "type": "tomato"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "番茄处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用宫保的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花生最后放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 18,
+    "protein": 0.9,
+    "fat": 0.2,
+    "carbs": 3.9
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.685837"
+}

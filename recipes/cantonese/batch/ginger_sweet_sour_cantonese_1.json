@@ -1,0 +1,61 @@
+{
+  "id": "ginger_sweet_sour_cantonese_1",
+  "name": "糖醋姜",
+  "cuisine": "cantonese",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 18,
+  "servings": 4,
+  "calories_per_serving": 71,
+  "cost_per_serving": 6,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "姜",
+      "amount": "500g",
+      "type": "ginger"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "姜处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用糖醋的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "糖醋比例2:1"
+  ],
+  "nutrition": {
+    "calories": 80,
+    "protein": 1.8,
+    "fat": 0.8,
+    "carbs": 17.8
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.656399"
+}

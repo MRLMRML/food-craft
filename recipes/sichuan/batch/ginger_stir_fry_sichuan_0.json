@@ -1,0 +1,74 @@
+{
+  "id": "ginger_stir_fry_sichuan_0",
+  "name": "清炒姜",
+  "cuisine": "sichuan",
+  "category": "vegetable",
+  "difficulty": "easy",
+  "time_minutes": 15,
+  "servings": 2,
+  "calories_per_serving": 76,
+  "cost_per_serving": 12,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "姜",
+      "amount": "500g",
+      "type": "ginger"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    },
+    {
+      "name": "蒜",
+      "amount": "3瓣"
+    },
+    {
+      "name": "生抽",
+      "amount": "1勺"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "姜洗净切好",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "锅中放油，蒜末爆香",
+      "tip": "小火炒蒜"
+    },
+    {
+      "step": 3,
+      "content": "放入姜大火翻炒",
+      "tip": "大火快炒"
+    },
+    {
+      "step": 4,
+      "content": "加盐调味，出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "大火快炒，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 80,
+    "protein": 1.8,
+    "fat": 0.8,
+    "carbs": 17.8
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.644710"
+}

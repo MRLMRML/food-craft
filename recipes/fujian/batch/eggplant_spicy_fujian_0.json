@@ -1,0 +1,61 @@
+{
+  "id": "eggplant_spicy_fujian_0",
+  "name": "麻辣茄子",
+  "cuisine": "fujian",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 21,
+  "servings": 4,
+  "calories_per_serving": 51,
+  "cost_per_serving": 5,
+  "tags": [
+    "素菜",
+    "素食",
+    "清淡"
+  ],
+  "ingredients": [
+    {
+      "name": "茄子",
+      "amount": "200g",
+      "type": "eggplant"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "茄子处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用麻辣的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花椒要炒出香味"
+  ],
+  "nutrition": {
+    "calories": 25,
+    "protein": 1,
+    "fat": 0.2,
+    "carbs": 5.7
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.711500"
+}

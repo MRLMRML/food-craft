@@ -1,0 +1,61 @@
+{
+  "id": "duck_fish_flavor_yunnan_2",
+  "name": "鱼香鸭肉",
+  "cuisine": "yunnan",
+  "category": "meat",
+  "difficulty": "medium",
+  "time_minutes": 18,
+  "servings": 4,
+  "calories_per_serving": 284,
+  "cost_per_serving": 29,
+  "tags": [
+    "汤品",
+    "营养",
+    "暖胃"
+  ],
+  "ingredients": [
+    {
+      "name": "鸭肉",
+      "amount": "500g",
+      "type": "duck"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸭肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用鱼香的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "鱼香汁的比例是关键"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 15.5,
+    "fat": 19.7,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.751201"
+}

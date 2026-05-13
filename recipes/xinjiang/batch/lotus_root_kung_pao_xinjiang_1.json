@@ -1,0 +1,61 @@
+{
+  "id": "lotus_root_kung_pao_xinjiang_1",
+  "name": "宫保莲藕",
+  "cuisine": "xinjiang",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 22,
+  "servings": 2,
+  "calories_per_serving": 66,
+  "cost_per_serving": 14,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "莲藕",
+      "amount": "300g",
+      "type": "lotus_root"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "莲藕处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用宫保的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花生最后放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 74,
+    "protein": 2.6,
+    "fat": 0.1,
+    "carbs": 17.2
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.746638"
+}

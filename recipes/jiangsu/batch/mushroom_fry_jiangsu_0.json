@@ -1,0 +1,61 @@
+{
+  "id": "mushroom_fry_jiangsu_0",
+  "name": "干炸蘑菇",
+  "cuisine": "jiangsu",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 18,
+  "servings": 4,
+  "calories_per_serving": 70,
+  "cost_per_serving": 14,
+  "tags": [
+    "汤品",
+    "营养",
+    "暖胃"
+  ],
+  "ingredients": [
+    {
+      "name": "蘑菇",
+      "amount": "300g",
+      "type": "mushroom"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "蘑菇处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炸的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "油温要够，炸到金黄"
+  ],
+  "nutrition": {
+    "calories": 22,
+    "protein": 3.1,
+    "fat": 0.3,
+    "carbs": 3.3
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.688499"
+}

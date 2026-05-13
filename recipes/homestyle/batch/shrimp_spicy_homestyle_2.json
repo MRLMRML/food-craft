@@ -1,0 +1,61 @@
+{
+  "id": "shrimp_spicy_homestyle_2",
+  "name": "麻辣虾",
+  "cuisine": "homestyle",
+  "category": "meat",
+  "difficulty": "medium",
+  "time_minutes": 13,
+  "servings": 2,
+  "calories_per_serving": 108,
+  "cost_per_serving": 41,
+  "tags": [
+    "汤品",
+    "营养",
+    "暖胃"
+  ],
+  "ingredients": [
+    {
+      "name": "虾",
+      "amount": "500g",
+      "type": "shrimp"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "虾处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用麻辣的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花椒要炒出香味"
+  ],
+  "nutrition": {
+    "calories": 99,
+    "protein": 20.4,
+    "fat": 1.7,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.759844"
+}

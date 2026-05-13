@@ -1,0 +1,61 @@
+{
+  "id": "tofu_spicy_anhui_0",
+  "name": "麻辣豆腐",
+  "cuisine": "anhui",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 11,
+  "servings": 2,
+  "calories_per_serving": 119,
+  "cost_per_serving": 8,
+  "tags": [
+    "凉菜",
+    "开胃",
+    "爽口"
+  ],
+  "ingredients": [
+    {
+      "name": "豆腐",
+      "amount": "500g",
+      "type": "tofu"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆腐处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用麻辣的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花椒要炒出香味"
+  ],
+  "nutrition": {
+    "calories": 76,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 2.8
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.722188"
+}

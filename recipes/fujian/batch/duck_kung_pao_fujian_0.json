@@ -1,0 +1,61 @@
+{
+  "id": "duck_kung_pao_fujian_0",
+  "name": "宫保鸭肉",
+  "cuisine": "fujian",
+  "category": "meat",
+  "difficulty": "medium",
+  "time_minutes": 16,
+  "servings": 2,
+  "calories_per_serving": 274,
+  "cost_per_serving": 23,
+  "tags": [
+    "宴客菜",
+    "有排面",
+    "硬菜"
+  ],
+  "ingredients": [
+    {
+      "name": "鸭肉",
+      "amount": "500g",
+      "type": "duck"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸭肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用宫保的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花生最后放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein": 15.5,
+    "fat": 19.7,
+    "carbs": 0
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.709499"
+}

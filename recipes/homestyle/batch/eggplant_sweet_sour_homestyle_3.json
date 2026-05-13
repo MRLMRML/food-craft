@@ -1,0 +1,61 @@
+{
+  "id": "eggplant_sweet_sour_homestyle_3",
+  "name": "糖醋茄子",
+  "cuisine": "homestyle",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 29,
+  "servings": 4,
+  "calories_per_serving": 33,
+  "cost_per_serving": 3,
+  "tags": [
+    "凉菜",
+    "开胃",
+    "爽口"
+  ],
+  "ingredients": [
+    {
+      "name": "茄子",
+      "amount": "200g",
+      "type": "eggplant"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "茄子处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用糖醋的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "糖醋比例2:1"
+  ],
+  "nutrition": {
+    "calories": 25,
+    "protein": 1,
+    "fat": 0.2,
+    "carbs": 5.7
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.761547"
+}

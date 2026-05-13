@@ -1,0 +1,61 @@
+{
+  "id": "green_bean_kung_pao_fujian_3",
+  "name": "宫保豆角",
+  "cuisine": "fujian",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 13,
+  "servings": 2,
+  "calories_per_serving": 49,
+  "cost_per_serving": 10,
+  "tags": [
+    "清淡",
+    "健康",
+    "少油"
+  ],
+  "ingredients": [
+    {
+      "name": "豆角",
+      "amount": "500g",
+      "type": "green_bean"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆角处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用宫保的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "花生最后放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 31,
+    "protein": 1.8,
+    "fat": 0.1,
+    "carbs": 7
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.714395"
+}

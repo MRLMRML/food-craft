@@ -1,0 +1,61 @@
+{
+  "id": "lotus_root_dry_fry_jiangsu_1",
+  "name": "干煸莲藕",
+  "cuisine": "jiangsu",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 23,
+  "servings": 4,
+  "calories_per_serving": 77,
+  "cost_per_serving": 17,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "莲藕",
+      "amount": "200g",
+      "type": "lotus_root"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "莲藕处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用干煸的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "煸到表面微焦才好吃"
+  ],
+  "nutrition": {
+    "calories": 74,
+    "protein": 2.6,
+    "fat": 0.1,
+    "carbs": 17.2
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.691629"
+}

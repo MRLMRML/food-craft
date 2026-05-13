@@ -1,0 +1,61 @@
+{
+  "id": "onion_roast_zhejiang_2",
+  "name": "烤洋葱",
+  "cuisine": "zhejiang",
+  "category": "vegetable",
+  "difficulty": "medium",
+  "time_minutes": 28,
+  "servings": 4,
+  "calories_per_serving": 37,
+  "cost_per_serving": 3,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "快手菜"
+  ],
+  "ingredients": [
+    {
+      "name": "洋葱",
+      "amount": "200g",
+      "type": "onion"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "洋葱处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用烤的方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "烤箱要预热，时间要准确"
+  ],
+  "nutrition": {
+    "calories": 40,
+    "protein": 1.1,
+    "fat": 0.1,
+    "carbs": 9.3
+  },
+  "source": "batch_generated",
+  "created_at": "2026-05-13T16:23:44.703482"
+}
