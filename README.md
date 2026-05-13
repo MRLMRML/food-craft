@@ -6,15 +6,24 @@
 [![Recipes](https://img.shields.io/badge/菜谱-1744+-red)](https://github.com/MRLMRML/food-craft/tree/main/recipes)
 [![Ingredients](https://img.shields.io/badge/食材-1025+-green)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/ingredients)
 [![Cuisines](https://img.shields.io/badge/菜系-39+-orange)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/cuisines)
-[![Scenes](https://img.shields.io/badge/场景-5-purple)](https://github.com/MRLMRML/food-craft/tree/main/scenes)
 
 ---
 
-## 🚀 两种使用方式
+## 🎯 项目逻辑
 
-### 方式 1：作为 AI Skill 使用（文字交互）
+```
+用户需求 → Agent读取SKILL.md → LLM生成菜谱 → 文字输出 / 网页展示
+```
 
-将 SKILL.md 安装到你的 AI Agent 技能目录：
+**两种输出方式**：
+1. **文字输出**：直接在对话中展示（默认）
+2. **网页输出**：生成HTML文件，浏览器打开查看（美化版本）
+
+---
+
+## 🚀 使用方式
+
+### 作为 AI Skill 使用
 
 ```bash
 cp SKILL.md ~/.opencode/skills/food-craft/SKILL.md
@@ -26,28 +35,11 @@ cp SKILL.md ~/.opencode/skills/food-craft/SKILL.md
 AI：好的！给你安排...
 ```
 
-### 方式 2：启动本地服务器（交互式网页）
+### 查看网页展示 Demo
 
-```bash
-git clone https://github.com/MRLMRML/food-craft.git
-cd food-craft
-python3 server.py
-```
+**👉 [在线 Demo](https://mrlmrml.github.io/food-craft/)**
 
-打开浏览器访问 `http://localhost:8080`
-
-**在线 Demo**：https://mrlmrml.github.io/food-craft/
-
----
-
-## ✨ 特性
-
-- 🎯 **高度定制化** - 根据人数、场景、预算、热量等多维度需求生成菜谱
-- 🌍 **全球菜系** - 涵盖 39 种菜系，从川菜到法餐，从日料到墨西哥菜
-- 🥗 **1744+ 菜谱** - 覆盖中国菜、国际菜、场景菜谱
-- 🥬 **1025+ 食材** - 全球食材数据库
-- 🎯 **5 种场景** - 儿童餐、老人餐、减脂餐、增肌餐、素食餐
-- 🔍 **智能搜索** - 按菜系、口味、关键词筛选
+这是 Skill 输出的美化展示版本，展示了一次完整的菜谱生成结果。
 
 ---
 
@@ -64,24 +56,11 @@ AI：给你安排川菜风格晚餐：
     预计：55分钟，¥90
 ```
 
-### 示例 2：宴客场景
+### 示例 2：输出网页版
 ```
-用户：周末请朋友吃饭，6个人，预算500
-AI：给你安排有档次的菜单：
-    - 口水鸡、拍黄瓜
-    - 红烧肉、清蒸鲈鱼
-    - 蒜蓉粉丝虾
-    预计：90分钟，¥480
-```
-
-### 示例 3：健身餐
-```
-用户：健身增肌餐，一人份，高蛋白
-AI：增肌餐安排：
-    - 黑椒牛柳（250g）
-    - 西兰花（150g）
-    - 糙米饭（100g）
-    热量：580大卡，蛋白质：42g
+用户：帮我做个晚餐，输出成网页版
+AI：好的！[生成HTML内容]
+    保存为 html 文件，用浏览器打开即可
 ```
 
 ---
@@ -90,20 +69,17 @@ AI：增肌餐安排：
 
 ```
 food-craft/
-├── SKILL.md                    # AI Skill 文档
+├── SKILL.md                    # AI Skill 文档（Agent读取）
 ├── README.md                   # 项目说明
-├── server.py                   # 本地服务器
 ├── frontend/
-│   ├── index.html              # 交互式前端
-│   └── recipes.json            # 菜谱数据
+│   └── index.html              # 网页展示模板（输出美化版本）
 ├── knowledge/                  # 知识库
-│   ├── cuisines/               # 39 种菜系
 │   ├── ingredients/            # 1025 种食材
+│   ├── cuisines/               # 39 种菜系
 │   └── ...
 ├── recipes/                    # 菜谱库（1744+ 道）
 ├── scenes/                     # 5 种场景规则
-├── scripts/                    # 数据生成脚本
-└── .github/workflows/          # GitHub Actions
+└── scripts/                    # 数据生成脚本
 ```
 
 ---
