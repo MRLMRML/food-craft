@@ -1,0 +1,111 @@
+{
+  "id": "gongbao_chicken",
+  "name": "宫保鸡丁",
+  "name_en": "Kung Pao Chicken",
+  "cuisine": "sichuan",
+  "category": "meat",
+  "difficulty": "medium",
+  "time_minutes": 25,
+  "servings": 2,
+  "calories_per_serving": 200,
+  "cost_per_serving": 15,
+  "tags": [
+    "家常菜",
+    "下饭菜",
+    "川菜"
+  ],
+  "ingredients": [
+    {
+      "name": "鸡腿肉",
+      "amount": "300g",
+      "type": "meat"
+    },
+    {
+      "name": "花生米",
+      "amount": "50g",
+      "type": "nuts"
+    },
+    {
+      "name": "干辣椒",
+      "amount": "10个",
+      "type": "spice"
+    },
+    {
+      "name": "花椒",
+      "amount": "1小把",
+      "type": "spice"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "生抽",
+      "amount": "1勺"
+    },
+    {
+      "name": "醋",
+      "amount": "2勺"
+    },
+    {
+      "name": "糖",
+      "amount": "1.5勺"
+    },
+    {
+      "name": "料酒",
+      "amount": "1勺"
+    },
+    {
+      "name": "淀粉",
+      "amount": "1勺"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸡肉切丁，加料酒、生抽、淀粉腌制15分钟",
+      "tip": "切丁大小要均匀"
+    },
+    {
+      "step": 2,
+      "content": "调碗汁：醋2勺、糖1.5勺、生抽1勺、淀粉1勺",
+      "tip": "提前调好是关键"
+    },
+    {
+      "step": 3,
+      "content": "冷油下花生，小火炸至微黄捞出",
+      "tip": "冷油下锅，小火慢炸"
+    },
+    {
+      "step": 4,
+      "content": "锅留底油，爆香干辣椒和花椒",
+      "tip": "小火！花椒炒黑会发苦"
+    },
+    {
+      "step": 5,
+      "content": "下鸡丁滑炒至变色",
+      "tip": "大火快炒"
+    },
+    {
+      "step": 6,
+      "content": "倒入碗汁，大火翻炒均匀",
+      "tip": "碗汁要搅匀再倒"
+    },
+    {
+      "step": 7,
+      "content": "关火，撒花生米，翻两下出锅",
+      "tip": "关火后再放花生，保持脆感"
+    }
+  ],
+  "key_points": [
+    "花椒要炒出香味但不能炒黑",
+    "碗汁的糖醋比是灵魂，2:1.5是黄金比例",
+    "花生最后放，关火后再放，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein": 18,
+    "fat": 12,
+    "carbs": 8
+  },
+  "source": "xiachufang",
+  "created_at": "2026-05-13T16:17:22.323012"
+}

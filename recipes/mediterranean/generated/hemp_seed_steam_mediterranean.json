@@ -1,0 +1,74 @@
+{
+  "id": "hemp_seed_steam_mediterranean",
+  "name": "清蒸火麻仁",
+  "name_en": "Steamed Hemp Seed",
+  "cuisine": "mediterranean",
+  "category": "seeds",
+  "difficulty": "easy",
+  "time_minutes": 15,
+  "servings": 2,
+  "calories_per_serving": 553,
+  "cost_per_serving": 35,
+  "tags": [
+    "清淡",
+    "健康"
+  ],
+  "ingredients": [
+    {
+      "name": "火麻仁",
+      "amount": "300g",
+      "type": "seeds"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "姜丝",
+      "amount": "适量"
+    },
+    {
+      "name": "葱丝",
+      "amount": "适量"
+    },
+    {
+      "name": "蒸鱼豉油",
+      "amount": "2勺"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "食材处理干净，放盘中",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "铺上姜丝，水开后蒸8-10分钟",
+      "tip": "水开后再放"
+    },
+    {
+      "step": 3,
+      "content": "倒掉蒸出的水，铺上葱丝",
+      "tip": "蒸出的水有腥味"
+    },
+    {
+      "step": 4,
+      "content": "淋上蒸鱼豉油，浇热油",
+      "tip": "油要烧热"
+    }
+  ],
+  "key_points": [
+    "蒸的时间要准确，不要过久"
+  ],
+  "nutrition": {
+    "calories": 553,
+    "protein": 31.6,
+    "fat": 48.8,
+    "carbs": 8.7
+  },
+  "source": "llm_generated",
+  "created_at": "2026-05-13T16:18:35.272020"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "sweet_chili_cold_dish_turkish",
+  "name": "凉拌甜辣酱",
+  "name_en": "Cold Sweet Chili",
+  "cuisine": "turkish",
+  "category": "sauce",
+  "difficulty": "easy",
+  "time_minutes": 10,
+  "servings": 2,
+  "calories_per_serving": 200,
+  "cost_per_serving": 12,
+  "tags": [
+    "凉菜",
+    "开胃"
+  ],
+  "ingredients": [
+    {
+      "name": "甜辣酱",
+      "amount": "300g",
+      "type": "sauce"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "蒜末",
+      "amount": "适量"
+    },
+    {
+      "name": "醋",
+      "amount": "2勺"
+    },
+    {
+      "name": "生抽",
+      "amount": "1勺"
+    },
+    {
+      "name": "辣椒油",
+      "amount": "适量"
+    },
+    {
+      "name": "香油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "食材洗净切好",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "焯水后过冷水",
+      "tip": "过冷水保持脆感"
+    },
+    {
+      "step": 3,
+      "content": "加入调味料拌匀",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "焯水时间不要太长，保持脆感"
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein": 0.5,
+    "fat": 0.2,
+    "carbs": 50.0
+  },
+  "source": "llm_generated",
+  "created_at": "2026-05-13T16:18:35.284881"
+}

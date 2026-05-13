@@ -1,0 +1,74 @@
+{
+  "id": "sweet_chili_steam_korean_traditional",
+  "name": "清蒸甜辣酱",
+  "name_en": "Steamed Sweet Chili",
+  "cuisine": "korean_traditional",
+  "category": "sauce",
+  "difficulty": "easy",
+  "time_minutes": 15,
+  "servings": 2,
+  "calories_per_serving": 200,
+  "cost_per_serving": 12,
+  "tags": [
+    "清淡",
+    "健康"
+  ],
+  "ingredients": [
+    {
+      "name": "甜辣酱",
+      "amount": "300g",
+      "type": "sauce"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "姜丝",
+      "amount": "适量"
+    },
+    {
+      "name": "葱丝",
+      "amount": "适量"
+    },
+    {
+      "name": "蒸鱼豉油",
+      "amount": "2勺"
+    },
+    {
+      "name": "食用油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "食材处理干净，放盘中",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "铺上姜丝，水开后蒸8-10分钟",
+      "tip": "水开后再放"
+    },
+    {
+      "step": 3,
+      "content": "倒掉蒸出的水，铺上葱丝",
+      "tip": "蒸出的水有腥味"
+    },
+    {
+      "step": 4,
+      "content": "淋上蒸鱼豉油，浇热油",
+      "tip": "油要烧热"
+    }
+  ],
+  "key_points": [
+    "蒸的时间要准确，不要过久"
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein": 0.5,
+    "fat": 0.2,
+    "carbs": 50.0
+  },
+  "source": "llm_generated",
+  "created_at": "2026-05-13T16:18:35.284883"
+}

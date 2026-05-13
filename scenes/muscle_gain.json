@@ -1,0 +1,68 @@
+{
+  "id": "muscle_gain",
+  "name": "增肌餐",
+  "name_en": "Muscle Gain Meal",
+  "description": "适合增肌期的高蛋白高热量餐，提供足够能量和蛋白质支持肌肉生长",
+  "target": "增肌期人群",
+  "rules": {
+    "nutrition": {
+      "calories_per_meal": {"min": 600, "max": 900, "unit": "大卡"},
+      "calories_per_day": {"min": 2500, "max": 3000, "unit": "大卡"},
+      "protein_per_meal": {"min": 35, "max": 50, "unit": "g"},
+      "protein_per_day": {"min": 120, "max": 180, "unit": "g"},
+      "carbs_per_meal": {"min": 60, "max": 100, "unit": "g"},
+      "fat_per_meal": {"min": 15, "max": 30, "unit": "g"}
+    },
+    "principles": {
+      "high_protein": "高蛋白（2-2.5g/kg体重）",
+      "high_carb": "适量高碳水（提供能量）",
+      "moderate_fat": "适量脂肪（激素合成）",
+      "frequent_meals": "分餐制（5-6餐/天）",
+      "post_workout": "训练后30分钟内补充蛋白质"
+    },
+    "cooking_methods_preferred": [
+      "煎（少油）",
+      "烤（少油）",
+      "炒（适量油）",
+      "炖（入味）",
+      "煮（健康）"
+    ],
+    "preferred_ingredients": [
+      "鸡胸肉（高蛋白、低脂）",
+      "牛肉（高蛋白、肌酸）",
+      "鸡蛋（优质蛋白）",
+      "鱼虾（高蛋白、易消化）",
+      "牛奶（蛋白、钙）",
+      "糙米（低GI碳水）",
+      "燕麦（高纤维碳水）",
+      "红薯（低GI碳水）",
+      "香蕉（快速碳水、钾）",
+      "坚果（健康脂肪）"
+    ],
+    "meal_timing": {
+      "breakfast": "7:00-8:00（高蛋白+碳水）",
+      "snack_1": "10:00（蛋白质+碳水）",
+      "lunch": "12:00-13:00（高蛋白+碳水+蔬菜）",
+      "snack_2": "15:00（蛋白质）",
+      "dinner": "18:00-19:00（高蛋白+蔬菜）",
+      "post_workout": "训练后30分钟（蛋白质+快速碳水）"
+    }
+  },
+  "sample_dishes": [
+    "黑椒牛柳",
+    "鸡胸肉沙拉",
+    "三文鱼配糙米",
+    "牛肉炖土豆",
+    "虾仁炒蛋",
+    "烤鸡腿",
+    "牛肉面",
+    "蛋白奶昔"
+  ],
+  "tips": [
+    "每餐都要有优质蛋白",
+    "训练后30分钟内补充蛋白质",
+    "碳水化合物选择低GI食物",
+    "不要跳过早餐",
+    "保持充足的水分摄入"
+  ]
+}

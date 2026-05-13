@@ -1,0 +1,82 @@
+{
+  "id": "weight_loss",
+  "name": "减脂餐",
+  "name_en": "Weight Loss Meal",
+  "description": "适合减脂期的低卡高蛋白餐，控制热量摄入，保持饱腹感",
+  "target": "减脂期人群",
+  "rules": {
+    "nutrition": {
+      "calories_per_meal": {"min": 300, "max": 500, "unit": "大卡"},
+      "calories_per_day": {"min": 1200, "max": 1500, "unit": "大卡"},
+      "protein_per_meal": {"min": 25, "max": 40, "unit": "g"},
+      "protein_per_day": {"min": 80, "max": 120, "unit": "g"},
+      "carbs_per_meal": {"min": 30, "max": 50, "unit": "g"},
+      "fat_per_meal": {"min": 10, "max": 20, "unit": "g"},
+      "fiber": "高纤维（增加饱腹感）"
+    },
+    "principles": {
+      "high_protein": "高蛋白（保护肌肉）",
+      "low_carb": "低碳水（促进脂肪燃烧）",
+      "low_fat": "低脂肪（减少热量摄入）",
+      "high_fiber": "高纤维（增加饱腹感）",
+      "low_gi": "低GI食物（稳定血糖）"
+    },
+    "cooking_methods_preferred": [
+      "蒸（少油）",
+      "煮（少油）",
+      "烤（少油）",
+      "凉拌（清爽）",
+      "白灼（少油）"
+    ],
+    "cooking_methods_avoid": [
+      "炸（高油）",
+      "红烧（高糖高油）",
+      "油焖（高油）",
+      "糖醋（高糖）"
+    ],
+    "avoid_ingredients": [
+      "肥肉",
+      "油炸食品",
+      "高糖食物",
+      "精制碳水（白米饭、白面包）",
+      "高热量调味料（沙拉酱、蛋黄酱）",
+      "含糖饮料",
+      "酒精"
+    ],
+    "preferred_ingredients": [
+      "鸡胸肉（高蛋白、低脂）",
+      "鱼虾（高蛋白、低脂）",
+      "瘦牛肉（高蛋白）",
+      "鸡蛋（优质蛋白）",
+      "豆腐（植物蛋白）",
+      "绿叶蔬菜（低卡、高纤维）",
+      "西兰花（低卡、高纤维）",
+      "糙米（低GI）",
+      "燕麦（高纤维）",
+      "红薯（低GI、高纤维）"
+    ],
+    "portion_control": {
+      "protein": "手掌大小",
+      "carbs": "拳头大小",
+      "vegetables": "两拳头大小",
+      "fat": "拇指大小"
+    }
+  },
+  "sample_dishes": [
+    "鸡胸肉沙拉",
+    "清蒸鲈鱼",
+    "白灼虾",
+    "西兰花炒鸡胸肉",
+    "番茄牛肉汤",
+    "凉拌黄瓜",
+    "蒸蛋羹",
+    "糙米饭"
+  ],
+  "tips": [
+    "优先选择蒸、煮、烤的烹饪方式",
+    "多吃蔬菜增加饱腹感",
+    "细嚼慢咽，每餐20分钟以上",
+    "避免晚上8点后进食",
+    "多喝水，每天2000ml以上"
+  ]
+}
