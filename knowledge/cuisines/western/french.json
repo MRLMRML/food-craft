@@ -1,0 +1,60 @@
+{
+  "id": "french",
+  "name": "法国菜",
+  "name_en": "French Cuisine",
+  "region": "法国",
+  "description": "西餐之母，讲究精致和仪式感。以酱汁、黄油、葡萄酒为灵魂，注重食材品质和烹饪技法。",
+  "flavor_profile": {
+    "primary": ["黄油", "酱汁", "酒香"],
+    "secondary": ["奶油", "香草", "松露"],
+    "characteristics": "精致典雅，酱汁丰富，注重仪式感"
+  },
+  "core_techniques": ["煎", "烤", "炖", "酱汁制作", "烘焙"],
+  "signature_dishes": [
+    {
+      "id": "coq_au_vin",
+      "name": "红酒炖鸡",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "high",
+      "popularity_score": 85,
+      "flavor": "酒香浓郁"
+    },
+    {
+      "id": "beef_bourguignon",
+      "name": "勃艮第红酒炖牛肉",
+      "difficulty": "hard",
+      "time_minutes": 180,
+      "cost_tier": "high",
+      "popularity_score": 88,
+      "flavor": "酒香浓郁"
+    },
+    {
+      "id": "ratatouille",
+      "name": "普罗旺斯炖菜",
+      "difficulty": "medium",
+      "time_minutes": 45,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "蔬菜原味"
+    },
+    {
+      "id": "french_onion_soup",
+      "name": "法式洋葱汤",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "甜鲜"
+    }
+  ],
+  "staple_pairing": ["法棍", "红酒", "奶酪"],
+  "suitable_scenarios": ["宴客", "约会", "正式场合"],
+  "common_ingredients": ["黄油", "奶油", "红酒", "百里香", "迷迭香", "大蒜"],
+  "difficulty_distribution": {
+    "easy": 0.1,
+    "medium": 0.4,
+    "hard": 0.5
+  },
+  "tips": "法国菜的精髓在于酱汁和火候。红酒炖鸡要小火慢炖，让酒香完全渗入鸡肉。洋葱汤的洋葱要炒到焦糖色。"
+}

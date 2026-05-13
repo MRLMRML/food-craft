@@ -1,0 +1,51 @@
+{
+  "id": "anhui",
+  "name": "徽菜",
+  "name_en": "Anhui Cuisine",
+  "region": "中国安徽",
+  "description": "以山珍野味为主，重油、重色、重火功。擅长烧、炖、蒸，讲究原汁原味。",
+  "flavor_profile": {
+    "primary": ["咸鲜", "酱香", "原味"],
+    "secondary": ["红烧", "腊味", "山野"],
+    "characteristics": "重油重色，火功精湛，善用山珍"
+  },
+  "core_techniques": ["红烧", "炖", "蒸", "腊味制作", "熏"],
+  "signature_dishes": [
+    {
+      "id": "mandarin_fish",
+      "name": "臭鳜鱼",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "臭香"
+    },
+    {
+      "id": "hairy_tofu",
+      "name": "毛豆腐",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "咸香"
+    },
+    {
+      "id": "li_hong_zhang_hodgepodge",
+      "name": "李鸿章杂烩",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 75,
+      "flavor": "咸鲜"
+    }
+  ],
+  "staple_pairing": ["米饭", "馒头", "烧饼"],
+  "suitable_scenarios": ["日常", "山珍爱好者"],
+  "common_ingredients": ["酱油", "料酒", "火腿", "笋", "香菇"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "徽菜讲究火功，烧、炖都要小火慢烹。臭鳜鱼的'臭'是腌制发酵的结果，闻着臭吃着香。"
+}

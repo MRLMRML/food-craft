@@ -1,0 +1,60 @@
+{
+  "id": "british",
+  "name": "英式料理",
+  "name_en": "British Cuisine",
+  "region": "英国",
+  "description": "传统英式料理以简单著称，炸鱼薯条是代表。近年发展迅速，融合了世界各地风味。",
+  "flavor_profile": {
+    "primary": ["咸鲜", "黄油", "香草"],
+    "secondary": ["芥末", "醋", "肉汁"],
+    "characteristics": "传统简单，注重食材本味"
+  },
+  "core_techniques": ["烤", "炸", "炖", "煮"],
+  "signature_dishes": [
+    {
+      "id": "fish_chips",
+      "name": "炸鱼薯条",
+      "difficulty": "easy",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香酥脆"
+    },
+    {
+      "id": "shepherds_pie",
+      "name": "牧羊人派",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    },
+    {
+      "id": "sunday_roast",
+      "name": "周日烤肉",
+      "difficulty": "medium",
+      "time_minutes": 120,
+      "cost_tier": "high",
+      "popularity_score": 80,
+      "flavor": "烤香"
+    },
+    {
+      "id": "full_english",
+      "name": "英式早餐",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["面包", "土豆", "啤酒", "红茶"],
+  "suitable_scenarios": ["日常", "早餐", "下午茶"],
+  "common_ingredients": ["土豆", "牛肉", "香肠", "黄油", "面粉"],
+  "difficulty_distribution": {
+    "easy": 0.5,
+    "medium": 0.4,
+    "hard": 0.1
+  },
+  "tips": "炸鱼薯条的面糊要酥脆，鱼肉要嫩。英式早餐要丰盛，烤豆、培根、香肠、鸡蛋都不能少。"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "malaysian",
+  "name": "马来西亚菜",
+  "name_en": "Malaysian Cuisine",
+  "region": "马来西亚",
+  "description": "融合了马来、华人、印度三大菜系的精华。口味浓郁，善用椰奶、咖喱、香料。",
+  "flavor_profile": {
+    "primary": ["咖喱", "椰香", "香辣"],
+    "secondary": ["甜辣", "酸辣", "咸香"],
+    "characteristics": "多元融合，口味浓郁，香料丰富"
+  },
+  "core_techniques": ["炒", "煮", "烤", "咖喱制作"],
+  "signature_dishes": [
+    {
+      "id": "nasi_lemak",
+      "name": "椰浆饭",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "椰香"
+    },
+    {
+      "id": "laksa",
+      "name": "叻沙",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "酸辣椰香"
+    },
+    {
+      "id": "satay",
+      "name": "沙爹",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "甜辣"
+    },
+    {
+      "id": "roti_canai",
+      "name": "印度飞饼",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["米饭", "面", "飞饼"],
+  "suitable_scenarios": ["日常", "东南亚爱好者"],
+  "common_ingredients": ["椰奶", "咖喱", "虾酱", "辣椒", "香茅", "南姜"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "马来西亚菜的特色是多元融合。椰浆饭的椰香、叻沙的酸辣、沙爹的甜辣，各有特色。"
+}

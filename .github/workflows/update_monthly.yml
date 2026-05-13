@@ -1,0 +1,44 @@
+name: Update Food Craft Knowledge Base (Monthly)
+
+on:
+  schedule:
+    # 每月1号凌晨4点更新
+    - cron: '0 20 1 * *'
+  workflow_dispatch:
+
+jobs:
+  full-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+      
+      - name: Update trending recipes
+        run: |
+          python scripts/update_trending.py
+      
+      - name: Validate all data
+        run: |
+          python scripts/validate_knowledge.py
+      
+      - name: Generate changelog
+        run: |
+          python scripts/generate_changelog.py
+      
+      - name: Commit and tag
+        run: |
+          git config user.name "Food Craft Bot"
+          git config user.email "bot@foodcraft.dev"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: monthly knowledge base update"
+          git tag "kb-$(date +%Y%m%d)"
+          git push --tags

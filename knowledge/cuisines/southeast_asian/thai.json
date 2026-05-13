@@ -1,0 +1,69 @@
+{
+  "id": "thai",
+  "name": "泰国菜",
+  "name_en": "Thai Cuisine",
+  "region": "泰国",
+  "description": "以酸辣甜为三大主味，善用椰奶、香茅、柠檬叶。口味浓郁，香气扑鼻，开胃下饭。",
+  "flavor_profile": {
+    "primary": ["酸辣", "甜辣", "椰香"],
+    "secondary": ["香茅", "柠檬", "鱼露"],
+    "characteristics": "酸辣甜平衡，香料丰富，椰奶浓郁"
+  },
+  "core_techniques": ["炒", "煮", "凉拌", "烤", "咖喱制作"],
+  "signature_dishes": [
+    {
+      "id": "pad_thai",
+      "name": "泰式炒河粉",
+      "difficulty": "medium",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "酸甜辣"
+    },
+    {
+      "id": "tom_yum",
+      "name": "冬阴功汤",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "green_curry",
+      "name": "绿咖喱",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "椰香辣味"
+    },
+    {
+      "id": "som_tam",
+      "name": "青木瓜沙拉",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "mango_sticky_rice",
+      "name": "芒果糯米饭",
+      "difficulty": "easy",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 86,
+      "flavor": "甜香"
+    }
+  ],
+  "staple_pairing": ["米饭", "河粉", "糯米饭"],
+  "suitable_scenarios": ["日常", "开胃", "东南亚爱好者"],
+  "common_ingredients": ["椰奶", "香茅", "柠檬叶", "鱼露", "辣椒", "罗勒", "青柠"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.6,
+    "hard": 0.1
+  },
+  "tips": "泰国菜的关键是酸辣甜的平衡。冬阴功汤的香茅和柠檬叶是灵魂，绿咖喱的椰奶要最后加。"
+}

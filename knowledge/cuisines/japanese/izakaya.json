@@ -1,0 +1,60 @@
+{
+  "id": "izakaya",
+  "name": "居酒屋料理",
+  "name_en": "Izakaya",
+  "region": "日本",
+  "description": "日本小酒馆的下酒菜，种类丰富，口味多样。适合朋友聚会，边喝边吃。",
+  "flavor_profile": {
+    "primary": ["咸香", "烤香", "下酒"],
+    "secondary": ["酱味", "辣味", "酸味"],
+    "characteristics": "口味偏重，适合下酒，种类多样"
+  },
+  "core_techniques": ["烤", "炸", "煮", "凉拌"],
+  "signature_dishes": [
+    {
+      "id": "yakitori",
+      "name": "烤鸡肉串",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香"
+    },
+    {
+      "id": "karaage",
+      "name": "炸鸡块",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 86,
+      "flavor": "酥脆咸香"
+    },
+    {
+      "id": "edamame",
+      "name": "毛豆",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    },
+    {
+      "id": "gyoza",
+      "name": "煎饺",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 84,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["米饭", "啤酒", "清酒"],
+  "suitable_scenarios": ["聚餐", "下酒", "朋友聚会"],
+  "common_ingredients": ["鸡肉", "猪肉", "酱油", "味醂", "七味粉"],
+  "difficulty_distribution": {
+    "easy": 0.5,
+    "medium": 0.4,
+    "hard": 0.1
+  },
+  "tips": "居酒屋料理的关键是调味和火候。烤串要用炭火，炸鸡要腌制入味，这些都是下酒的好菜。"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mexican",
+  "name": "墨西哥菜",
+  "name_en": "Mexican Cuisine",
+  "region": "墨西哥",
+  "description": "以玉米、辣椒、豆类为三大主食。口味浓郁，辣味十足，色彩鲜艳。",
+  "flavor_profile": {
+    "primary": ["辣味", "玉米", "番茄"],
+    "secondary": ["牛油果", "青柠", "香菜"],
+    "characteristics": "辣味浓郁，玉米为主，色彩丰富"
+  },
+  "core_techniques": ["烤", "炸", "煮", "炖"],
+  "signature_dishes": [
+    {
+      "id": "taco",
+      "name": "墨西哥卷饼",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "辣味多样"
+    },
+    {
+      "id": "burrito",
+      "name": "墨西哥卷",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "辣味多样"
+    },
+    {
+      "id": "enchilada",
+      "name": "安奇拉达",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "辣味番茄"
+    },
+    {
+      "id": "guacamole",
+      "name": "牛油果酱",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "清爽"
+    }
+  ],
+  "staple_pairing": ["玉米饼", "米饭", "豆类"],
+  "suitable_scenarios": ["快餐", "聚餐", "辣味爱好者"],
+  "common_ingredients": ["玉米饼", "辣椒", "番茄", "牛油果", "青柠", "香菜"],
+  "difficulty_distribution": {
+    "easy": 0.5,
+    "medium": 0.4,
+    "hard": 0.1
+  },
+  "tips": "墨西哥卷饼的灵魂是辣椒酱和牛油果酱。玉米饼要加热后才好吃，配料要新鲜。"
+}

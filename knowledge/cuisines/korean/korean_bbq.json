@@ -1,0 +1,60 @@
+{
+  "id": "korean_bbq",
+  "name": "韩式烤肉",
+  "name_en": "Korean BBQ",
+  "region": "韩国",
+  "description": "韩国最具代表性的料理方式，以烤五花肉、烤牛肉为主。讲究肉质、腌制和蘸料。",
+  "flavor_profile": {
+    "primary": ["烤香", "甜辣", "蒜香"],
+    "secondary": ["酱香", "咸鲜", "芝麻"],
+    "characteristics": "肉质鲜嫩，腌制入味，蘸料丰富"
+  },
+  "core_techniques": ["烤", "腌制", "蘸料制作"],
+  "signature_dishes": [
+    {
+      "id": "samgyeopsal",
+      "name": "烤五花肉",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "medium",
+      "popularity_score": 95,
+      "flavor": "烤香"
+    },
+    {
+      "id": "bulgogi",
+      "name": "烤牛肉",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "high",
+      "popularity_score": 90,
+      "flavor": "甜咸"
+    },
+    {
+      "id": "galbi",
+      "name": "烤牛排骨",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "high",
+      "popularity_score": 88,
+      "flavor": "甜咸"
+    },
+    {
+      "id": "dakgalbi",
+      "name": "烤鸡肉",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "辣味"
+    }
+  ],
+  "staple_pairing": ["生菜", "蒜片", "辣椒", "米饭", "烧酒"],
+  "suitable_scenarios": ["聚餐", "朋友聚会", "烤肉爱好者"],
+  "common_ingredients": ["五花肉", "牛肉", "生菜", "蒜", "辣椒", "芝麻油", "酱油"],
+  "difficulty_distribution": {
+    "easy": 0.5,
+    "medium": 0.4,
+    "hard": 0.1
+  },
+  "tips": "韩式烤肉的关键是肉的腌制和烤的火候。五花肉要烤到微焦，包着生菜吃，配上蒜片和辣椒，才是正宗吃法。"
+}

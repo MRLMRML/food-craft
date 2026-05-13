@@ -1,0 +1,69 @@
+{
+  "id": "italian",
+  "name": "意大利菜",
+  "name_en": "Italian Cuisine",
+  "region": "意大利",
+  "description": "以面食和披萨闻名世界。讲究食材简单但品质高，注重原汁原味，少用复杂调味。",
+  "flavor_profile": {
+    "primary": ["番茄", "橄榄油", "罗勒"],
+    "secondary": ["芝士", "大蒜", "黑胡椒"],
+    "characteristics": "食材简单，品质至上，番茄和橄榄油是灵魂"
+  },
+  "core_techniques": ["煮面", "烤", "炒", "炖", "制作披萨"],
+  "signature_dishes": [
+    {
+      "id": "spaghetti_carbonara",
+      "name": "培根蛋意面",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "咸香"
+    },
+    {
+      "id": "margherita_pizza",
+      "name": "玛格丽特披萨",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "番茄芝士"
+    },
+    {
+      "id": "risotto",
+      "name": "意式烩饭",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "奶油鲜美"
+    },
+    {
+      "id": "lasagna",
+      "name": "千层面",
+      "difficulty": "hard",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "番茄肉酱"
+    },
+    {
+      "id": "tiramisu",
+      "name": "提拉米苏",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 86,
+      "flavor": "咖啡酒香"
+    }
+  ],
+  "staple_pairing": ["意面", "披萨", "法棍", "红酒"],
+  "suitable_scenarios": ["日常", "约会", "宴客"],
+  "common_ingredients": ["番茄", "橄榄油", "罗勒", "大蒜", "帕玛森芝士", "黑胡椒"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "意大利菜的关键是食材品质和简单烹饪。意面要al dente（有嚼劲），披萨要用高温短时间烤制。"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lebanese",
+  "name": "黎巴嫩菜",
+  "name_en": "Lebanese Cuisine",
+  "region": "黎巴嫩",
+  "description": "中东菜系的代表，以鹰嘴豆泥、塔布勒沙拉闻名。口味清新，善用橄榄油、柠檬、香草。",
+  "flavor_profile": {
+    "primary": ["橄榄油", "柠檬", "香草"],
+    "secondary": ["大蒜", "芝麻酱", "薄荷"],
+    "characteristics": "清新健康，橄榄油为主，蔬菜丰富"
+  },
+  "core_techniques": ["烤", "煮", "凉拌", "制作酱料"],
+  "signature_dishes": [
+    {
+      "id": "hummus",
+      "name": "鹰嘴豆泥",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "咸香"
+    },
+    {
+      "id": "tabbouleh",
+      "name": "塔布勒沙拉",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "清爽"
+    },
+    {
+      "id": "falafel",
+      "name": "炸豆丸子",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    },
+    {
+      "id": "shawarma",
+      "name": "沙瓦尔玛",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "香料烤肉"
+    }
+  ],
+  "staple_pairing": ["皮塔饼", "米饭", "面包"],
+  "suitable_scenarios": ["素食", "健康饮食", "中东爱好者"],
+  "common_ingredients": ["鹰嘴豆", "橄榄油", "柠檬", "大蒜", "香菜", "薄荷"],
+  "difficulty_distribution": {
+    "easy": 0.5,
+    "medium": 0.4,
+    "hard": 0.1
+  },
+  "tips": "鹰嘴豆泥要打得细腻顺滑，橄榄油要最后淋上。塔布勒沙拉的香菜要新鲜切碎。"
+}

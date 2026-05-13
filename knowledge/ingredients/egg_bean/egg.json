@@ -1,0 +1,63 @@
+{
+  "id": "egg",
+  "name": "鸡蛋",
+  "name_en": "Egg",
+  "category": "egg_bean",
+  "subcategory": "egg",
+  "nutrition_per_100g": {
+    "calories": 144,
+    "protein": 13.3,
+    "fat": 8.8,
+    "carbs": 2.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏1个月",
+    "frozen": "不建议冷冻",
+    "tips": "大头朝上放置，保存更久"
+  },
+  "cuts": [
+    {
+      "name": "整蛋",
+      "suitable_for": ["煮", "蒸", "炒", "煎"],
+      "texture": "多样",
+      "cook_time_range": "3-10分钟"
+    },
+    {
+      "name": "蛋液",
+      "suitable_for": ["炒蛋", "蛋花汤", "蒸蛋"],
+      "texture": "嫩滑",
+      "cook_time_range": "2-5分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["番茄", "韭菜", "虾仁", "豆腐"],
+    "spicy": ["辣椒", "蒜"],
+    "sauce": ["酱油", "醋", "香油"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "鸭蛋",
+      "reason": "更大",
+      "taste_impact": "腥味略重",
+      "cook_time_change": "+1分钟"
+    }
+  ],
+  "tips": [
+    "炒蛋要大火快炒，蛋液刚凝固就出锅",
+    "蒸蛋要加温水，比例1:1.5，过筛更细腻",
+    "溏心蛋冷水下锅，煮6-7分钟"
+  ]
+}

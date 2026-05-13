@@ -1,0 +1,49 @@
+{
+  "id": "doubanjiang",
+  "name": "郫县豆瓣酱",
+  "name_en": "Pixian Doubanjiang",
+  "category": "seasoning",
+  "subcategory": "sauce",
+  "nutrition_per_100g": {
+    "calories": 120,
+    "protein": 8.0,
+    "fat": 5.0,
+    "carbs": 12.0,
+    "fiber": 3.0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 25,
+    "average": 15,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "常温避光1年",
+    "frozen": "不建议",
+    "tips": "用干净勺子取用，避免变质"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": ["川菜", "回锅肉", "麻婆豆腐", "水煮鱼"],
+    "usage": ["炒菜", "红烧", "火锅底料"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "普通豆瓣酱",
+      "reason": "更方便",
+      "taste_impact": "香味和辣度不足",
+      "cook_time_change": "无"
+    }
+  ],
+  "tips": [
+    "郫县豆瓣酱是川菜的灵魂",
+    "使用前要剁碎，更容易出味",
+    "小火炒出红油，香味更浓"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "homestyle",
+  "name": "家常菜",
+  "name_en": "Homestyle Chinese",
+  "region": "中国各地",
+  "description": "家家户户都会做的日常菜，简单实用，好吃下饭。不需要复杂的技法，但需要掌握火候和调味。",
+  "flavor_profile": {
+    "primary": ["咸鲜", "家常", "下饭"],
+    "secondary": ["微辣", "酱香", "清淡"],
+    "characteristics": "简单实用，口味适中，老少皆宜"
+  },
+  "core_techniques": ["炒", "炖", "蒸", "煮", "凉拌"],
+  "signature_dishes": [
+    {
+      "id": "tomato_egg",
+      "name": "番茄炒蛋",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 95,
+      "flavor": "咸鲜微甜"
+    },
+    {
+      "id": "stir_fried_potato",
+      "name": "酸辣土豆丝",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "braised_eggplant",
+      "name": "红烧茄子",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香"
+    },
+    {
+      "id": "scrambled_egg",
+      "name": "蒜苗炒肉",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "cucumber_salad",
+      "name": "拍黄瓜",
+      "difficulty": "easy",
+      "time_minutes": 5,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "酸辣清爽"
+    },
+    {
+      "id": "stir_fried_greens",
+      "name": "清炒时蔬",
+      "difficulty": "easy",
+      "time_minutes": 5,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "egg_drop_soup",
+      "name": "紫菜蛋花汤",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "清鲜"
+    }
+  ],
+  "staple_pairing": ["米饭", "馒头", "面条"],
+  "suitable_scenarios": ["日常", "快手菜", "新手友好"],
+  "common_ingredients": ["鸡蛋", "番茄", "土豆", "茄子", "青菜", "猪肉"],
+  "difficulty_distribution": {
+    "easy": 0.8,
+    "medium": 0.2,
+    "hard": 0
+  },
+  "tips": "家常菜的关键是火候和调味顺序。炒菜要大火快炒，炖菜要小火慢炖。调味要先少后多，边尝边调。"
+}

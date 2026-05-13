@@ -1,0 +1,60 @@
+{
+  "id": "american",
+  "name": "美式料理",
+  "name_en": "American Cuisine",
+  "region": "美国",
+  "description": "以汉堡、BBQ、牛排为代表。分量大，口味重，注重肉食和烧烤。",
+  "flavor_profile": {
+    "primary": ["烧烤", "烟熏", "咸香"],
+    "secondary": ["芝士", "番茄酱", "芥末"],
+    "characteristics": "分量大，口味重，肉食为主"
+  },
+  "core_techniques": ["烤", "煎", "炸", "烟熏", "BBQ"],
+  "signature_dishes": [
+    {
+      "id": "burger",
+      "name": "美式汉堡",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "咸香"
+    },
+    {
+      "id": "bbq_ribs",
+      "name": "BBQ烤排骨",
+      "difficulty": "hard",
+      "time_minutes": 180,
+      "cost_tier": "high",
+      "popularity_score": 88,
+      "flavor": "烟熏甜辣"
+    },
+    {
+      "id": "steak",
+      "name": "美式牛排",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "high",
+      "popularity_score": 90,
+      "flavor": "咸香"
+    },
+    {
+      "id": "mac_cheese",
+      "name": "芝士通心粉",
+      "difficulty": "easy",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "芝士浓郁"
+    }
+  ],
+  "staple_pairing": ["面包", "薯条", "可乐", "啤酒"],
+  "suitable_scenarios": ["快餐", "聚餐", "BBQ派对"],
+  "common_ingredients": ["牛肉", "芝士", "培根", "番茄酱", "芥末", "BBQ酱"],
+  "difficulty_distribution": {
+    "easy": 0.4,
+    "medium": 0.3,
+    "hard": 0.3
+  },
+  "tips": "美式牛排要掌握好熟度，medium rare（三分熟）是最佳口感。BBQ要低温慢烤，让肉质软烂。"
+}

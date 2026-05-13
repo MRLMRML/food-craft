@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-15",
+  "rules": {
+    "classic_pairings": [
+      {
+        "ingredients": ["番茄", "鸡蛋"],
+        "dish": "番茄炒蛋",
+        "reason": "酸甜鲜美，经典家常菜"
+      },
+      {
+        "ingredients": ["土豆", "牛肉"],
+        "dish": "土豆炖牛肉",
+        "reason": "土豆软糯，牛肉鲜香"
+      },
+      {
+        "ingredients": ["鸡肉", "花生"],
+        "dish": "宫保鸡丁",
+        "reason": "花生酥脆，鸡肉嫩滑"
+      },
+      {
+        "ingredients": ["豆腐", "肉末"],
+        "dish": "麻婆豆腐",
+        "reason": "豆腐嫩滑，肉末提鲜"
+      },
+      {
+        "ingredients": ["虾仁", "西兰花"],
+        "dish": "虾仁西兰花",
+        "reason": "清爽健康，颜色好看"
+      },
+      {
+        "ingredients": ["排骨", "玉米"],
+        "dish": "玉米排骨汤",
+        "reason": "清甜滋补"
+      },
+      {
+        "ingredients": ["鱼", "葱姜"],
+        "dish": "清蒸鱼",
+        "reason": "去腥提鲜"
+      },
+      {
+        "ingredients": ["五花肉", "梅干菜"],
+        "dish": "梅菜扣肉",
+        "reason": "咸香下饭"
+      }
+    ],
+    "avoid_pairings": [
+      {
+        "ingredients": ["柿子", "螃蟹"],
+        "reason": "同食可能导致肠胃不适"
+      },
+      {
+        "ingredients": ["牛奶", "橙汁"],
+        "reason": "同食可能导致消化不良"
+      }
+    ],
+    "flavor_combinations": {
+      "咸鲜": ["酱油", "蚝油", "盐", "鸡精"],
+      "酸辣": ["醋", "辣椒", "胡椒"],
+      "糖醋": ["糖", "醋", "番茄酱"],
+      "麻辣": ["花椒", "辣椒", "豆瓣酱"],
+      "蒜香": ["蒜", "黄油", "橄榄油"],
+      "姜汁": ["姜", "醋", "酱油"]
+    },
+    "substitution_rules": [
+      {
+        "original": "料酒",
+        "substitutes": ["白酒", "啤酒", "米酒"],
+        "notes": "白酒用量减半"
+      },
+      {
+        "original": "蚝油",
+        "substitutes": ["生抽+糖"],
+        "notes": "比例10:1"
+      },
+      {
+        "original": "黄油",
+        "substitutes": ["橄榄油", "植物油"],
+        "notes": "风味略有不同"
+      }
+    ]
+  }
+}

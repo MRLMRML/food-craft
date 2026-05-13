@@ -1,0 +1,63 @@
+{
+  "id": "shrimp",
+  "name": "虾",
+  "name_en": "Shrimp",
+  "category": "seafood",
+  "subcategory": "shellfish",
+  "nutrition_per_100g": {
+    "calories": 99,
+    "protein": 20.4,
+    "fat": 1.7,
+    "carbs": 0.2,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 25,
+    "max": 60,
+    "average": 40,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "夏秋"
+  },
+  "storage": {
+    "fresh": "冷藏1-2天",
+    "frozen": "冷冻3个月",
+    "tips": "活虾买回来直接冷冻，口感最好"
+  },
+  "cuts": [
+    {
+      "name": "整虾",
+      "suitable_for": ["白灼", "油焖", "椒盐"],
+      "texture": "Q弹",
+      "cook_time_range": "3-10分钟"
+    },
+    {
+      "name": "虾仁",
+      "suitable_for": ["炒", "滑蛋", "宫保"],
+      "texture": "嫩滑",
+      "cook_time_range": "2-5分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["西兰花", "腰果", "鸡蛋", "豆腐"],
+    "spicy": ["辣椒", "花椒", "蒜"],
+    "sauce": ["番茄酱", "蚝油", "料酒"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "虾仁",
+      "reason": "方便处理",
+      "taste_impact": "鲜味略减",
+      "cook_time_change": "-2分钟"
+    }
+  ],
+  "tips": [
+    "虾线要去掉，不然有腥味",
+    "白灼虾水开后煮2分钟即可",
+    "虾仁腌制时加蛋清和淀粉更嫩滑"
+  ]
+}

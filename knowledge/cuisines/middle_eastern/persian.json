@@ -1,0 +1,60 @@
+{
+  "id": "persian",
+  "name": "波斯菜",
+  "name_en": "Persian Cuisine",
+  "region": "伊朗",
+  "description": "以藏红花米饭、炖肉、坚果为特色。口味温和，注重香料的平衡，色彩鲜艳。",
+  "flavor_profile": {
+    "primary": ["藏红花", "坚果", "水果"],
+    "secondary": ["柠檬", "香草", "肉桂"],
+    "characteristics": "口味温和，香料平衡，色彩鲜艳"
+  },
+  "core_techniques": ["炖", "煮", "烤", "制作米饭"],
+  "signature_dishes": [
+    {
+      "id": "tahdig",
+      "name": "藏红花锅巴饭",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "藏红花香"
+    },
+    {
+      "id": "ghormeh_sabzi",
+      "name": "波斯香草炖肉",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "香草咸鲜"
+    },
+    {
+      "id": "kebab_koobideh",
+      "name": "波斯烤肉串",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "烤香"
+    },
+    {
+      "id": "fesenjan",
+      "name": "核桃石榴炖鸡",
+      "difficulty": "hard",
+      "time_minutes": 90,
+      "cost_tier": "high",
+      "popularity_score": 80,
+      "flavor": "酸甜"
+    }
+  ],
+  "staple_pairing": ["米饭", "馕", "酸奶"],
+  "suitable_scenarios": ["宴客", "尝鲜"],
+  "common_ingredients": ["藏红花", "核桃", "石榴", "柠檬", "香草"],
+  "difficulty_distribution": {
+    "easy": 0.1,
+    "medium": 0.5,
+    "hard": 0.4
+  },
+  "tips": "波斯米饭的关键是藏红花和锅巴。藏红花要泡水后使用，锅巴要金黄酥脆。"
+}

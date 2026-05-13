@@ -1,0 +1,60 @@
+{
+  "id": "korean_traditional",
+  "name": "韩国传统料理",
+  "name_en": "Korean Traditional",
+  "region": "韩国",
+  "description": "韩国传统料理，以发酵食品和烤肉为特色。口味丰富，善用辣椒酱、大酱、泡菜等发酵调味料。",
+  "flavor_profile": {
+    "primary": ["辣味", "发酵", "咸鲜"],
+    "secondary": ["甜辣", "酸辣", "酱香"],
+    "characteristics": "辣味为主，发酵风味，配菜丰富"
+  },
+  "core_techniques": ["烤", "炖", "煮", "凉拌", "发酵"],
+  "signature_dishes": [
+    {
+      "id": "bibimbap",
+      "name": "石锅拌饭",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "辣味咸香"
+    },
+    {
+      "id": "kimchi_jjigae",
+      "name": "泡菜汤",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "sundubu_jjigae",
+      "name": "嫩豆腐汤",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "辣味鲜美"
+    },
+    {
+      "id": "japchae",
+      "name": "杂菜",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸鲜微甜"
+    }
+  ],
+  "staple_pairing": ["米饭", "泡菜", "各种小菜"],
+  "suitable_scenarios": ["日常", "聚餐", "韩餐爱好者"],
+  "common_ingredients": ["辣椒酱", "大酱", "泡菜", "芝麻油", "大蒜", "葱"],
+  "difficulty_distribution": {
+    "easy": 0.4,
+    "medium": 0.5,
+    "hard": 0.1
+  },
+  "tips": "韩国料理的灵魂是发酵调味料。辣椒酱、大酱、泡菜是必备的。石锅拌饭的锅巴是精华。"
+}

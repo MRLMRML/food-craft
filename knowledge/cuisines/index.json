@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-15",
+  "total_cuisines": 25,
+  "regions": {
+    "chinese": {
+      "name": "中国菜系",
+      "count": 13,
+      "cuisines": ["sichuan", "cantonese", "shandong", "jiangsu", "zhejiang", "fujian", "hunan", "anhui", "northeast", "xinjiang", "yunnan", "guizhou", "homestyle"]
+    },
+    "japanese": {
+      "name": "日本料理",
+      "count": 4,
+      "cuisines": ["washoku", "ramen", "sushi", "izakaya"]
+    },
+    "korean": {
+      "name": "韩国料理",
+      "count": 3,
+      "cuisines": ["korean_traditional", "korean_bbq", "korean_street"]
+    },
+    "southeast_asian": {
+      "name": "东南亚菜系",
+      "count": 5,
+      "cuisines": ["thai", "vietnamese", "malaysian", "indonesian", "singaporean"]
+    },
+    "south_asian": {
+      "name": "南亚菜系",
+      "count": 2,
+      "cuisines": ["indian", "sri_lankan"]
+    },
+    "western": {
+      "name": "西方菜系",
+      "count": 7,
+      "cuisines": ["french", "italian", "spanish", "american", "british", "german", "mediterranean"]
+    },
+    "middle_eastern": {
+      "name": "中东菜系",
+      "count": 3,
+      "cuisines": ["turkish", "lebanese", "persian"]
+    },
+    "latin_american": {
+      "name": "拉丁美洲菜系",
+      "count": 4,
+      "cuisines": ["mexican", "brazilian", "peruvian", "argentinian"]
+    },
+    "african": {
+      "name": "非洲菜系",
+      "count": 3,
+      "cuisines": ["ethiopian", "moroccan", "nigerian"]
+    }
+  }
+}

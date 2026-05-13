@@ -1,0 +1,69 @@
+{
+  "id": "tofu",
+  "name": "豆腐",
+  "name_en": "Tofu",
+  "category": "egg_bean",
+  "subcategory": "tofu",
+  "nutrition_per_100g": {
+    "calories": 76,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 2.8,
+    "fiber": 0.4
+  },
+  "price_range": {
+    "min": 2,
+    "max": 6,
+    "average": 4,
+    "unit": "元/块",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏2-3天，泡水保存",
+    "frozen": "可冷冻，变成冻豆腐",
+    "tips": "每天换水可以保存更久"
+  },
+  "cuts": [
+    {
+      "name": "嫩豆腐",
+      "suitable_for": ["麻婆豆腐", "汤", "凉拌"],
+      "texture": "嫩滑",
+      "cook_time_range": "5-10分钟"
+    },
+    {
+      "name": "老豆腐",
+      "suitable_for": ["红烧", "煎", "炸"],
+      "texture": "紧实",
+      "cook_time_range": "10-20分钟"
+    },
+    {
+      "name": "冻豆腐",
+      "suitable_for": ["火锅", "炖"],
+      "texture": "多孔吸味",
+      "cook_time_range": "10-15分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["肉末", "白菜", "鱼", "鸡蛋"],
+    "spicy": ["豆瓣酱", "辣椒", "花椒"],
+    "sauce": ["酱油", "蚝油", "豆瓣酱"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "鸡蛋",
+      "reason": "蛋白质来源",
+      "taste_impact": "口感不同",
+      "cook_time_change": "相似"
+    }
+  ],
+  "tips": [
+    "嫩豆腐容易碎，翻炒要轻",
+    "煎豆腐要先沥干水分，中火煎至金黄",
+    "麻婆豆腐用嫩豆腐，红烧用老豆腐"
+  ]
+}

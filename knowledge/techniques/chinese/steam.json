@@ -1,0 +1,23 @@
+{
+  "id": "steam",
+  "name": "蒸",
+  "name_en": "Steam",
+  "category": "chinese",
+  "description": "用蒸汽加热，保持食材原汁原味。",
+  "heat_level": "大火",
+  "oil_temperature": "无油",
+  "time_range": "8-30分钟",
+  "suitable_for": ["鱼", "排骨", "鸡蛋", "蔬菜"],
+  "key_points": [
+    "水要烧开后再放食材",
+    "蒸的时间要精准",
+    "蒸鱼要倒掉蒸出的水",
+    "最后淋热油激香"
+  ],
+  "common_mistakes": [
+    "冷水下锅，蒸过头",
+    "不倒蒸鱼水，有腥味",
+    "蒸太久，食材变老"
+  ],
+  "tips": "蒸菜的关键是'水开后放，时间精准'。清蒸鲈鱼8-10分钟，蒸蛋10分钟。"
+}

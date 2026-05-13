@@ -1,0 +1,69 @@
+{
+  "id": "shandong",
+  "name": "鲁菜",
+  "name_en": "Shandong Cuisine",
+  "region": "中国山东",
+  "description": "中国八大菜系之首，讲究火候，精于制汤，善用葱香。以咸鲜为主，注重原汁原味。",
+  "flavor_profile": {
+    "primary": ["咸鲜", "葱香", "酱香"],
+    "secondary": ["糖醋", "椒盐", "五香"],
+    "characteristics": "咸鲜为主，火候精湛，善用葱姜蒜"
+  },
+  "core_techniques": ["爆炒", "红烧", "糖醋", "拔丝", "制汤", "葱烧"],
+  "signature_dishes": [
+    {
+      "id": "sweet_sour_carp",
+      "name": "糖醋鲤鱼",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "糖醋"
+    },
+    {
+      "id": "scallion_sea_cucumber",
+      "name": "葱烧海参",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "high",
+      "popularity_score": 85,
+      "flavor": "葱香咸鲜"
+    },
+    {
+      "id": "braised_intestines",
+      "name": "九转大肠",
+      "difficulty": "hard",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 80,
+      "flavor": "咸甜酸辣"
+    },
+    {
+      "id": "oil_fried_prawn",
+      "name": "油焖大虾",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "high",
+      "popularity_score": 86,
+      "flavor": "咸鲜"
+    },
+    {
+      "id": "dezhou_chicken",
+      "name": "德州扒鸡",
+      "difficulty": "hard",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "五香"
+    }
+  ],
+  "staple_pairing": ["馒头", "煎饼", "面条", "米饭"],
+  "suitable_scenarios": ["宴客", "节日", "正式场合"],
+  "common_ingredients": ["大葱", "生姜", "大蒜", "酱油", "醋", "料酒"],
+  "difficulty_distribution": {
+    "easy": 0.1,
+    "medium": 0.3,
+    "hard": 0.6
+  },
+  "tips": "鲁菜的精髓在于火候控制和制汤。爆炒要急火快炒，红烧要小火慢炖，葱烧要将葱香味完全激发出来。"
+}

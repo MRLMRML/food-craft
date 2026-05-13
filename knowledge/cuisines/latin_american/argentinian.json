@@ -1,0 +1,60 @@
+{
+  "id": "argentinian",
+  "name": "阿根廷菜",
+  "name_en": "Argentinian Cuisine",
+  "region": "阿根廷",
+  "description": "以牛肉和烤肉（Asado）闻名世界。口味浓郁，肉食为主，搭配阿根廷红酒。",
+  "flavor_profile": {
+    "primary": ["烤香", "牛肉", "咸香"],
+    "secondary": ["香草", "辣椒", "红酒"],
+    "characteristics": "牛肉为主，烤肉文化，红酒搭配"
+  },
+  "core_techniques": ["烤", "煎", "炖"],
+  "signature_dishes": [
+    {
+      "id": "asado",
+      "name": "阿根廷烤肉",
+      "difficulty": "medium",
+      "time_minutes": 120,
+      "cost_tier": "high",
+      "popularity_score": 92,
+      "flavor": "烤香"
+    },
+    {
+      "id": "empanada",
+      "name": "阿根廷饺子",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "milanesa",
+      "name": "炸牛排",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "酥脆咸香"
+    },
+    {
+      "id": "chimichurri",
+      "name": "香草酱",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "香草酸辣"
+    }
+  ],
+  "staple_pairing": ["牛肉", "面包", "红酒"],
+  "suitable_scenarios": ["BBQ", "肉食爱好者", "红酒搭配"],
+  "common_ingredients": ["牛肉", "香草", "大蒜", "橄榄油", "柠檬"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "阿根廷烤肉要用果木炭火，低温慢烤，保持肉质鲜嫩。香草酱（Chimichurri）是必备蘸料。"
+}

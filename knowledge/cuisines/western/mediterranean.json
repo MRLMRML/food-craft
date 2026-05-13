@@ -1,0 +1,60 @@
+{
+  "id": "mediterranean",
+  "name": "地中海菜",
+  "name_en": "Mediterranean Cuisine",
+  "region": "地中海沿岸",
+  "description": "以橄榄油、蔬菜、海鲜为特色。健康美味，被认为是世界上最健康的饮食方式之一。",
+  "flavor_profile": {
+    "primary": ["橄榄油", "柠檬", "香草"],
+    "secondary": ["番茄", "大蒜", "海鲜"],
+    "characteristics": "健康清淡，橄榄油为主，蔬菜丰富"
+  },
+  "core_techniques": ["烤", "煮", "凉拌", "炖"],
+  "signature_dishes": [
+    {
+      "id": "greek_salad",
+      "name": "希腊沙拉",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "清爽"
+    },
+    {
+      "id": "hummus",
+      "name": "鹰嘴豆泥",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    },
+    {
+      "id": "grilled_fish",
+      "name": "地中海烤鱼",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "medium",
+      "popularity_score": 80,
+      "flavor": "柠檬香草"
+    },
+    {
+      "id": "moussaka",
+      "name": "希腊茄盒",
+      "difficulty": "hard",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 78,
+      "flavor": "番茄肉酱"
+    }
+  ],
+  "staple_pairing": ["面包", "橄榄油", "葡萄酒"],
+  "suitable_scenarios": ["健康饮食", "减肥", "日常"],
+  "common_ingredients": ["橄榄油", "柠檬", "番茄", "大蒜", "迷迭香", "百里香"],
+  "difficulty_distribution": {
+    "easy": 0.4,
+    "medium": 0.4,
+    "hard": 0.2
+  },
+  "tips": "地中海菜的关键是橄榄油和新鲜食材。橄榄油要选特级初榨的，蔬菜要新鲜，海鲜要当天的。"
+}

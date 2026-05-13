@@ -1,0 +1,69 @@
+{
+  "id": "lamb_leg",
+  "name": "羊腿肉",
+  "name_en": "Lamb Leg",
+  "category": "meat",
+  "subcategory": "lamb",
+  "nutrition_per_100g": {
+    "calories": 203,
+    "protein": 17.1,
+    "fat": 14.1,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 35,
+    "max": 65,
+    "average": 48,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "秋冬"
+  },
+  "storage": {
+    "fresh": "冷藏2-3天",
+    "frozen": "冷冻3个月",
+    "tips": "羊肉膻味重，建议分装密封冷冻"
+  },
+  "cuts": [
+    {
+      "name": "羊腿肉",
+      "suitable_for": ["烤", "炖", "手抓"],
+      "texture": "紧实",
+      "cook_time_range": "60-120分钟"
+    },
+    {
+      "name": "羊排",
+      "suitable_for": ["烤", "煎", "炖"],
+      "texture": "嫩滑",
+      "cook_time_range": "20-40分钟"
+    },
+    {
+      "name": "羊肉卷",
+      "suitable_for": ["涮火锅", "炒"],
+      "texture": "薄嫩",
+      "cook_time_range": "1-3分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["萝卜", "土豆", "洋葱", "胡萝卜"],
+    "spicy": ["孜然", "辣椒", "花椒"],
+    "sauce": ["料酒", "姜", "蒜"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "牛肉",
+      "reason": "膻味小",
+      "taste_impact": "缺少羊肉香味",
+      "cook_time_change": "相似"
+    }
+  ],
+  "tips": [
+    "去膻味：冷水浸泡2小时，焯水时加姜片和料酒",
+    "烤羊腿要先腌制4小时以上",
+    "涮火锅要选羊肉卷，涮10秒即可"
+  ]
+}

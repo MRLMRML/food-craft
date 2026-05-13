@@ -1,0 +1,23 @@
+{
+  "id": "grill",
+  "name": "烤",
+  "name_en": "Grill/Roast",
+  "category": "universal",
+  "description": "用烤箱或明火加热，使食材表面焦香。",
+  "heat_level": "中高火",
+  "oil_temperature": "无需油",
+  "time_range": "15-120分钟",
+  "suitable_for": ["鸡翅", "排骨", "鱼", "蔬菜", "面包"],
+  "key_points": [
+    "烤箱要预热",
+    "食材要腌制入味",
+    "中途翻面一次",
+    "根据食材调整温度和时间"
+  ],
+  "common_mistakes": [
+    "不预热，受热不均",
+    "温度太高，外焦里生",
+    "不翻面，一面焦一面生"
+  ],
+  "tips": "烤鸡翅：200°C烤25分钟，中途翻面。烤蔬菜：180°C烤15-20分钟。"
+}

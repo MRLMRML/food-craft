@@ -1,0 +1,60 @@
+{
+  "id": "moroccan",
+  "name": "摩洛哥菜",
+  "name_en": "Moroccan Cuisine",
+  "region": "摩洛哥",
+  "description": "以塔吉锅炖菜和库斯库斯闻名。口味丰富，善用香料、干果、坚果，甜咸交织。",
+  "flavor_profile": {
+    "primary": ["香料", "干果", "甜咸"],
+    "secondary": ["肉桂", "姜黄", "杏仁"],
+    "characteristics": "甜咸交织，香料丰富，干果点缀"
+  },
+  "core_techniques": ["炖", "煮", "烤", "制作库斯库斯"],
+  "signature_dishes": [
+    {
+      "id": "tagine",
+      "name": "塔吉锅炖肉",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "甜咸香料"
+    },
+    {
+      "id": "couscous",
+      "name": "库斯库斯",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "香料鲜美"
+    },
+    {
+      "id": "pastilla",
+      "name": "摩洛哥馅饼",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "high",
+      "popularity_score": 80,
+      "flavor": "甜咸"
+    },
+    {
+      "id": "harira",
+      "name": "摩洛哥汤",
+      "difficulty": "medium",
+      "time_minutes": 45,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "香料咸鲜"
+    }
+  ],
+  "staple_pairing": ["库斯库斯", "面包", "米饭"],
+  "suitable_scenarios": ["尝鲜", "炖菜爱好者"],
+  "common_ingredients": ["羊肉", "鸡肉", "杏仁", "葡萄干", "肉桂", "姜黄"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "塔吉锅的锥形盖子可以让蒸汽循环，保持食物湿润。库斯库斯要蒸两次才会松软。"
+}

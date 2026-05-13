@@ -1,0 +1,62 @@
+{
+  "id": "rice",
+  "name": "大米",
+  "name_en": "Rice",
+  "category": "staple",
+  "subcategory": "rice",
+  "nutrition_per_100g": {
+    "calories": 116,
+    "protein": 2.6,
+    "fat": 0.3,
+    "carbs": 25.9,
+    "fiber": 0.3
+  },
+  "price_range": {
+    "min": 3,
+    "max": 10,
+    "average": 5,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "新米季（秋季）"
+  },
+  "storage": {
+    "fresh": "常温密封6个月",
+    "frozen": "不建议",
+    "tips": "防潮防虫，密封保存"
+  },
+  "cuts": [
+    {
+      "name": "白米",
+      "suitable_for": ["煮饭", "煮粥"],
+      "texture": "软糯",
+      "cook_time_range": "20-30分钟"
+    },
+    {
+      "name": "糙米",
+      "suitable_for": ["煮饭", "健康饮食"],
+      "texture": "有嚼劲",
+      "cook_time_range": "40-50分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["所有菜肴"],
+    "special": ["寿司醋", "椰奶"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "面条",
+      "reason": "换口味",
+      "taste_impact": "口感不同",
+      "cook_time_change": "-10分钟"
+    }
+  ],
+  "tips": [
+    "米水比例1:1.2（软）到1:1（硬）",
+    "煮饭前浸泡20分钟更松软",
+    "新米少放水，陈米多放水"
+  ]
+}

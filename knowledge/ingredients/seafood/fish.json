@@ -1,0 +1,63 @@
+{
+  "id": "sea_bass",
+  "name": "鲈鱼",
+  "name_en": "Sea Bass",
+  "category": "seafood",
+  "subcategory": "fish",
+  "nutrition_per_100g": {
+    "calories": 105,
+    "protein": 18.4,
+    "fat": 3.4,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 20,
+    "max": 40,
+    "average": 30,
+    "unit": "元/条",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "秋冬"
+  },
+  "storage": {
+    "fresh": "冷藏1天",
+    "frozen": "冷冻1个月",
+    "tips": "活鱼现杀现吃最好"
+  },
+  "cuts": [
+    {
+      "name": "整鱼",
+      "suitable_for": ["清蒸", "红烧", "烤"],
+      "texture": "鲜嫩",
+      "cook_time_range": "10-20分钟"
+    },
+    {
+      "name": "鱼片",
+      "suitable_for": ["水煮", "酸菜鱼", "滑炒"],
+      "texture": "嫩滑",
+      "cook_time_range": "3-5分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["葱", "姜", "蒜", "蒸鱼豉油"],
+    "spicy": ["剁椒", "豆豉"],
+    "sauce": ["蒸鱼豉油", "料酒", "生抽"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "鳜鱼",
+      "reason": "更嫩",
+      "taste_impact": "口感相似",
+      "cook_time_change": "相似"
+    }
+  ],
+  "tips": [
+    "清蒸鲈鱼要水开后再放鱼，蒸8-10分钟",
+    "蒸鱼豉油要最后淋上，不要先放",
+    "鱼要新鲜，眼睛明亮、鳃红润"
+  ]
+}

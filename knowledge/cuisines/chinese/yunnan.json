@@ -1,0 +1,60 @@
+{
+  "id": "yunnan",
+  "name": "云南菜",
+  "name_en": "Yunnan Cuisine",
+  "region": "中国云南",
+  "description": "以菌菇、野菜、鲜花为特色，口味酸辣适中，原汁原味，具有浓郁的民族风情。",
+  "flavor_profile": {
+    "primary": ["酸辣", "原味", "菌香"],
+    "secondary": ["傣味", "清鲜", "花香"],
+    "characteristics": "食材多样，酸辣为主，善用菌菇和香草"
+  },
+  "core_techniques": ["汽锅", "烤", "凉拌", "舂", "煮"],
+  "signature_dishes": [
+    {
+      "id": "steam_pot_chicken",
+      "name": "汽锅鸡",
+      "difficulty": "medium",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "cross_bridge_noodle",
+      "name": "过桥米线",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "dai_fish",
+      "name": "香茅草烤鱼",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "香辣"
+    },
+    {
+      "id": "wild_mushroom_hotpot",
+      "name": "野生菌火锅",
+      "difficulty": "easy",
+      "time_minutes": 40,
+      "cost_tier": "high",
+      "popularity_score": 85,
+      "flavor": "菌香"
+    }
+  ],
+  "staple_pairing": ["米线", "饵块", "米饭"],
+  "suitable_scenarios": ["日常", "养生", "尝鲜"],
+  "common_ingredients": ["菌菇", "香茅草", "小米辣", "柠檬", "薄荷", "芫荽"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "云南菜的特色在于食材的多样性。野生菌一定要煮熟，香茅草要新鲜的才有香味。"
+}

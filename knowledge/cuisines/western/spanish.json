@@ -1,0 +1,60 @@
+{
+  "id": "spanish",
+  "name": "西班牙菜",
+  "name_en": "Spanish Cuisine",
+  "region": "西班牙",
+  "description": "以海鲜饭和Tapas闻名。口味浓郁，善用橄榄油、番茄、大蒜，适合分享和聚会。",
+  "flavor_profile": {
+    "primary": ["番茄", "橄榄油", "海鲜"],
+    "secondary": ["大蒜", "辣椒", "藏红花"],
+    "characteristics": "口味浓郁，适合分享，Tapas文化"
+  },
+  "core_techniques": ["煮", "烤", "炒", "炖"],
+  "signature_dishes": [
+    {
+      "id": "paella",
+      "name": "西班牙海鲜饭",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "high",
+      "popularity_score": 90,
+      "flavor": "海鲜鲜美"
+    },
+    {
+      "id": "tapas",
+      "name": "Tapas拼盘",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "多样"
+    },
+    {
+      "id": "gazpacho",
+      "name": "番茄冷汤",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "酸甜清爽"
+    },
+    {
+      "id": "churros",
+      "name": "吉事果",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "甜香"
+    }
+  ],
+  "staple_pairing": ["米饭", "面包", "红酒"],
+  "suitable_scenarios": ["聚餐", "派对", "分享"],
+  "common_ingredients": ["橄榄油", "番茄", "大蒜", "藏红花", "辣椒", "海鲜"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "西班牙海鲜饭的关键是藏红花和锅底的锅巴。Tapas要多样化，适合多人分享。"
+}

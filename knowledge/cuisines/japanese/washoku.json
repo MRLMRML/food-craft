@@ -1,0 +1,60 @@
+{
+  "id": "washoku",
+  "name": "和食",
+  "name_en": "Japanese Washoku",
+  "region": "日本",
+  "description": "日本传统料理，注重食材本味和季节感。讲究'五味五色五法'，追求视觉与味觉的统一。",
+  "flavor_profile": {
+    "primary": ["鲜味", "清淡", "本味"],
+    "secondary": ["出汁", "酱油味", "味噌"],
+    "characteristics": "清淡鲜美，注重食材原味和摆盘美观"
+  },
+  "core_techniques": ["生食", "煮物", "烤物", "蒸物", "炸物"],
+  "signature_dishes": [
+    {
+      "id": "tempura",
+      "name": "天妇罗",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "酥脆鲜美"
+    },
+    {
+      "id": "tonkatsu",
+      "name": "炸猪排",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "medium",
+      "popularity_score": 86,
+      "flavor": "酥脆咸香"
+    },
+    {
+      "id": "sukiyaki",
+      "name": "寿喜烧",
+      "difficulty": "easy",
+      "time_minutes": 30,
+      "cost_tier": "high",
+      "popularity_score": 84,
+      "flavor": "甜鲜"
+    },
+    {
+      "id": "udon",
+      "name": "乌冬面",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "清淡鲜美"
+    }
+  ],
+  "staple_pairing": ["米饭", "乌冬面", "荞麦面"],
+  "suitable_scenarios": ["日常", "养生", "清淡饮食"],
+  "common_ingredients": ["出汁", "酱油", "味噌", "味醂", "米醋", "海苔"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "和食的精髓在于出汁（高汤）。用昆布和柴鱼片制作的出汁，是日本料理的基底。"
+}

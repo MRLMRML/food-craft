@@ -1,0 +1,51 @@
+{
+  "id": "peruvian",
+  "name": "秘鲁菜",
+  "name_en": "Peruvian Cuisine",
+  "region": "秘鲁",
+  "description": "融合了印第安、西班牙、非洲和亚洲风味。以酸橘汁腌鱼（Ceviche）为代表，口味独特。",
+  "flavor_profile": {
+    "primary": ["酸辣", "柠檬", "辣椒"],
+    "secondary": ["香菜", "洋葱", "海鲜"],
+    "characteristics": "多元融合，酸辣为主，海鲜丰富"
+  },
+  "core_techniques": ["腌制", "烤", "炖", "炒"],
+  "signature_dishes": [
+    {
+      "id": "ceviche",
+      "name": "酸橘汁腌鱼",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "lomo_saltado",
+      "name": "秘鲁炒牛肉",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "aji_de_gallina",
+      "name": "奶油辣椒鸡",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "辣味奶油"
+    }
+  ],
+  "staple_pairing": ["米饭", "玉米", "土豆"],
+  "suitable_scenarios": ["海鲜爱好者", "尝鲜"],
+  "common_ingredients": ["柠檬", "辣椒", "香菜", "洋葱", "海鲜"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.6,
+    "hard": 0.2
+  },
+  "tips": "酸橘汁腌鱼要用新鲜的鱼，柠檬汁要现挤，腌制时间不能太长，否则鱼肉会变老。"
+}

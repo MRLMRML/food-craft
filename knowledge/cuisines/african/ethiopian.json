@@ -1,0 +1,51 @@
+{
+  "id": "ethiopian",
+  "name": "埃塞俄比亚菜",
+  "name_en": "Ethiopian Cuisine",
+  "region": "埃塞俄比亚",
+  "description": "以英吉拉（酸面团薄饼）为特色，用手抓食。口味浓郁，善用berbere香料。",
+  "flavor_profile": {
+    "primary": ["berbere香料", "酸味", "辣味"],
+    "secondary": ["姜黄", "大蒜", "洋葱"],
+    "characteristics": "酸辣为主，用手抓食，berbere香料独特"
+  },
+  "core_techniques": ["炖", "煮", "制作薄饼"],
+  "signature_dishes": [
+    {
+      "id": "doro_wat",
+      "name": "埃塞炖鸡",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "辣味"
+    },
+    {
+      "id": "injera",
+      "name": "英吉拉薄饼",
+      "difficulty": "hard",
+      "time_minutes": 48,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "酸味"
+    },
+    {
+      "id": "kitfo",
+      "name": "生牛肉塔塔",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 78,
+      "flavor": "辣味"
+    }
+  ],
+  "staple_pairing": ["英吉拉薄饼", "米饭"],
+  "suitable_scenarios": ["尝鲜", "素食爱好者"],
+  "common_ingredients": ["berbere香料", "洋葱", "大蒜", "姜", "鹰嘴豆"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "英吉拉薄饼要发酵2-3天，才会酸软。berbere香料是埃塞菜的灵魂，可以用辣椒粉、姜黄等调配。"
+}

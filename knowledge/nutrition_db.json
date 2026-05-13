@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-15",
+  "unit": "per_100g",
+  "categories": {
+    "meat": {
+      "chicken_leg": {"calories": 181, "protein": 20.2, "fat": 10.9, "carbs": 0},
+      "chicken_breast": {"calories": 133, "protein": 23.3, "fat": 5.0, "carbs": 0},
+      "pork_belly": {"calories": 395, "protein": 14.0, "fat": 37.0, "carbs": 0.8},
+      "pork_loin": {"calories": 143, "protein": 20.0, "fat": 6.5, "carbs": 0},
+      "beef_sirloin": {"calories": 140, "protein": 20.2, "fat": 6.2, "carbs": 0},
+      "beef_brisket": {"calories": 250, "protein": 17.1, "fat": 19.8, "carbs": 0},
+      "lamb_leg": {"calories": 203, "protein": 17.1, "fat": 14.1, "carbs": 0}
+    },
+    "seafood": {
+      "shrimp": {"calories": 99, "protein": 20.4, "fat": 1.7, "carbs": 0.2},
+      "sea_bass": {"calories": 105, "protein": 18.4, "fat": 3.4, "carbs": 0},
+      "salmon": {"calories": 208, "protein": 20.4, "fat": 13.4, "carbs": 0},
+      "cod": {"calories": 82, "protein": 17.8, "fat": 0.7, "carbs": 0}
+    },
+    "vegetables": {
+      "tomato": {"calories": 18, "protein": 0.9, "fat": 0.2, "carbs": 3.9},
+      "potato": {"calories": 77, "protein": 2.0, "fat": 0.1, "carbs": 17.5},
+      "broccoli": {"calories": 36, "protein": 4.3, "fat": 0.4, "carbs": 5.2},
+      "eggplant": {"calories": 25, "protein": 1.0, "fat": 0.2, "carbs": 5.7},
+      "cucumber": {"calories": 16, "protein": 0.7, "fat": 0.1, "carbs": 3.6},
+      "carrot": {"calories": 41, "protein": 0.9, "fat": 0.2, "carbs": 9.6},
+      "cabbage": {"calories": 25, "protein": 1.3, "fat": 0.1, "carbs": 5.8},
+      "spinach": {"calories": 23, "protein": 2.9, "fat": 0.4, "carbs": 3.6}
+    },
+    "staple": {
+      "rice": {"calories": 116, "protein": 2.6, "fat": 0.3, "carbs": 25.9},
+      "noodle": {"calories": 110, "protein": 3.5, "fat": 0.5, "carbs": 22.0},
+      "bread": {"calories": 265, "protein": 9.0, "fat": 3.3, "carbs": 49.0}
+    },
+    "egg_bean": {
+      "egg": {"calories": 144, "protein": 13.3, "fat": 8.8, "carbs": 2.8},
+      "tofu": {"calories": 76, "protein": 8.1, "fat": 3.7, "carbs": 2.8}
+    },
+    "dairy": {
+      "milk": {"calories": 54, "protein": 3.0, "fat": 3.2, "carbs": 3.4},
+      "cheese": {"calories": 350, "protein": 25.0, "fat": 28.0, "carbs": 2.0}
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2024-01-15",
+  "currency": "CNY",
+  "region": "一线城市（北上广深）",
+  "price_index": {
+    "meat": {
+      "chicken_leg": {"min": 12, "max": 25, "average": 18, "unit": "元/500g"},
+      "chicken_breast": {"min": 10, "max": 20, "average": 15, "unit": "元/500g"},
+      "pork_belly": {"min": 15, "max": 30, "average": 22, "unit": "元/500g"},
+      "pork_loin": {"min": 14, "max": 28, "average": 20, "unit": "元/500g"},
+      "beef_sirloin": {"min": 40, "max": 80, "average": 60, "unit": "元/500g"},
+      "beef_brisket": {"min": 35, "max": 65, "average": 48, "unit": "元/500g"},
+      "lamb_leg": {"min": 35, "max": 65, "average": 48, "unit": "元/500g"}
+    },
+    "seafood": {
+      "shrimp": {"min": 25, "max": 60, "average": 40, "unit": "元/500g"},
+      "sea_bass": {"min": 20, "max": 40, "average": 30, "unit": "元/条"},
+      "salmon": {"min": 40, "max": 80, "average": 60, "unit": "元/500g"}
+    },
+    "vegetables": {
+      "tomato": {"min": 3, "max": 8, "average": 5, "unit": "元/500g"},
+      "potato": {"min": 2, "max": 5, "average": 3, "unit": "元/500g"},
+      "broccoli": {"min": 5, "max": 12, "average": 8, "unit": "元/朵"},
+      "eggplant": {"min": 3, "max": 7, "average": 5, "unit": "元/500g"},
+      "cucumber": {"min": 2, "max": 5, "average": 3, "unit": "元/根"},
+      "carrot": {"min": 2, "max": 5, "average": 3, "unit": "元/500g"},
+      "cabbage": {"min": 2, "max": 5, "average": 3, "unit": "元/斤"}
+    },
+    "staple": {
+      "rice": {"min": 3, "max": 10, "average": 5, "unit": "元/500g"},
+      "noodle": {"min": 3, "max": 8, "average": 5, "unit": "元/500g"},
+      "bread": {"min": 5, "max": 15, "average": 8, "unit": "元/个"}
+    },
+    "egg_bean": {
+      "egg": {"min": 8, "max": 15, "average": 12, "unit": "元/斤"},
+      "tofu": {"min": 2, "max": 6, "average": 4, "unit": "元/块"}
+    },
+    "seasoning": {
+      "soy_sauce": {"min": 8, "max": 25, "average": 15, "unit": "元/500ml"},
+      "vinegar": {"min": 5, "max": 15, "average": 10, "unit": "元/500ml"},
+      "cooking_wine": {"min": 8, "max": 20, "average": 12, "unit": "元/500ml"},
+      "doubanjiang": {"min": 10, "max": 25, "average": 15, "unit": "元/500g"}
+    }
+  },
+  "seasonal_trends": {
+    "spring": {"vegetables": "便宜", "seafood": "一般"},
+    "summer": {"vegetables": "便宜", "seafood": "便宜"},
+    "autumn": {"vegetables": "一般", "seafood": "便宜"},
+    "winter": {"vegetables": "贵", "seafood": "贵"}
+  }
+}

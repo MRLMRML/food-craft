@@ -1,0 +1,63 @@
+{
+  "id": "chicken_leg",
+  "name": "鸡腿肉",
+  "name_en": "Chicken Leg",
+  "category": "meat",
+  "subcategory": "poultry",
+  "nutrition_per_100g": {
+    "calories": 181,
+    "protein": 20.2,
+    "fat": 10.9,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 12,
+    "max": 25,
+    "average": 18,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏2-3天",
+    "frozen": "冷冻3个月",
+    "tips": "买回来如果不马上吃，建议分装冷冻"
+  },
+  "cuts": [
+    {
+      "name": "鸡腿肉",
+      "suitable_for": ["炒", "炸", "烤", "红烧"],
+      "texture": "嫩滑多汁",
+      "cook_time_range": "15-30分钟"
+    },
+    {
+      "name": "鸡腿骨",
+      "suitable_for": ["炖汤", "熬高汤"],
+      "texture": "骨香浓郁",
+      "cook_time_range": "60-120分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["花生", "土豆", "香菇", "栗子"],
+    "spicy": ["干辣椒", "花椒", "辣椒"],
+    "sauce": ["照烧汁", "可乐", "啤酒"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "鸡胸肉",
+      "reason": "更低脂",
+      "taste_impact": "口感稍柴",
+      "cook_time_change": "-5分钟"
+    }
+  ],
+  "tips": [
+    "去骨后更容易入味",
+    "鸡皮朝下煎会更香",
+    "腌制时加一点淀粉更嫩"
+  ]
+}

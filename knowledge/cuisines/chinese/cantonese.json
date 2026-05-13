@@ -1,0 +1,78 @@
+{
+  "id": "cantonese",
+  "name": "粤菜",
+  "name_en": "Cantonese Cuisine",
+  "region": "中国广东",
+  "description": "追求食材本味，讲究鲜、嫩、滑、爽。烹饪技法多样，尤以蒸、炒、煲、炖见长。",
+  "flavor_profile": {
+    "primary": ["清鲜", "嫩滑", "爽口"],
+    "secondary": ["咸鲜", "甜鲜", "豉汁", "蚝油"],
+    "characteristics": "清淡鲜美，注重食材本味，少用辛辣调料"
+  },
+  "core_techniques": ["蒸", "白灼", "煲汤", "小炒", "烧腊", "炖"],
+  "signature_dishes": [
+    {
+      "id": "steamed_fish",
+      "name": "清蒸鲈鱼",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 92,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "char_siu",
+      "name": "叉烧",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "甜香"
+    },
+    {
+      "id": "white_cut_chicken",
+      "name": "白切鸡",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "cantonese_soup",
+      "name": "老火靓汤",
+      "difficulty": "easy",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "清甜"
+    },
+    {
+      "id": "beef_chow_fun",
+      "name": "干炒牛河",
+      "difficulty": "hard",
+      "time_minutes": 15,
+      "cost_tier": "medium",
+      "popularity_score": 87,
+      "flavor": "咸鲜"
+    },
+    {
+      "id": "siu_yuk",
+      "name": "烧肉",
+      "difficulty": "hard",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 86,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["白米饭", "肠粉", "河粉", "云吞面"],
+  "suitable_scenarios": ["日常", "宴客", "养生", "清淡饮食"],
+  "common_ingredients": ["蚝油", "生抽", "老抽", "姜", "葱", "料酒", "胡椒粉"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "粤菜讲究火候和食材新鲜度。蒸鱼要水开后再放鱼，白切鸡要冰水过冷河，这些都是保持口感的关键。"
+}

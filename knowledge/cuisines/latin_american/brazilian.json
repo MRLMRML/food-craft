@@ -1,0 +1,60 @@
+{
+  "id": "brazilian",
+  "name": "巴西菜",
+  "name_en": "Brazilian Cuisine",
+  "region": "巴西",
+  "description": "以烤肉（Churrasco）为代表，善用木薯、黑豆。口味浓郁，分量大，热情奔放。",
+  "flavor_profile": {
+    "primary": ["烤香", "咸香", "黑豆"],
+    "secondary": ["椰奶", "辣椒", "柠檬"],
+    "characteristics": "烤肉为主，分量大，热情奔放"
+  },
+  "core_techniques": ["烤", "炖", "煮"],
+  "signature_dishes": [
+    {
+      "id": "churrasco",
+      "name": "巴西烤肉",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "high",
+      "popularity_score": 92,
+      "flavor": "烤香"
+    },
+    {
+      "id": "feijoada",
+      "name": "黑豆饭",
+      "difficulty": "medium",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "coxinha",
+      "name": "鸡肉丸子",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "咸香"
+    },
+    {
+      "id": "pao_de_queijo",
+      "name": "芝士面包",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "芝士"
+    }
+  ],
+  "staple_pairing": ["米饭", "黑豆", "木薯"],
+  "suitable_scenarios": ["聚餐", "BBQ", "肉食爱好者"],
+  "common_ingredients": ["牛肉", "猪肉", "黑豆", "木薯", "椰奶"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.6,
+    "hard": 0.2
+  },
+  "tips": "巴西烤肉要炭火慢烤，肉要大块，吃的时候切片。黑豆饭要炖到软烂，配上米饭和橙片。"
+}

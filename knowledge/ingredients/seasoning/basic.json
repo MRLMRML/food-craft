@@ -1,0 +1,49 @@
+{
+  "id": "soy_sauce",
+  "name": "生抽",
+  "name_en": "Light Soy Sauce",
+  "category": "seasoning",
+  "subcategory": "sauce",
+  "nutrition_per_100g": {
+    "calories": 53,
+    "protein": 8.6,
+    "fat": 0.1,
+    "carbs": 4.9,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 25,
+    "average": 15,
+    "unit": "元/500ml",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "常温避光1年",
+    "frozen": "不建议",
+    "tips": "开封后冷藏保存更久"
+  },
+  "cuts": [],
+  "pairing": {
+    "classic": ["几乎所有中式菜肴"],
+    "usage": ["炒菜", "凉拌", "蘸料", "腌制"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "老抽",
+      "reason": "上色用",
+      "taste_impact": "更咸，颜色更深",
+      "cook_time_change": "无"
+    }
+  ],
+  "tips": [
+    "生抽调味，老抽上色",
+    "炒菜时最后放生抽，保持鲜味",
+    "凉拌菜用生抽，红烧菜用老抽"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "guizhou",
+  "name": "贵州菜",
+  "name_en": "Guizhou Cuisine",
+  "region": "中国贵州",
+  "description": "以酸辣为主，善用酸汤、糟辣。口味独特，酸中带辣，辣中带酸，开胃下饭。",
+  "flavor_profile": {
+    "primary": ["酸辣", "糟辣", "酸汤"],
+    "secondary": ["麻辣", "咸酸", "糊辣"],
+    "characteristics": "酸辣并重，善用酸汤和糟辣椒"
+  },
+  "core_techniques": ["酸汤制作", "腌制", "炖", "炒", "烤"],
+  "signature_dishes": [
+    {
+      "id": "sour_fish_soup",
+      "name": "酸汤鱼",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "huaxi_noodle",
+      "name": "花溪牛肉粉",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "siwawa",
+      "name": "丝娃娃",
+      "difficulty": "easy",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "酸辣"
+    },
+    {
+      "id": "lao_tang_mian",
+      "name": "肠旺面",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "麻辣"
+    }
+  ],
+  "staple_pairing": ["米饭", "米粉", "面条"],
+  "suitable_scenarios": ["日常", "开胃", "酸辣爱好者"],
+  "common_ingredients": ["酸汤", "糟辣椒", "番茄", "木姜子", "折耳根"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "贵州菜的灵魂是酸汤。酸汤用番茄自然发酵而成，酸中带鲜。糟辣椒是贵州特有的调味料。"
+}

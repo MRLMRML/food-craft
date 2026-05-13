@@ -1,0 +1,60 @@
+{
+  "id": "zhejiang",
+  "name": "浙菜",
+  "name_en": "Zhejiang Cuisine",
+  "region": "中国浙江",
+  "description": "鲜嫩软滑，清爽不腻。讲究鲜、嫩、滑、爽，注重食材本味。",
+  "flavor_profile": {
+    "primary": ["鲜嫩", "清爽", "本味"],
+    "secondary": ["咸鲜", "糖醋", "酒香"],
+    "characteristics": "鲜嫩清爽，不油腻，注重食材新鲜度"
+  },
+  "core_techniques": ["蒸", "炒", "炖", "醉", "糟", "烩"],
+  "signature_dishes": [
+    {
+      "id": "dongpo_pork",
+      "name": "东坡肉",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "咸甜"
+    },
+    {
+      "id": "west_lake_fish",
+      "name": "西湖醋鱼",
+      "difficulty": "hard",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "糖醋"
+    },
+    {
+      "id": "longjing_shrimp",
+      "name": "龙井虾仁",
+      "difficulty": "medium",
+      "time_minutes": 15,
+      "cost_tier": "high",
+      "popularity_score": 84,
+      "flavor": "茶香清鲜"
+    },
+    {
+      "id": "beggar_chicken",
+      "name": "叫花鸡",
+      "difficulty": "hard",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 80,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["米饭", "年糕", "汤圆"],
+  "suitable_scenarios": ["日常", "宴客", "清淡饮食"],
+  "common_ingredients": ["料酒", "酱油", "糖", "醋", "茶叶", "葱", "姜"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "浙菜注重食材新鲜度和火候控制。东坡肉要小火慢炖，龙井虾仁要大火快炒，保持虾仁的鲜嫩。"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "sushi",
+  "name": "寿司",
+  "name_en": "Sushi",
+  "region": "日本",
+  "description": "日本料理的代表，以新鲜的生鱼片和醋饭为基本。讲究食材新鲜、刀工精湛、摆盘美观。",
+  "flavor_profile": {
+    "primary": ["鲜味", "醋饭", "芥末"],
+    "secondary": ["酱油", "清鲜", "海洋"],
+    "characteristics": "食材新鲜，醋饭酸甜适中，芥末提味"
+  },
+  "core_techniques": ["握寿司", "卷寿司", "刺身", "醋饭制作"],
+  "signature_dishes": [
+    {
+      "id": "nigiri",
+      "name": "握寿司",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "high",
+      "popularity_score": 90,
+      "flavor": "鲜美"
+    },
+    {
+      "id": "maki",
+      "name": "卷寿司",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "多样"
+    },
+    {
+      "id": "chirashi",
+      "name": "散寿司",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "high",
+      "popularity_score": 82,
+      "flavor": "鲜美"
+    },
+    {
+      "id": "temaki",
+      "name": "手卷寿司",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "medium",
+      "popularity_score": 78,
+      "flavor": "多样"
+    }
+  ],
+  "staple_pairing": ["醋饭", "味噌汤"],
+  "suitable_scenarios": ["宴客", "约会", "日料爱好者"],
+  "common_ingredients": ["三文鱼", "金枪鱼", "甜虾", "醋饭", "海苔", "芥末", "酱油"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "寿司的关键是食材新鲜和醋饭温度。醋饭要温热，鱼片要冷藏，这样口感最好。"
+}

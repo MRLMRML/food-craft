@@ -1,0 +1,69 @@
+{
+  "id": "hunan",
+  "name": "湘菜",
+  "name_en": "Hunan Cuisine",
+  "region": "中国湖南",
+  "description": "以辣著称，辣得纯粹，辣得过瘾。善用剁椒、腊味，注重香鲜、酸辣、软嫩。",
+  "flavor_profile": {
+    "primary": ["香辣", "酸辣", "剁椒"],
+    "secondary": ["腊味", "烟熏", "酱辣"],
+    "characteristics": "辣味纯正，香辣酸辣为主，善用腊味和剁椒"
+  },
+  "core_techniques": ["小炒", "红烧", "蒸", "腊味制作", "干锅"],
+  "signature_dishes": [
+    {
+      "id": "stinky_tofu",
+      "name": "臭豆腐",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "香辣"
+    },
+    {
+      "id": "steamed_fish_head",
+      "name": "剁椒鱼头",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "剁椒香辣"
+    },
+    {
+      "id": "hunan_pork",
+      "name": "小炒肉",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 86,
+      "flavor": "香辣"
+    },
+    {
+      "id": "cured_meat",
+      "name": "腊味合蒸",
+      "difficulty": "easy",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "腊香"
+    },
+    {
+      "id": "dongan_chicken",
+      "name": "东安子鸡",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "medium",
+      "popularity_score": 80,
+      "flavor": "酸辣"
+    }
+  ],
+  "staple_pairing": ["米饭", "米粉", "馒头"],
+  "suitable_scenarios": ["日常", "聚餐", "开胃", "下饭"],
+  "common_ingredients": ["剁椒", "干辣椒", "腊肉", "腊鱼", "豆豉", "蒜"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "湘菜的辣是纯正的辣，不像川菜那样麻辣。掌握好剁椒和干辣椒的用法，是做好湘菜的关键。"
+}

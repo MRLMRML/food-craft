@@ -1,0 +1,60 @@
+{
+  "id": "german",
+  "name": "德国菜",
+  "name_en": "German Cuisine",
+  "region": "德国",
+  "description": "以香肠、猪肘、啤酒闻名。口味浓郁，分量大，适合肉食爱好者。",
+  "flavor_profile": {
+    "primary": ["咸香", "烟熏", "啤酒"],
+    "secondary": ["酸菜", "芥末", "奶油"],
+    "characteristics": "肉食为主，分量大，啤酒文化"
+  },
+  "core_techniques": ["烤", "煮", "炖", "烟熏"],
+  "signature_dishes": [
+    {
+      "id": "bratwurst",
+      "name": "德国香肠",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香"
+    },
+    {
+      "id": "schweinshaxe",
+      "name": "德国猪肘",
+      "difficulty": "hard",
+      "time_minutes": 120,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "烤香"
+    },
+    {
+      "id": "sauerkraut",
+      "name": "德国酸菜",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "酸香"
+    },
+    {
+      "id": "pretzel",
+      "name": "德国碱水面包",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["面包", "土豆", "啤酒"],
+  "suitable_scenarios": ["聚餐", "啤酒配餐", "肉食爱好者"],
+  "common_ingredients": ["猪肉", "香肠", "酸菜", "芥末", "啤酒"],
+  "difficulty_distribution": {
+    "easy": 0.4,
+    "medium": 0.3,
+    "hard": 0.3
+  },
+  "tips": "德国猪肘要先煮后烤，外皮才会酥脆。香肠配酸菜和芥末是经典搭配。"
+}

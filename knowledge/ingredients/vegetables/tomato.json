@@ -1,0 +1,69 @@
+{
+  "id": "tomato",
+  "name": "番茄",
+  "name_en": "Tomato",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {
+    "calories": 18,
+    "protein": 0.9,
+    "fat": 0.2,
+    "carbs": 3.9,
+    "fiber": 1.2
+  },
+  "price_range": {
+    "min": 3,
+    "max": 8,
+    "average": 5,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "夏秋"
+  },
+  "storage": {
+    "fresh": "常温3-5天，冷藏7天",
+    "frozen": "可冷冻，适合做汤",
+    "tips": "未熟的番茄常温催熟，熟的冷藏保存"
+  },
+  "cuts": [
+    {
+      "name": "番茄块",
+      "suitable_for": ["炒蛋", "炖汤", "煮面"],
+      "texture": "多汁",
+      "cook_time_range": "5-10分钟"
+    },
+    {
+      "name": "番茄丁",
+      "suitable_for": ["沙拉", "凉拌"],
+      "texture": "清爽",
+      "cook_time_range": "0分钟"
+    },
+    {
+      "name": "番茄酱",
+      "suitable_for": ["调味", "蘸料"],
+      "texture": "浓稠",
+      "cook_time_range": "0分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["鸡蛋", "牛肉", "土豆", "豆腐"],
+    "spicy": ["辣椒", "胡椒"],
+    "sauce": ["番茄酱", "糖", "盐"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "番茄酱",
+      "reason": "更方便",
+      "taste_impact": "缺少新鲜口感",
+      "cook_time_change": "-3分钟"
+    }
+  ],
+  "tips": [
+    "番茄炒蛋要先炒蛋，再炒番茄，最后混合",
+    "番茄去皮：顶部划十字，开水烫30秒",
+    "炖汤时番茄要炒出汁再加水"
+  ]
+}

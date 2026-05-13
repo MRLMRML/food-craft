@@ -1,0 +1,69 @@
+{
+  "id": "northeast",
+  "name": "东北菜",
+  "name_en": "Northeast Cuisine",
+  "region": "中国东北",
+  "description": "分量十足，口味浓郁。以炖、酱、炒为主，咸香下饭，豪爽实在。",
+  "flavor_profile": {
+    "primary": ["咸香", "酱香", "酸菜"],
+    "secondary": ["红烧", "炖煮", "酱味"],
+    "characteristics": "分量大，味道浓，咸香下饭"
+  },
+  "core_techniques": ["炖", "酱", "炒", "烩", "烤"],
+  "signature_dishes": [
+    {
+      "id": "guobaorou",
+      "name": "锅包肉",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "酸甜"
+    },
+    {
+      "id": "disanxian",
+      "name": "地三鲜",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香"
+    },
+    {
+      "id": "xiaojidunmogu",
+      "name": "小鸡炖蘑菇",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "咸鲜"
+    },
+    {
+      "id": "suancaifenshurou",
+      "name": "酸菜粉丝汆白肉",
+      "difficulty": "easy",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "酸香"
+    },
+    {
+      "id": "tiedaoguobaorou",
+      "name": "铁锅炖大鹅",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 80,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["米饭", "馒头", "大饼", "饺子"],
+  "suitable_scenarios": ["日常", "聚餐", "冬季", "大份量"],
+  "common_ingredients": ["酱油", "大酱", "酸菜", "粉条", "土豆", "大白菜"],
+  "difficulty_distribution": {
+    "easy": 0.4,
+    "medium": 0.5,
+    "hard": 0.1
+  },
+  "tips": "东北菜讲究'实在'，分量要足，味道要浓。锅包肉的挂糊和炸制是关键，酸菜要炖透才好吃。"
+}

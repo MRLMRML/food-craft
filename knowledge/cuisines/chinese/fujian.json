@@ -1,0 +1,51 @@
+{
+  "id": "fujian",
+  "name": "闽菜",
+  "name_en": "Fujian Cuisine",
+  "region": "中国福建",
+  "description": "以海鲜为主，讲究汤的制作，口味清鲜、和醇、荤香。善用红糟，讲究五味调和。",
+  "flavor_profile": {
+    "primary": ["清鲜", "荤香", "糟香"],
+    "secondary": ["酸甜", "咸鲜", "红糟"],
+    "characteristics": "清鲜为主，善用红糟，注重汤的制作"
+  },
+  "core_techniques": ["炖", "煨", "蒸", "糟", "红烧", "白灼"],
+  "signature_dishes": [
+    {
+      "id": "fo_tiao_qiang",
+      "name": "佛跳墙",
+      "difficulty": "hard",
+      "time_minutes": 180,
+      "cost_tier": "high",
+      "popularity_score": 85,
+      "flavor": "荤香"
+    },
+    {
+      "id": "lychee_pork",
+      "name": "荔枝肉",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "酸甜"
+    },
+    {
+      "id": "drunk_chicken",
+      "name": "醉鸡",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 78,
+      "flavor": "酒香"
+    }
+  ],
+  "staple_pairing": ["米饭", "米粉", "扁肉"],
+  "suitable_scenarios": ["宴客", "养生", "海鲜爱好者"],
+  "common_ingredients": ["红糟", "料酒", "虾油", "鱼露", "姜", "蒜"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "闽菜的精髓在于汤和红糟。好汤是闽菜的基础，红糟是闽菜的灵魂。"
+}

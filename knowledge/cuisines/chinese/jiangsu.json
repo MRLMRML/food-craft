@@ -1,0 +1,60 @@
+{
+  "id": "jiangsu",
+  "name": "苏菜",
+  "name_en": "Jiangsu Cuisine",
+  "region": "中国江苏",
+  "description": "注重本味，讲究刀工，擅长炖焖。口味清鲜平和，咸甜适中，造型精美。",
+  "flavor_profile": {
+    "primary": ["清鲜", "咸甜", "本味"],
+    "secondary": ["糖醋", "红烧", "糟香"],
+    "characteristics": "清鲜平和，咸甜适中，注重刀工和造型"
+  },
+  "core_techniques": ["炖", "焖", "蒸", "烧", "糖醋", "刀工"],
+  "signature_dishes": [
+    {
+      "id": "squirrel_fish",
+      "name": "松鼠鳜鱼",
+      "difficulty": "hard",
+      "time_minutes": 30,
+      "cost_tier": "high",
+      "popularity_score": 88,
+      "flavor": "糖醋"
+    },
+    {
+      "id": "lion_head",
+      "name": "狮子头",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 86,
+      "flavor": "清鲜"
+    },
+    {
+      "id": "salted_duck",
+      "name": "盐水鸭",
+      "difficulty": "medium",
+      "time_minutes": 90,
+      "cost_tier": "medium",
+      "popularity_score": 84,
+      "flavor": "咸鲜"
+    },
+    {
+      "id": "braised_pork",
+      "name": "红烧肉",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "咸甜"
+    }
+  ],
+  "staple_pairing": ["米饭", "汤面", "小笼包"],
+  "suitable_scenarios": ["宴客", "节日", "正式场合"],
+  "common_ingredients": ["料酒", "酱油", "冰糖", "葱", "姜", "八角"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.4,
+    "hard": 0.4
+  },
+  "tips": "苏菜讲究火候和刀工。炖焖要小火慢炖，刀工要精细，造型要美观。红烧肉的糖色是关键。"
+}

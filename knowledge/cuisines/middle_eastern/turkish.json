@@ -1,0 +1,60 @@
+{
+  "id": "turkish",
+  "name": "土耳其菜",
+  "name_en": "Turkish Cuisine",
+  "region": "土耳其",
+  "description": "融合了中亚、中东和地中海风味。以烤肉、甜点、咖啡闻名，口味浓郁，层次丰富。",
+  "flavor_profile": {
+    "primary": ["烤香", "香料", "酸奶"],
+    "secondary": ["番茄", "辣椒", "柠檬"],
+    "characteristics": "烤肉为主，香料丰富，甜点精致"
+  },
+  "core_techniques": ["烤", "炖", "煮", "制作甜点"],
+  "signature_dishes": [
+    {
+      "id": "kebab",
+      "name": "土耳其烤肉",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "烤香"
+    },
+    {
+      "id": "pide",
+      "name": "土耳其披萨",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "baklava",
+      "name": "果仁蜜饼",
+      "difficulty": "hard",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "甜香"
+    },
+    {
+      "id": "lahmacun",
+      "name": "土耳其肉饼",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 80,
+      "flavor": "咸香"
+    }
+  ],
+  "staple_pairing": ["面包", "米饭", "酸奶"],
+  "suitable_scenarios": ["聚餐", "烤肉爱好者"],
+  "common_ingredients": ["羊肉", "牛肉", "番茄", "辣椒", "酸奶", "香料"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "土耳其烤肉要腌制入味，炭火烤制。果仁蜜饼的酥皮要层层分明，糖浆要均匀渗透。"
+}

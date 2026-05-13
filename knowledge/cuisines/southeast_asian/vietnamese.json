@@ -1,0 +1,60 @@
+{
+  "id": "vietnamese",
+  "name": "越南菜",
+  "name_en": "Vietnamese Cuisine",
+  "region": "越南",
+  "description": "以清淡鲜美为主，善用鱼露、香草。口味清爽，不油腻，注重食材新鲜度。",
+  "flavor_profile": {
+    "primary": ["清淡", "鲜美", "香草"],
+    "secondary": ["鱼露", "柠檬", "薄荷"],
+    "characteristics": "清淡爽口，香草丰富，少油少盐"
+  },
+  "core_techniques": ["煮", "凉拌", "烤", "卷"],
+  "signature_dishes": [
+    {
+      "id": "pho",
+      "name": "越南河粉",
+      "difficulty": "medium",
+      "time_minutes": 120,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "清淡鲜美"
+    },
+    {
+      "id": "banh_mi",
+      "name": "越南三明治",
+      "difficulty": "easy",
+      "time_minutes": 10,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "咸香"
+    },
+    {
+      "id": "spring_roll",
+      "name": "越南春卷",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "清爽"
+    },
+    {
+      "id": "bun_cha",
+      "name": "烤肉米粉",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "酸甜辣"
+    }
+  ],
+  "staple_pairing": ["河粉", "米粉", "米饭", "法棍"],
+  "suitable_scenarios": ["日常", "清淡饮食", "减肥"],
+  "common_ingredients": ["鱼露", "柠檬", "薄荷", "罗勒", "豆芽", "青柠"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.6,
+    "hard": 0.1
+  },
+  "tips": "越南河粉的灵魂是汤底，要用牛骨熬制数小时。吃的时候配上新鲜香草和柠檬，才是正宗吃法。"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sichuan",
+  "name": "川菜",
+  "name_en": "Sichuan Cuisine",
+  "region": "中国四川",
+  "description": "以麻辣著称，一菜一格，百菜百味。善用三椒（辣椒、花椒、胡椒），三香（葱、姜、蒜），味型多变。",
+  "flavor_profile": {
+    "primary": ["麻辣", "鱼香", "怪味", "糊辣"],
+    "secondary": ["椒麻", "酸辣", "红油", "蒜泥"],
+    "characteristics": "麻辣鲜香，味型多样，百菜百味"
+  },
+  "core_techniques": ["小炒", "干煸", "水煮", "红烧", "宫保", "鱼香", "干锅"],
+  "signature_dishes": [
+    {
+      "id": "gongbao_chicken",
+      "name": "宫保鸡丁",
+      "difficulty": "medium",
+      "time_minutes": 25,
+      "cost_tier": "low",
+      "popularity_score": 95,
+      "flavor": "糊辣荔枝味"
+    },
+    {
+      "id": "mapo_tofu",
+      "name": "麻婆豆腐",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 92,
+      "flavor": "麻辣"
+    },
+    {
+      "id": "twice_cooked_pork",
+      "name": "回锅肉",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 90,
+      "flavor": "咸鲜微辣"
+    },
+    {
+      "id": "water_boiled_fish",
+      "name": "水煮鱼",
+      "difficulty": "hard",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 88,
+      "flavor": "麻辣"
+    },
+    {
+      "id": "dry_fried_green_beans",
+      "name": "干煸四季豆",
+      "difficulty": "easy",
+      "time_minutes": 15,
+      "cost_tier": "low",
+      "popularity_score": 85,
+      "flavor": "干香微辣"
+    },
+    {
+      "id": "fish_flavored_pork",
+      "name": "鱼香肉丝",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "low",
+      "popularity_score": 88,
+      "flavor": "鱼香"
+    },
+    {
+      "id": "kung_pao_shrimp",
+      "name": "宫保虾仁",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 82,
+      "flavor": "糊辣荔枝味"
+    }
+  ],
+  "staple_pairing": ["米饭", "担担面", "抄手", "钟水饺"],
+  "suitable_scenarios": ["日常", "聚餐", "下饭", "开胃"],
+  "common_ingredients": ["郫县豆瓣", "花椒", "干辣椒", "泡椒", "豆豉", "蒜", "姜"],
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  },
+  "tips": "川菜的灵魂是调味，掌握好豆瓣酱、花椒、辣椒的比例，就掌握了川菜的精髓。"
+}

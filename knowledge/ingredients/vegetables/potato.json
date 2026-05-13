@@ -1,0 +1,69 @@
+{
+  "id": "potato",
+  "name": "土豆",
+  "name_en": "Potato",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {
+    "calories": 77,
+    "protein": 2.0,
+    "fat": 0.1,
+    "carbs": 17.5,
+    "fiber": 2.2
+  },
+  "price_range": {
+    "min": 2,
+    "max": 5,
+    "average": 3,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": "秋冬"
+  },
+  "storage": {
+    "fresh": "常温避光1-2周",
+    "frozen": "可冷冻，需先煮熟",
+    "tips": "发芽的土豆有毒，不能吃"
+  },
+  "cuts": [
+    {
+      "name": "土豆丝",
+      "suitable_for": ["酸辣土豆丝", "清炒"],
+      "texture": "爽脆",
+      "cook_time_range": "3-5分钟"
+    },
+    {
+      "name": "土豆块",
+      "suitable_for": ["红烧", "炖肉", "咖喱"],
+      "texture": "软糯",
+      "cook_time_range": "15-20分钟"
+    },
+    {
+      "name": "土豆片",
+      "suitable_for": ["煎", "炸", "烤"],
+      "texture": "外酥里嫩",
+      "cook_time_range": "5-10分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["牛肉", "鸡肉", "排骨", "青椒"],
+    "spicy": ["辣椒", "花椒", "醋"],
+    "sauce": ["酱油", "醋", "盐"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "红薯",
+      "reason": "更甜",
+      "taste_impact": "口感更甜糯",
+      "cook_time_change": "相似"
+    }
+  ],
+  "tips": [
+    "土豆丝要泡水去淀粉，才会爽脆",
+    "炒土豆丝要大火快炒，保持脆感",
+    "炖肉时土豆要后放，否则会煮烂"
+  ]
+}

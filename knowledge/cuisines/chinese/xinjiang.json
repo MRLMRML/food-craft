@@ -1,0 +1,69 @@
+{
+  "id": "xinjiang",
+  "name": "新疆菜",
+  "name_en": "Xinjiang Cuisine",
+  "region": "中国新疆",
+  "description": "以牛羊肉为主，善用孜然、辣椒。口味浓郁，香气扑鼻，具有浓郁的西域风情。",
+  "flavor_profile": {
+    "primary": ["孜然", "咸香", "烤香"],
+    "secondary": ["辣味", "奶香", "番茄"],
+    "characteristics": "孜然香气浓郁，牛羊肉为主，烧烤风味"
+  },
+  "core_techniques": ["烤", "炖", "炒", "焖", "拉面"],
+  "signature_dishes": [
+    {
+      "id": "big_plate_chicken",
+      "name": "大盘鸡",
+      "difficulty": "medium",
+      "time_minutes": 40,
+      "cost_tier": "medium",
+      "popularity_score": 90,
+      "flavor": "香辣"
+    },
+    {
+      "id": "lamb_skewer",
+      "name": "烤羊肉串",
+      "difficulty": "medium",
+      "time_minutes": 20,
+      "cost_tier": "medium",
+      "popularity_score": 92,
+      "flavor": "孜然咸香"
+    },
+    {
+      "id": "pilaf",
+      "name": "手抓饭",
+      "difficulty": "medium",
+      "time_minutes": 60,
+      "cost_tier": "medium",
+      "popularity_score": 85,
+      "flavor": "咸香"
+    },
+    {
+      "id": "laghman",
+      "name": "拉条子",
+      "difficulty": "hard",
+      "time_minutes": 40,
+      "cost_tier": "low",
+      "popularity_score": 82,
+      "flavor": "咸香"
+    },
+    {
+      "id": "nan_bread",
+      "name": "馕",
+      "difficulty": "medium",
+      "time_minutes": 30,
+      "cost_tier": "low",
+      "popularity_score": 78,
+      "flavor": "麦香"
+    }
+  ],
+  "staple_pairing": ["馕", "米饭", "拉面"],
+  "suitable_scenarios": ["聚餐", "烧烤", "冬季"],
+  "common_ingredients": ["羊肉", "牛肉", "孜然", "辣椒", "洋葱", "番茄", "土豆"],
+  "difficulty_distribution": {
+    "easy": 0.2,
+    "medium": 0.5,
+    "hard": 0.3
+  },
+  "tips": "新疆菜的灵魂是孜然和羊肉。羊肉要去膻味，可以用料酒和姜腌制。烤羊肉串要掌握好火候，外焦里嫩。"
+}

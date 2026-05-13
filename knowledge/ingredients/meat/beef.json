@@ -1,0 +1,69 @@
+{
+  "id": "beef_sirloin",
+  "name": "牛里脊",
+  "name_en": "Beef Sirloin",
+  "category": "meat",
+  "subcategory": "beef",
+  "nutrition_per_100g": {
+    "calories": 140,
+    "protein": 20.2,
+    "fat": 6.2,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 40,
+    "max": 80,
+    "average": 60,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏2-3天",
+    "frozen": "冷冻3个月",
+    "tips": "牛肉冷冻后口感变化不大"
+  },
+  "cuts": [
+    {
+      "name": "牛里脊",
+      "suitable_for": ["煎", "炒", "烤"],
+      "texture": "嫩滑",
+      "cook_time_range": "5-15分钟"
+    },
+    {
+      "name": "牛腩",
+      "suitable_for": ["炖", "红烧", "咖喱"],
+      "texture": "软烂",
+      "cook_time_range": "60-120分钟"
+    },
+    {
+      "name": "牛腱子",
+      "suitable_for": ["卤", "炖", "酱"],
+      "texture": "紧实",
+      "cook_time_range": "90-120分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["土豆", "胡萝卜", "洋葱", "番茄"],
+    "spicy": ["黑胡椒", "辣椒", "咖喱"],
+    "sauce": ["红酒", "酱油", "蚝油"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "猪肉里脊",
+      "reason": "更便宜",
+      "taste_impact": "牛肉香味不足",
+      "cook_time_change": "相似"
+    }
+  ],
+  "tips": [
+    "牛排要室温回温后再煎",
+    "煎牛排要大火，每面2-3分钟（三分熟）",
+    "炖牛肉要冷水下锅，小火慢炖"
+  ]
+}

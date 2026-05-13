@@ -1,0 +1,57 @@
+{
+  "id": "pork_belly",
+  "name": "五花肉",
+  "name_en": "Pork Belly",
+  "category": "meat",
+  "subcategory": "pork",
+  "nutrition_per_100g": {
+    "calories": 395,
+    "protein": 14.0,
+    "fat": 37.0,
+    "carbs": 0.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 15,
+    "max": 30,
+    "average": 22,
+    "unit": "元/500g",
+    "last_updated": "2024-01-15",
+    "source": "盒马/美团买菜"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "冷藏2-3天",
+    "frozen": "冷冻3个月",
+    "tips": "分装冷冻，每次取用一份"
+  },
+  "cuts": [
+    {
+      "name": "五花肉",
+      "suitable_for": ["红烧", "烤", "炖", "炒"],
+      "texture": "肥瘦相间",
+      "cook_time_range": "30-90分钟"
+    }
+  ],
+  "pairing": {
+    "classic": ["梅干菜", "土豆", "豆腐", "白菜"],
+    "spicy": ["辣椒", "豆瓣酱"],
+    "sauce": ["酱油", "冰糖", "料酒"]
+  },
+  "substitutes": [
+    {
+      "ingredient": "梅花肉",
+      "reason": "更瘦",
+      "taste_impact": "肥肉少，口感略柴",
+      "cook_time_change": "-10分钟"
+    }
+  ],
+  "tips": [
+    "红烧肉要选肥瘦相间的三层",
+    "先焯水去腥，再冷水冲洗",
+    "炒糖色要用小火，冰糖更容易操作"
+  ]
+}
