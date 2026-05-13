@@ -1,17 +1,36 @@
-# Food Craft
+# 🍽️ Food Craft
 
-> 🍽️ AI 驱动的智能菜谱生成系统 - 在约束条件下做出最好吃的菜
+> AI 驱动的智能菜谱生成系统 - 在约束条件下做出最好吃的菜
 
+[![GitHub Pages](https://img.shields.io/badge/Demo-🌐%20在线预览-blue)](https://mrlmrml.github.io/food-craft/)
 [![Update Knowledge Base](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml/badge.svg)](https://github.com/MRLMRML/food-craft/actions/workflows/update_weekly.yml)
+[![Ingredients](https://img.shields.io/badge/食材-1000+-green)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/ingredients)
+[![Cuisines](https://img.shields.io/badge/菜系-25+-orange)](https://github.com/MRLMRML/food-craft/tree/main/knowledge/cuisines)
+
+---
+
+## 🌐 在线 Demo
+
+**👉 [点击查看 Demo](https://mrlmrml.github.io/food-craft/)**
+
+Demo 展示了一个完整的菜谱输出示例，包括：
+- 📋 菜单总览（人数、时长、成本、热量）
+- 👨‍🍳 详细做法（食材、步骤、小贴士）
+- 🛒 采购清单（分类、价格）
+- ⏱️ 时间规划（并行烹饪安排）
+
+---
 
 ## ✨ 特性
 
 - 🎯 **高度定制化** - 根据人数、场景、预算、热量等多维度需求生成菜谱
-- 🌍 **世界菜系** - 涵盖 25+ 菜系，从川菜到法餐，从日料到墨西哥菜
-- 🥗 **营养均衡** - 精确的热量、蛋白质、脂肪、碳水计算
+- 🌍 **全球菜系** - 涵盖 25+ 菜系，从川菜到法餐，从日料到墨西哥菜
+- 🥗 **1000+ 食材** - 全球食材数据库，涵盖蔬菜、肉类、海鲜、调味料等
 - 💰 **预算控制** - 实时价格数据，人均成本精确到元
 - ⏱️ **时间规划** - 多道菜并行烹饪的时间线
 - 🛒 **采购清单** - 自动生成购物清单，不错过任何食材
+
+---
 
 ## 🚀 快速开始
 
@@ -22,15 +41,18 @@
 cp SKILL.md ~/.opencode/skills/food-craft/SKILL.md
 ```
 
-### 前端 Demo
+### 本地运行 Demo
 
 ```bash
-# 美观的菜谱展示页面（推荐）
-open frontend/demo.html
+# 克隆仓库
+git clone https://github.com/MRLMRML/food-craft.git
+cd food-craft
 
-# 菜谱输出示例页面
+# 打开 Demo 页面
 open frontend/index.html
 ```
+
+---
 
 ## 📖 使用示例
 
@@ -84,41 +106,34 @@ AI：增肌餐安排！给你一份高蛋白低脂菜单：
     蛋白质：42g
 ```
 
+---
+
 ## 🏗️ 项目结构
 
 ```
 food-craft/
 ├── SKILL.md                          # AI Skill 文档
 ├── README.md                         # 项目说明
+├── frontend/
+│   └── index.html                    # Demo 页面
 ├── knowledge/                        # 知识库
-│   ├── cuisines/                     # 菜系库（25+ 菜系）
-│   │   ├── chinese/                  # 中国菜系
-│   │   ├── japanese/                 # 日本料理
-│   │   ├── korean/                   # 韩国料理
-│   │   ├── southeast_asian/          # 东南亚菜系
-│   │   ├── western/                  # 西方菜系
-│   │   └── ...
-│   ├── ingredients/                  # 食材库（50+ 食材）
-│   │   ├── meat/                     # 肉类
-│   │   ├── seafood/                  # 海鲜
-│   │   ├── vegetables/               # 蔬菜
-│   │   └── ...
-│   ├── techniques/                   # 烹饪技法库
-│   ├── pairing_rules.json            # 食材搭配规则
-│   ├── nutrition_db.json             # 营养数据库
+│   ├── cuisines/                     # 25+ 菜系
+│   ├── ingredients/                  # 1000+ 食材
+│   ├── techniques/                   # 烹饪技法
+│   ├── pairing_rules.json            # 搭配规则
+│   ├── nutrition_db.json             # 营养数据
 │   ├── price_index.json              # 价格指数
-│   └── seasonal_calendar.json        # 时令食材日历
+│   └── seasonal_calendar.json        # 时令食材
 ├── scripts/                          # 更新脚本
-│   ├── update_prices.py              # 更新价格
-│   ├── update_seasonal.py            # 更新时令
-│   ├── update_trending.py            # 更新趋势
+│   ├── generate_*.py                 # 食材生成脚本
+│   ├── update_*.py                   # 数据更新脚本
 │   └── validate_knowledge.py         # 数据校验
-├── frontend/                         # 前端页面
-│   └── index.html                    # 单页应用
 └── .github/workflows/                # GitHub Actions
     ├── update_weekly.yml             # 每周更新
     └── update_monthly.yml            # 每月更新
 ```
+
+---
 
 ## 🍳 支持的菜系
 
@@ -134,6 +149,8 @@ food-craft/
 ### 其他菜系
 土耳其 | 黎巴嫩 | 波斯 | 墨西哥 | 巴西 | 秘鲁 | 阿根廷 | 埃塞俄比亚 | 摩洛哥
 
+---
+
 ## 📊 知识库统计
 
 | 类别 | 数量 |
@@ -144,12 +161,16 @@ food-craft/
 | 调味料 | 50+ |
 | 搭配规则 | 20+ |
 
+---
+
 ## 🔄 自动更新
 
 知识库通过 GitHub Actions 自动更新：
 
 - **每周更新**：价格数据、时令食材
 - **每月更新**：热门趋势、数据校验
+
+---
 
 ## 🛠️ 开发
 
@@ -161,17 +182,17 @@ git clone https://github.com/MRLMRML/food-craft.git
 cd food-craft
 
 # 校验数据
-python scripts/validate_knowledge.py
+python3 scripts/validate_knowledge.py
 
-# 更新价格
-python scripts/update_prices.py
+# 生成食材
+python3 scripts/generate_global_ingredients.py
 ```
 
 ### 添加新菜系
 
 1. 在 `knowledge/cuisines/` 下创建新的 JSON 文件
 2. 按照现有格式填写菜系信息
-3. 运行 `python scripts/validate_knowledge.py` 校验
+3. 运行 `python3 scripts/validate_knowledge.py` 校验
 
 ### 添加新食材
 
@@ -179,13 +200,19 @@ python scripts/update_prices.py
 2. 填写营养数据、价格区间、搭配建议
 3. 运行校验脚本
 
+---
+
 ## 📄 License
 
 MIT License
 
+---
+
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！
+
+---
 
 ## 🙏 致谢
 
