@@ -1,0 +1,69 @@
+{
+  "id": "rice_grill_italian_2",
+  "name": "烤米饭",
+  "cuisine": "italian",
+  "category": "international",
+  "difficulty": "medium",
+  "time_minutes": 18,
+  "servings": 4,
+  "calories_per_serving": 129,
+  "cost_per_serving": 6,
+  "tags": [
+    "意大利菜",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "米饭",
+      "amount": "200g",
+      "type": "rice"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "米饭处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用意面风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用烤方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好意面风味的调味"
+  ],
+  "nutrition": {
+    "calories": 116,
+    "protein": 2.6,
+    "fat": 0.3,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.822223"
+}

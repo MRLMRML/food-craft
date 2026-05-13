@@ -1,0 +1,69 @@
+{
+  "id": "chicken_stir_fry_thai_french_2",
+  "name": "泰式鸡肉",
+  "cuisine": "french",
+  "category": "international",
+  "difficulty": "easy",
+  "time_minutes": 14,
+  "servings": 4,
+  "calories_per_serving": 173,
+  "cost_per_serving": 24,
+  "tags": [
+    "法国菜",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "鸡肉",
+      "amount": "200g",
+      "type": "chicken"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鸡肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用奶酪风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用泰式炒方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好奶酪风味的调味"
+  ],
+  "nutrition": {
+    "calories": 167,
+    "protein": 19.3,
+    "fat": 9.4,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.814090"
+}

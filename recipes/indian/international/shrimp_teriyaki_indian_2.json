@@ -1,0 +1,69 @@
+{
+  "id": "shrimp_teriyaki_indian_2",
+  "name": "照烧虾",
+  "cuisine": "indian",
+  "category": "international",
+  "difficulty": "easy",
+  "time_minutes": 20,
+  "servings": 4,
+  "calories_per_serving": 87,
+  "cost_per_serving": 39,
+  "tags": [
+    "印度菜",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "虾",
+      "amount": "300g",
+      "type": "shrimp"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "虾处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用飞饼风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用照烧方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好飞饼风味的调味"
+  ],
+  "nutrition": {
+    "calories": 99,
+    "protein": 20.4,
+    "fat": 1.7,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.811728"
+}

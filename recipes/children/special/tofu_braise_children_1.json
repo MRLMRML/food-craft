@@ -1,0 +1,66 @@
+{
+  "id": "tofu_braise_children_1",
+  "name": "炖豆腐",
+  "cuisine": "homestyle",
+  "category": "children",
+  "difficulty": "easy",
+  "time_minutes": 36,
+  "servings": 4,
+  "calories_per_serving": 595,
+  "cost_per_serving": 14,
+  "tags": [
+    "儿童",
+    "营养",
+    "可爱"
+  ],
+  "ingredients": [
+    {
+      "name": "豆腐",
+      "amount": "300g",
+      "type": "tofu"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆腐处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炖方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "摆盘成可爱造型",
+      "tip": "增加食欲"
+    }
+  ],
+  "key_points": [
+    "适合儿童餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 595,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.338406"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "salmon_stir_fry_muscle_gain_3",
+  "name": "清炒三文鱼",
+  "cuisine": "homestyle",
+  "category": "muscle_gain",
+  "difficulty": "easy",
+  "time_minutes": 7,
+  "servings": 4,
+  "calories_per_serving": 791,
+  "cost_per_serving": 70,
+  "tags": [
+    "增肌",
+    "高蛋白",
+    "高热量"
+  ],
+  "ingredients": [
+    {
+      "name": "三文鱼",
+      "amount": "200g",
+      "type": "salmon"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "三文鱼处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炒方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "搭配碳水一起食用",
+      "tip": "补充能量"
+    }
+  ],
+  "key_points": [
+    "适合增肌餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 791,
+    "protein": 20.4,
+    "fat": 13.4,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.346435"
+}

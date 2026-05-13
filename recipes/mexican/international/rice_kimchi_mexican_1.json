@@ -1,0 +1,69 @@
+{
+  "id": "rice_kimchi_mexican_1",
+  "name": "泡菜米饭",
+  "cuisine": "mexican",
+  "category": "international",
+  "difficulty": "easy",
+  "time_minutes": 12,
+  "servings": 2,
+  "calories_per_serving": 112,
+  "cost_per_serving": 11,
+  "tags": [
+    "墨西哥菜",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "米饭",
+      "amount": "500g",
+      "type": "rice"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "米饭处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用塔可风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用泡菜方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好塔可风味的调味"
+  ],
+  "nutrition": {
+    "calories": 116,
+    "protein": 2.6,
+    "fat": 0.3,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.827173"
+}

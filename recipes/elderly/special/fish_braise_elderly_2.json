@@ -1,0 +1,66 @@
+{
+  "id": "fish_braise_elderly_2",
+  "name": "炖鱼肉",
+  "cuisine": "homestyle",
+  "category": "elderly",
+  "difficulty": "easy",
+  "time_minutes": 37,
+  "servings": 2,
+  "calories_per_serving": 456,
+  "cost_per_serving": 35,
+  "tags": [
+    "老人",
+    "软烂",
+    "易消化"
+  ],
+  "ingredients": [
+    {
+      "name": "鱼肉",
+      "amount": "300g",
+      "type": "fish"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "鱼肉处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炖方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "确保软烂易嚼",
+      "tip": "方便老人食用"
+    }
+  ],
+  "key_points": [
+    "适合老人餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 456,
+    "protein": 18.4,
+    "fat": 3.4,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.340782"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "lotus_root_boil_elderly_3",
+  "name": "水煮莲藕",
+  "cuisine": "homestyle",
+  "category": "elderly",
+  "difficulty": "easy",
+  "time_minutes": 17,
+  "servings": 2,
+  "calories_per_serving": 609,
+  "cost_per_serving": 17,
+  "tags": [
+    "老人",
+    "软烂",
+    "易消化"
+  ],
+  "ingredients": [
+    {
+      "name": "莲藕",
+      "amount": "300g",
+      "type": "lotus_root"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "莲藕处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用煮方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "确保软烂易嚼",
+      "tip": "方便老人食用"
+    }
+  ],
+  "key_points": [
+    "适合老人餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 609,
+    "protein": 2.6,
+    "fat": 0.1,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.342445"
+}

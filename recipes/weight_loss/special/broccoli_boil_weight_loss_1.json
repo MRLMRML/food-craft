@@ -1,0 +1,66 @@
+{
+  "id": "broccoli_boil_weight_loss_1",
+  "name": "水煮西兰花",
+  "cuisine": "homestyle",
+  "category": "weight_loss",
+  "difficulty": "easy",
+  "time_minutes": 22,
+  "servings": 1,
+  "calories_per_serving": 476,
+  "cost_per_serving": 18,
+  "tags": [
+    "减脂",
+    "低卡",
+    "高蛋白"
+  ],
+  "ingredients": [
+    {
+      "name": "西兰花",
+      "amount": "300g",
+      "type": "broccoli"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "西兰花处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用煮方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "少油少盐调味",
+      "tip": "控制热量"
+    }
+  ],
+  "key_points": [
+    "适合减脂餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 476,
+    "protein": 4.3,
+    "fat": 0.4,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.343740"
+}

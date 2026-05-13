@@ -1,0 +1,69 @@
+{
+  "id": "tofu_bbq_mexican_2",
+  "name": "BBQ豆腐",
+  "cuisine": "mexican",
+  "category": "international",
+  "difficulty": "medium",
+  "time_minutes": 34,
+  "servings": 4,
+  "calories_per_serving": 117,
+  "cost_per_serving": 18,
+  "tags": [
+    "墨西哥菜",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "豆腐",
+      "amount": "200g",
+      "type": "tofu"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆腐处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用玉米饼风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用BBQ方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好玉米饼风味的调味"
+  ],
+  "nutrition": {
+    "calories": 76,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.825847"
+}

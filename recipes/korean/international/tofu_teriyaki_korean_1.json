@@ -1,0 +1,69 @@
+{
+  "id": "tofu_teriyaki_korean_1",
+  "name": "照烧豆腐",
+  "cuisine": "korean",
+  "category": "international",
+  "difficulty": "easy",
+  "time_minutes": 16,
+  "servings": 4,
+  "calories_per_serving": 112,
+  "cost_per_serving": 10,
+  "tags": [
+    "韩国料理",
+    "国际美食"
+  ],
+  "ingredients": [
+    {
+      "name": "豆腐",
+      "amount": "200g",
+      "type": "tofu"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "胡椒",
+      "amount": "适量"
+    },
+    {
+      "name": "橄榄油",
+      "amount": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "豆腐处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用韩式辣酱风味调味",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "用照烧方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "掌握好韩式辣酱风味的调味"
+  ],
+  "nutrition": {
+    "calories": 76,
+    "protein": 8.1,
+    "fat": 3.7,
+    "carbs": 20
+  },
+  "source": "international_batch",
+  "created_at": "2026-05-13T16:32:04.799267"
+}

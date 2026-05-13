@@ -1,0 +1,66 @@
+{
+  "id": "cucumber_stir_fry_weight_loss_1",
+  "name": "清炒黄瓜",
+  "cuisine": "homestyle",
+  "category": "weight_loss",
+  "difficulty": "easy",
+  "time_minutes": 14,
+  "servings": 4,
+  "calories_per_serving": 478,
+  "cost_per_serving": 7,
+  "tags": [
+    "减脂",
+    "低卡",
+    "高蛋白"
+  ],
+  "ingredients": [
+    {
+      "name": "黄瓜",
+      "amount": "200g",
+      "type": "cucumber"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "黄瓜处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炒方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    },
+    {
+      "step": 4,
+      "content": "少油少盐调味",
+      "tip": "控制热量"
+    }
+  ],
+  "key_points": [
+    "适合减脂餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 478,
+    "protein": 0.7,
+    "fat": 0.1,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.344166"
+}

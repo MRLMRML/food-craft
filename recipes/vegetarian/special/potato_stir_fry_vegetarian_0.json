@@ -1,0 +1,61 @@
+{
+  "id": "potato_stir_fry_vegetarian_0",
+  "name": "清炒土豆",
+  "cuisine": "homestyle",
+  "category": "vegetarian",
+  "difficulty": "easy",
+  "time_minutes": 7,
+  "servings": 2,
+  "calories_per_serving": 391,
+  "cost_per_serving": 2,
+  "tags": [
+    "素食",
+    "健康",
+    "清淡"
+  ],
+  "ingredients": [
+    {
+      "name": "土豆",
+      "amount": "200g",
+      "type": "potato"
+    }
+  ],
+  "seasonings": [
+    {
+      "name": "盐",
+      "amount": "适量"
+    },
+    {
+      "name": "食用油",
+      "amount": "少许"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "content": "土豆处理干净",
+      "tip": ""
+    },
+    {
+      "step": 2,
+      "content": "用炒方式烹饪",
+      "tip": ""
+    },
+    {
+      "step": 3,
+      "content": "调味出锅",
+      "tip": ""
+    }
+  ],
+  "key_points": [
+    "适合素食餐的烹饪方式"
+  ],
+  "nutrition": {
+    "calories": 391,
+    "protein": 2,
+    "fat": 0.1,
+    "carbs": 30
+  },
+  "source": "scene_batch",
+  "created_at": "2026-05-13T16:34:31.349875"
+}
