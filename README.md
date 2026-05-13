@@ -39,23 +39,42 @@ Demo 展示了一个完整的菜谱输出示例，包括：
 
 ## 🚀 快速开始
 
-### 作为 AI Skill 使用
+### 方式 1：作为 AI Skill 使用（文字交互）
+
+将 SKILL.md 安装到你的 AI Agent 技能目录：
 
 ```bash
-# 复制 SKILL.md 到你的 AI Agent 技能目录
 cp SKILL.md ~/.opencode/skills/food-craft/SKILL.md
 ```
 
-### 本地运行 Demo
+然后在 Agent 中使用：
+```
+用户：帮我做个晚餐，4个人，预算200
+AI：好的！给你安排...
+```
+
+### 方式 2：启动本地服务器（交互式前端）
 
 ```bash
 # 克隆仓库
 git clone https://github.com/MRLMRML/food-craft.git
 cd food-craft
 
-# 打开 Demo 页面
-open frontend/index.html
+# 启动服务器
+python3 server.py
+
+# 打开浏览器访问
+# http://localhost:8080       # 交互式前端
+# http://localhost:8080/demo  # 静态展示
 ```
+
+**交互式前端功能**：
+- ✅ 选择用餐场景（儿童餐、老人餐、减脂餐、增肌餐、素食餐）
+- ✅ 选择菜系偏好
+- ✅ 设置预算范围
+- ✅ 关键词搜索菜谱
+- ✅ 查看菜谱详情（食材、步骤、关键点）
+- ✅ API 接口供二次开发
 
 ---
 
