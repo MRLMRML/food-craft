@@ -1,0 +1,34 @@
+{
+  "id": "cayenne",
+  "name": "卡宴辣椒",
+  "name_en": "Cayenne",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {
+    "calories": 318,
+    "protein": 12.0,
+    "fat": 17.3,
+    "carbs": 56.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

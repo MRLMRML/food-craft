@@ -1,0 +1,34 @@
+{
+  "id": "wheatgrass",
+  "name": "小麦草粉",
+  "name_en": "Wheatgrass",
+  "category": "superfood",
+  "subcategory": "superfood",
+  "nutrition_per_100g": {
+    "calories": 300,
+    "protein": 25.0,
+    "fat": 5.0,
+    "carbs": 40.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 42,
+    "max": 78,
+    "average": 60,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "dried_scallop_asian",
+  "name": "干贝",
+  "name_en": "Dried Scallop",
+  "category": "seafood",
+  "subcategory": "dried_seafood",
+  "nutrition_per_100g": {
+    "calories": 290,
+    "protein": 63.0,
+    "fat": 3.2,
+    "carbs": 5.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 84,
+    "max": 156,
+    "average": 120,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

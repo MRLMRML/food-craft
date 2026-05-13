@@ -1,0 +1,34 @@
+{
+  "id": "wahoo",
+  "name": "刺鲅",
+  "name_en": "Wahoo",
+  "category": "seafood_exotic",
+  "subcategory": "seafood_exotic",
+  "nutrition_per_100g": {
+    "calories": 120,
+    "protein": 22.0,
+    "fat": 3.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 49,
+    "max": 91,
+    "average": 70,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "tiramisu",
+  "name": "提拉米苏",
+  "name_en": "Tiramisu",
+  "category": "dessert",
+  "subcategory": "dessert",
+  "nutrition_per_100g": {
+    "calories": 240,
+    "protein": 4.0,
+    "fat": 14.0,
+    "carbs": 25.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 24,
+    "max": 45,
+    "average": 35,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

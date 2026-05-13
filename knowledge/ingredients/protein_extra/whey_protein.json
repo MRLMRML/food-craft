@@ -1,0 +1,34 @@
+{
+  "id": "whey_protein",
+  "name": "乳清蛋白",
+  "name_en": "Whey Protein",
+  "category": "protein_extra",
+  "subcategory": "protein_extra",
+  "nutrition_per_100g": {
+    "calories": 370,
+    "protein": 80.0,
+    "fat": 3.0,
+    "carbs": 8.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 84,
+    "max": 156,
+    "average": 120,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

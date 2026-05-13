@@ -1,0 +1,34 @@
+{
+  "id": "chlorella",
+  "name": "小球藻",
+  "name_en": "Chlorella",
+  "category": "vegetables",
+  "subcategory": "seaweed",
+  "nutrition_per_100g": {
+    "calories": 336,
+    "protein": 58.4,
+    "fat": 9.3,
+    "carbs": 23.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 84,
+    "max": 156,
+    "average": 120,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

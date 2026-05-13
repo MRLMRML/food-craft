@@ -1,0 +1,34 @@
+{
+  "id": "walleye",
+  "name": "大眼鲈",
+  "name_en": "Walleye",
+  "category": "seafood",
+  "subcategory": "fish_freshwater",
+  "nutrition_per_100g": {
+    "calories": 93,
+    "protein": 19.1,
+    "fat": 1.2,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 28,
+    "max": 52,
+    "average": 40,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

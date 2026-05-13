@@ -1,0 +1,34 @@
+{
+  "id": "parsley",
+  "name": "欧芹",
+  "name_en": "Parsley",
+  "category": "herbs",
+  "subcategory": "general",
+  "nutrition_per_100g": {
+    "calories": 36,
+    "protein": 3.0,
+    "fat": 0.8,
+    "carbs": 6.3,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 5,
+    "max": 10,
+    "average": 8,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

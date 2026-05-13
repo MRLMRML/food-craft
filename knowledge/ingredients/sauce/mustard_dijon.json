@@ -1,0 +1,34 @@
+{
+  "id": "mustard_dijon",
+  "name": "第戎芥末",
+  "name_en": "Dijon Mustard",
+  "category": "sauce",
+  "subcategory": "sauce",
+  "nutrition_per_100g": {
+    "calories": 66,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 5.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

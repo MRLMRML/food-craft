@@ -1,0 +1,34 @@
+{
+  "id": "porterhouse",
+  "name": "波特豪斯牛排",
+  "name_en": "Porterhouse",
+  "category": "meat",
+  "subcategory": "beef",
+  "nutrition_per_100g": {
+    "calories": 250,
+    "protein": 24.5,
+    "fat": 16.5,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 118,
+    "max": 221,
+    "average": 170,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

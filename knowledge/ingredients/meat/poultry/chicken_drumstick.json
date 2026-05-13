@@ -1,0 +1,34 @@
+{
+  "id": "chicken_drumstick",
+  "name": "鸡小腿",
+  "name_en": "Chicken Drumstick",
+  "category": "meat",
+  "subcategory": "poultry",
+  "nutrition_per_100g": {
+    "calories": 177,
+    "protein": 28.3,
+    "fat": 5.7,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

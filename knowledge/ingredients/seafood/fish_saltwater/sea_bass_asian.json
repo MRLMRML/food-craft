@@ -1,0 +1,34 @@
+{
+  "id": "sea_bass_asian",
+  "name": "海鲈鱼",
+  "name_en": "Sea Bass",
+  "category": "seafood",
+  "subcategory": "fish_saltwater",
+  "nutrition_per_100g": {
+    "calories": 97,
+    "protein": 18.4,
+    "fat": 2.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 38,
+    "max": 71,
+    "average": 55,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

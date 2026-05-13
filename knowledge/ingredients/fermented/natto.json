@@ -1,0 +1,34 @@
+{
+  "id": "natto",
+  "name": "纳豆",
+  "name_en": "Natto",
+  "category": "fermented",
+  "subcategory": "fermented",
+  "nutrition_per_100g": {
+    "calories": 212,
+    "protein": 17.7,
+    "fat": 11.0,
+    "carbs": 14.4,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 12,
+    "max": 23,
+    "average": 18,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

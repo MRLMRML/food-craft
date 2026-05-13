@@ -1,0 +1,34 @@
+{
+  "id": "macadamia",
+  "name": "夏威夷果",
+  "name_en": "Macadamia",
+  "category": "nuts",
+  "subcategory": "nuts",
+  "nutrition_per_100g": {
+    "calories": 718,
+    "protein": 7.9,
+    "fat": 75.8,
+    "carbs": 13.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 42,
+    "max": 78,
+    "average": 60,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

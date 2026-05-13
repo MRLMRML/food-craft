@@ -1,0 +1,34 @@
+{
+  "id": "elk",
+  "name": "麋鹿肉",
+  "name_en": "Elk",
+  "category": "meat",
+  "subcategory": "game",
+  "nutrition_per_100g": {
+    "calories": 146,
+    "protein": 30.0,
+    "fat": 1.8,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 77,
+    "max": 143,
+    "average": 110,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

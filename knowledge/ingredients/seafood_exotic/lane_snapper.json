@@ -1,0 +1,34 @@
+{
+  "id": "lane_snapper",
+  "name": "车道鲷",
+  "name_en": "Lane Snapper",
+  "category": "seafood_exotic",
+  "subcategory": "seafood_exotic",
+  "nutrition_per_100g": {
+    "calories": 100,
+    "protein": 20.0,
+    "fat": 1.5,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 35,
+    "max": 65,
+    "average": 50,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

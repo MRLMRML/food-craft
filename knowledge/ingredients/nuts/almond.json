@@ -1,0 +1,34 @@
+{
+  "id": "almond",
+  "name": "杏仁",
+  "name_en": "Almond",
+  "category": "nuts",
+  "subcategory": "nuts",
+  "nutrition_per_100g": {
+    "calories": 579,
+    "protein": 21.2,
+    "fat": 49.9,
+    "carbs": 21.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 28,
+    "max": 52,
+    "average": 40,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

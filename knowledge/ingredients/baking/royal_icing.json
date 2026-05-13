@@ -1,0 +1,34 @@
+{
+  "id": "royal_icing",
+  "name": "皇家糖霜",
+  "name_en": "Royal Icing",
+  "category": "baking",
+  "subcategory": "baking",
+  "nutrition_per_100g": {
+    "calories": 375,
+    "protein": 0,
+    "fat": 0,
+    "carbs": 94.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

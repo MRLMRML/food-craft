@@ -1,0 +1,34 @@
+{
+  "id": "curry_leaf",
+  "name": "咖喱叶",
+  "name_en": "Curry Leaf",
+  "category": "herbs",
+  "subcategory": "general",
+  "nutrition_per_100g": {
+    "calories": 108,
+    "protein": 6.0,
+    "fat": 1.0,
+    "carbs": 18.7,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

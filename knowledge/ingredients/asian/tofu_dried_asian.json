@@ -1,0 +1,34 @@
+{
+  "id": "tofu_dried_asian",
+  "name": "豆腐干",
+  "name_en": "Dried Tofu",
+  "category": "asian",
+  "subcategory": "asian",
+  "nutrition_per_100g": {
+    "calories": 140,
+    "protein": 16.2,
+    "fat": 5.3,
+    "carbs": 10.7,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 4,
+    "max": 7,
+    "average": 6,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "cape_gooseberry",
+  "name": "灯笼果",
+  "name_en": "Cape Gooseberry",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {
+    "calories": 53,
+    "protein": 1.9,
+    "fat": 0.7,
+    "carbs": 11.2,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

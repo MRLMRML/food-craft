@@ -1,0 +1,34 @@
+{
+  "id": "rutabaga",
+  "name": "芜菁甘蓝",
+  "name_en": "Rutabaga",
+  "category": "vegetables",
+  "subcategory": "root",
+  "nutrition_per_100g": {
+    "calories": 38,
+    "protein": 1.1,
+    "fat": 0.2,
+    "carbs": 8.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

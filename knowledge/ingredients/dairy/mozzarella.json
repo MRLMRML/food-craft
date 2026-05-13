@@ -1,0 +1,34 @@
+{
+  "id": "mozzarella",
+  "name": "马苏里拉奶酪",
+  "name_en": "Mozzarella",
+  "category": "dairy",
+  "subcategory": "dairy",
+  "nutrition_per_100g": {
+    "calories": 280,
+    "protein": 28.0,
+    "fat": 17.1,
+    "carbs": 3.1,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 24,
+    "max": 45,
+    "average": 35,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

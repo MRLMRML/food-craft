@@ -1,0 +1,34 @@
+{
+  "id": "avocado_oil",
+  "name": "牛油果油",
+  "name_en": "Avocado Oil",
+  "category": "oils",
+  "subcategory": "oils",
+  "nutrition_per_100g": {
+    "calories": 884,
+    "protein": 0,
+    "fat": 100,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 42,
+    "max": 78,
+    "average": 60,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

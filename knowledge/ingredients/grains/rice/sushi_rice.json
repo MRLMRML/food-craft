@@ -1,0 +1,34 @@
+{
+  "id": "sushi_rice",
+  "name": "寿司米",
+  "name_en": "Sushi Rice",
+  "category": "grains",
+  "subcategory": "rice",
+  "nutrition_per_100g": {
+    "calories": 130,
+    "protein": 2.5,
+    "fat": 0.3,
+    "carbs": 28.5,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

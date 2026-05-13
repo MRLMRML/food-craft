@@ -1,0 +1,34 @@
+{
+  "id": "turmeric_latte",
+  "name": "姜黄拿铁粉",
+  "name_en": "Turmeric Latte",
+  "category": "superfood",
+  "subcategory": "superfood",
+  "nutrition_per_100g": {
+    "calories": 350,
+    "protein": 8.0,
+    "fat": 10.0,
+    "carbs": 60.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 31,
+    "max": 58,
+    "average": 45,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

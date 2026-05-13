@@ -1,0 +1,34 @@
+{
+  "id": "longan",
+  "name": "龙眼",
+  "name_en": "Longan",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 60,
+    "protein": 1.3,
+    "fat": 0.1,
+    "carbs": 15.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

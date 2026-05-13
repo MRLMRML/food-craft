@@ -1,0 +1,34 @@
+{
+  "id": "heavy_cream",
+  "name": "浓奶油",
+  "name_en": "Heavy Cream",
+  "category": "dairy",
+  "subcategory": "dairy",
+  "nutrition_per_100g": {
+    "calories": 340,
+    "protein": 2.1,
+    "fat": 36.1,
+    "carbs": 2.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 17,
+    "max": 32,
+    "average": 25,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

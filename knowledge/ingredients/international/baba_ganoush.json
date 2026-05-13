@@ -1,0 +1,34 @@
+{
+  "id": "baba_ganoush",
+  "name": "中东茄泥",
+  "name_en": "Baba Ganoush",
+  "category": "international",
+  "subcategory": "international",
+  "nutrition_per_100g": {
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 10.0,
+    "carbs": 8.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 14,
+    "max": 26,
+    "average": 20,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

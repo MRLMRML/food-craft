@@ -1,0 +1,34 @@
+{
+  "id": "prosciutto",
+  "name": "意式火腿",
+  "name_en": "Prosciutto",
+  "category": "meat",
+  "subcategory": "pork",
+  "nutrition_per_100g": {
+    "calories": 250,
+    "protein": 30.0,
+    "fat": 14.0,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 56,
+    "max": 104,
+    "average": 80,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

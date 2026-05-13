@@ -1,0 +1,34 @@
+{
+  "id": "molasses",
+  "name": "糖蜜",
+  "name_en": "Molasses",
+  "category": "sweeteners",
+  "subcategory": "sweeteners",
+  "nutrition_per_100g": {
+    "calories": 290,
+    "protein": 0,
+    "fat": 0.1,
+    "carbs": 74.7,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 17,
+    "max": 32,
+    "average": 25,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

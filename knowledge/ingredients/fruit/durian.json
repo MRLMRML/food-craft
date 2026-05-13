@@ -1,0 +1,34 @@
+{
+  "id": "durian",
+  "name": "榴莲",
+  "name_en": "Durian",
+  "category": "fruit",
+  "subcategory": "fruit",
+  "nutrition_per_100g": {
+    "calories": 147,
+    "protein": 1.5,
+    "fat": 5.3,
+    "carbs": 27.1,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 21,
+    "max": 39,
+    "average": 30,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

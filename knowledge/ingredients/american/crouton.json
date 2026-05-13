@@ -1,0 +1,34 @@
+{
+  "id": "crouton",
+  "name": "面包丁",
+  "name_en": "Crouton",
+  "category": "american",
+  "subcategory": "american",
+  "nutrition_per_100g": {
+    "calories": 407,
+    "protein": 12.0,
+    "fat": 6.0,
+    "carbs": 74.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

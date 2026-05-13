@@ -1,0 +1,34 @@
+{
+  "id": "maca_powder",
+  "name": "玛卡粉",
+  "name_en": "Maca Powder",
+  "category": "superfood",
+  "subcategory": "superfood",
+  "nutrition_per_100g": {
+    "calories": 325,
+    "protein": 14.0,
+    "fat": 2.0,
+    "carbs": 64.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 70,
+    "max": 130,
+    "average": 100,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

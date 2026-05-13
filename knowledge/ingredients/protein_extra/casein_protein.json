@@ -1,0 +1,34 @@
+{
+  "id": "casein_protein",
+  "name": "酪蛋白",
+  "name_en": "Casein Protein",
+  "category": "protein_extra",
+  "subcategory": "protein_extra",
+  "nutrition_per_100g": {
+    "calories": 360,
+    "protein": 75.0,
+    "fat": 2.0,
+    "carbs": 10.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 91,
+    "max": 169,
+    "average": 130,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

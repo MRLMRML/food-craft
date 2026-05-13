@@ -1,0 +1,34 @@
+{
+  "id": "ivy_gourd",
+  "name": "红瓜",
+  "name_en": "Ivy Gourd",
+  "category": "vegetables",
+  "subcategory": "fruit_vegetable",
+  "nutrition_per_100g": {
+    "calories": 18,
+    "protein": 1.2,
+    "fat": 0.1,
+    "carbs": 3.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

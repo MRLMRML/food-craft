@@ -1,0 +1,34 @@
+{
+  "id": "turnip",
+  "name": "芜菁",
+  "name_en": "Turnip",
+  "category": "vegetables",
+  "subcategory": "cruciferous",
+  "nutrition_per_100g": {
+    "calories": 28,
+    "protein": 0.9,
+    "fat": 0.1,
+    "carbs": 6.4,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 3,
+    "max": 6,
+    "average": 5,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

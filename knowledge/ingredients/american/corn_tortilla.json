@@ -1,0 +1,34 @@
+{
+  "id": "corn_tortilla",
+  "name": "玉米饼",
+  "name_en": "Corn Tortilla",
+  "category": "american",
+  "subcategory": "american",
+  "nutrition_per_100g": {
+    "calories": 218,
+    "protein": 5.7,
+    "fat": 2.9,
+    "carbs": 44.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 7,
+    "max": 13,
+    "average": 10,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

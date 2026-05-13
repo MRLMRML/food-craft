@@ -1,0 +1,34 @@
+{
+  "id": "mustard_whole",
+  "name": "整粒芥末",
+  "name_en": "Whole Grain Mustard",
+  "category": "sauce",
+  "subcategory": "sauce",
+  "nutrition_per_100g": {
+    "calories": 66,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 5.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 12,
+    "max": 23,
+    "average": 18,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

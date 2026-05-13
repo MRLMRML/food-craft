@@ -1,0 +1,34 @@
+{
+  "id": "salmon_king",
+  "name": "帝王三文鱼",
+  "name_en": "King Salmon",
+  "category": "seafood",
+  "subcategory": "fish_saltwater",
+  "nutrition_per_100g": {
+    "calories": 231,
+    "protein": 25.7,
+    "fat": 13.8,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 84,
+    "max": 156,
+    "average": 120,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

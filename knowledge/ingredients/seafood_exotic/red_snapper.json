@@ -1,0 +1,34 @@
+{
+  "id": "red_snapper",
+  "name": "红鲷鱼",
+  "name_en": "Red Snapper",
+  "category": "seafood_exotic",
+  "subcategory": "seafood_exotic",
+  "nutrition_per_100g": {
+    "calories": 100,
+    "protein": 20.5,
+    "fat": 1.3,
+    "carbs": 0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 42,
+    "max": 78,
+    "average": 60,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

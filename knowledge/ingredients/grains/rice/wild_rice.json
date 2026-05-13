@@ -1,0 +1,34 @@
+{
+  "id": "wild_rice",
+  "name": "野生米",
+  "name_en": "Wild Rice",
+  "category": "grains",
+  "subcategory": "rice",
+  "nutrition_per_100g": {
+    "calories": 101,
+    "protein": 4.0,
+    "fat": 0.3,
+    "carbs": 21.3,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 17,
+    "max": 32,
+    "average": 25,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

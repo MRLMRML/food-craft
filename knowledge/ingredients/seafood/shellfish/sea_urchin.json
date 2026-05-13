@@ -1,0 +1,34 @@
+{
+  "id": "sea_urchin",
+  "name": "海胆",
+  "name_en": "Sea Urchin",
+  "category": "seafood",
+  "subcategory": "shellfish",
+  "nutrition_per_100g": {
+    "calories": 172,
+    "protein": 13.3,
+    "fat": 11.8,
+    "carbs": 4.8,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 84,
+    "max": 156,
+    "average": 120,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

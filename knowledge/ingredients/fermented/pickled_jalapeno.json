@@ -1,0 +1,34 @@
+{
+  "id": "pickled_jalapeno",
+  "name": "腌墨西哥辣椒",
+  "name_en": "Pickled Jalapeno",
+  "category": "fermented",
+  "subcategory": "fermented",
+  "nutrition_per_100g": {
+    "calories": 17,
+    "protein": 0.5,
+    "fat": 0.1,
+    "carbs": 4.0,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 8,
+    "max": 15,
+    "average": 12,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

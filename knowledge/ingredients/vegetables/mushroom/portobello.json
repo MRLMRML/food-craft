@@ -1,0 +1,34 @@
+{
+  "id": "portobello",
+  "name": "波特贝勒菇",
+  "name_en": "Portobello",
+  "category": "vegetables",
+  "subcategory": "mushroom",
+  "nutrition_per_100g": {
+    "calories": 22,
+    "protein": 2.1,
+    "fat": 0.4,
+    "carbs": 3.9,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 10,
+    "max": 19,
+    "average": 15,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}

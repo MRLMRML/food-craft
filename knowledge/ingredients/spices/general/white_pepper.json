@@ -1,0 +1,34 @@
+{
+  "id": "white_pepper",
+  "name": "白胡椒",
+  "name_en": "White Pepper",
+  "category": "spices",
+  "subcategory": "general",
+  "nutrition_per_100g": {
+    "calories": 296,
+    "protein": 10.4,
+    "fat": 2.1,
+    "carbs": 68.6,
+    "fiber": 0
+  },
+  "price_range": {
+    "min": 12,
+    "max": 23,
+    "average": 18,
+    "unit": "元/斤",
+    "last_updated": "2024-01-15"
+  },
+  "seasonal_availability": {
+    "全年": true,
+    "best_season": null
+  },
+  "storage": {
+    "fresh": "按照食材特性保存",
+    "tips": "参考食材说明"
+  },
+  "pairing": {
+    "classic": [],
+    "usage": []
+  },
+  "tips": []
+}
