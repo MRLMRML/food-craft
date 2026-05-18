@@ -2,12 +2,11 @@ name: Update Food Craft Knowledge Base (Monthly)
 
 on:
   schedule:
-    # 每月1号凌晨4点更新
     - cron: '0 20 1 * *'
   workflow_dispatch:
 
 jobs:
-  full-update:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,21 +17,9 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
-      
-      - name: Update trending recipes
-        run: |
-          python scripts/update_trending.py
-      
       - name: Validate all data
         run: |
           python scripts/validate_knowledge.py
-      
-      - name: Generate changelog
-        run: |
-          python scripts/generate_changelog.py
       
       - name: Commit and tag
         run: |
